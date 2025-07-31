@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bixhydqy242lq"]
 
-[ext_resource type="Script" uid="uid://u6dfkj138lcs" path="res://player_controller.gd" id="1_02ohv"]
+[ext_resource type="Script" uid="uid://dwkmxhgklhjr8" path="res://PlayerCharacterController.cs" id="1_02ohv"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tfo3t"]
 
@@ -19,6 +19,11 @@ emission = Color(1, 0, 0, 1)
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_02ohv")
+move_speed = 20.0
+jump_force = 30.0
+gravity_scale = 40.0
+slidingTime = 1.0
+slidingSpeed = 35.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_tfo3t")
