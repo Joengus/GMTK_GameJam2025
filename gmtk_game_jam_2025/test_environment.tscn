@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://5dubmyyoaa5r"]
+[gd_scene load_steps=11 format=3 uid="uid://5dubmyyoaa5r"]
 
+[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="1_hu1ts"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://player_character.tscn" id="1_oyxwl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3ykjp"]
@@ -17,8 +18,22 @@ sky = SubResource("Sky_oyxwl")
 [sub_resource type="PlaneMesh" id="PlaneMesh_uc33h"]
 size = Vector2(200, 200)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mdi38"]
+render_priority = 0
+shader = ExtResource("1_hu1ts")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(1, 1, 1, 1)
+shader_parameter/scale = 50.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_4f72c"]
 size = Vector3(200, 1, 200)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hu1ts"]
+render_priority = 0
+shader = ExtResource("1_hu1ts")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(1, 1, 1, 1)
+shader_parameter/scale = 50.0
 
 [node name="Test Environment" type="Node3D"]
 
@@ -30,6 +45,7 @@ physics_material_override = SubResource("PhysicsMaterial_mdi38")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
 mesh = SubResource("PlaneMesh_uc33h")
+surface_material_override/0 = SubResource("ShaderMaterial_mdi38")
 
 [node name="Floor" type="CollisionShape3D" parent="Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -41,6 +57,7 @@ physics_material_override = SubResource("PhysicsMaterial_mdi38")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Wall"]
 mesh = SubResource("PlaneMesh_uc33h")
+surface_material_override/0 = SubResource("ShaderMaterial_hu1ts")
 
 [node name="Collider" type="CollisionShape3D" parent="Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
