@@ -13,3 +13,11 @@ config_version=5
 config/name="GMTK_GameJam2025"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="res://Audio/default_bus_layout.tres"
+
+[dotnet]
+
+project/assembly_name="GMTK_GameJam2025"
