@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bxfaxrrh8exdo"]
 
-[ext_resource type="Script" uid="uid://bdahqn7y1h265" path="res://PauseMenu.cs" id="1_05uyy"]
-[ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://AudioController.cs" id="1_hdmo1"]
-[ext_resource type="PackedScene" uid="uid://xio2gveaa1q8" path="res://main_menu.tscn" id="2_p81d2"]
+[ext_resource type="Script" uid="uid://bdahqn7y1h265" path="res://Scripts/PauseMenu.cs" id="1_05uyy"]
+[ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://Scripts/AudioController.cs" id="1_hdmo1"]
+[ext_resource type="PackedScene" uid="uid://xio2gveaa1q8" path="res://Scenes/main_menu.tscn" id="2_p81d2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hdmo1"]
 bg_color = Color(0, 0, 0, 1)

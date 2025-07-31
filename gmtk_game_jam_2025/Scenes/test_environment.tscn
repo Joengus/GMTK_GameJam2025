@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://5dubmyyoaa5r"]
 
-[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="1_hu1ts"]
-[ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://player_character.tscn" id="1_oyxwl"]
+[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="1_n4lrg"]
+[ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="2_ovar5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3ykjp"]
 sky_top_color = Color(0.660593, 0.290983, 0.552217, 1)
@@ -20,7 +20,7 @@ size = Vector2(200, 200)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mdi38"]
 render_priority = 0
-shader = ExtResource("1_hu1ts")
+shader = ExtResource("1_n4lrg")
 shader_parameter/color1 = Color(0, 0, 0, 1)
 shader_parameter/color2 = Color(1, 1, 1, 1)
 shader_parameter/scale = 50.0
@@ -30,7 +30,7 @@ size = Vector3(200, 1, 200)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hu1ts"]
 render_priority = 0
-shader = ExtResource("1_hu1ts")
+shader = ExtResource("1_n4lrg")
 shader_parameter/color1 = Color(0, 0, 0, 1)
 shader_parameter/color2 = Color(1, 1, 1, 1)
 shader_parameter/scale = 50.0
@@ -63,5 +63,5 @@ surface_material_override/0 = SubResource("ShaderMaterial_hu1ts")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_4f72c")
 
-[node name="PlayerCharacter" parent="." instance=ExtResource("1_oyxwl")]
+[node name="PlayerCharacter" parent="." instance=ExtResource("2_ovar5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0193367, 0, 0.0293798)

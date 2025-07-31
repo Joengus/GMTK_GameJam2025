@@ -1,14 +1,17 @@
 using Godot;
 using System;
 using System.Diagnostics;
+using System.Threading;
 
 
 
 public partial class PlayerCharacterController : CharacterBody3D
 {
-        Vector3 movement_vector = new Vector3(0, 0, 0);
+    Vector3 movement_vector = new Vector3(0, 0, 0);
     [Export] float move_speed;
     [Export] float jump_force;
+    [Export] double jumpBufferTime = .175f;
+    private double jumpBufferCounter = 0;
     [Export] float gravity_scale;
     [Export] float mouse_sensitivity = .002f;
     [Export] float vertical_look_limit = 70f;
@@ -22,7 +25,6 @@ public partial class PlayerCharacterController : CharacterBody3D
     [Export] float slidingSpeed;
     private bool isSliding = false;
 
-
     public override void _Ready()
     {
         Input.MouseMode = Input.MouseModeEnum.Captured;
@@ -32,24 +34,24 @@ public partial class PlayerCharacterController : CharacterBody3D
 
     public override void _Process(double delta)
     {
-        //set direction
-        if (IsOnFloor() && !isSliding)
+        if (IsOnFloor())
         {
-            var direction = Transform.Basis * new Vector3(input_direction.X * move_speed, Velocity.Y, input_direction.Z * move_speed);
-            Velocity = direction;
-        }
-        else if (isSliding)
-        {
-            slidingCounter -= delta;
-            if (slidingCounter <= 0)
+            if (jumpBufferCounter > 0) //jump if counter is higher than 0
             {
-                isSliding = false;
-                Scale = new Vector3(1, 1, 1);
+                jumpBufferCounter = 0;
+                Velocity += new Vector3(0, jump_force, 0);
+                GD.Print("Jump" + Velocity);
+            }
+            else if (!isSliding && Velocity.Y <= 0) //set direction
+            {
+                var direction = Transform.Basis * new Vector3(input_direction.X * move_speed, Velocity.Y, input_direction.Z * move_speed);
+                Velocity = direction;
+                GD.Print("Move" + Velocity);
             }
         }
 
         MoveAndSlide();
-
+        counters(delta);
         _apply_gravity(delta);
     }
 
@@ -81,17 +83,24 @@ public partial class PlayerCharacterController : CharacterBody3D
             camera_rotation_x = Mathf.Clamp(camera_rotation_x, Mathf.DegToRad(-vertical_look_limit), Mathf.DegToRad(vertical_look_limit));
             camera_pivot.Rotation = new Vector3(camera_rotation_x, camera_pivot.Rotation.Y, camera_pivot.Rotation.Z);
         }
-        else if (!isSliding)
+        else
         {
-            if (@event.IsActionPressed("Jump") && IsOnFloor())
+            if (@event.IsActionPressed("Jump"))//&& IsOnFloor())
             {
-                Velocity += new Vector3(0, jump_force, 0);
+                if (isSliding)
+                {
+                    isSliding = false;
+                    slidingCounter = 0;
+                    Scale = new Vector3(1, 1, 1);
+                }
+                jumpBufferCounter = jumpBufferTime;
+                //Velocity += new Vector3(0, jump_force, 0);
             }
             else if (@event.IsActionReleased("Jump") && Velocity.Y > 0)
             {
                 Velocity = new Vector3(Velocity.X, 0, Velocity.Z);
             }
-            else if (@event.IsActionPressed("Left"))
+            if (@event.IsActionPressed("Left"))
             {
                 input_direction.X -= 1;
             }
@@ -123,13 +132,30 @@ public partial class PlayerCharacterController : CharacterBody3D
             {
                 input_direction.Z -= 1;
             }
-            else if (@event.IsActionPressed("Slide") && IsOnFloor())
+            else if (@event.IsActionPressed("Slide") && IsOnFloor() && !isSliding)
             {
                 isSliding = true;
                 slidingCounter = slidingTime;
                 Scale = new Vector3(1, .5f, 1);
                 Velocity = Transform.Basis * new Vector3(0, 0, -slidingSpeed);
             }
+        }
+    }
+
+    private void counters(double delta)
+    {
+        if (isSliding && slidingCounter > 0f)
+        {
+            slidingCounter -= delta;
+            if (slidingCounter <= 0)
+            {
+                isSliding = false;
+                Scale = new Vector3(1, 1, 1);
+            }
+        }
+        if (jumpBufferCounter > 0)
+        {
+            jumpBufferCounter -= delta;
         }
     }
 }
