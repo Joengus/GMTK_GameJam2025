@@ -11,6 +11,7 @@ public partial class MainMenu : Control
 
 	public void OnPlayButtonPressed()
 	{
+		GetTree().ChangeSceneToFile("res://pause_menu.tscn");
 		GD.Print("Play button pressed");
 	}
 

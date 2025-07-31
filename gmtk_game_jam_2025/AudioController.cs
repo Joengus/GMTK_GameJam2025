@@ -18,9 +18,9 @@ public partial class AudioController : Control
 		_masterAudioBus = AudioServer.GetBusIndex(_masterAudioBusName);
 		_musicAudioBus = AudioServer.GetBusIndex(_musicAudioBusName);
 		_sfxAudioBus = AudioServer.GetBusIndex(_sfxAudioBusName);
-		AudioServer.SetBusVolumeLinear(_masterAudioBus, (float)GetNode<HSlider>("MasterSlider").Value);
-		AudioServer.SetBusVolumeLinear(_masterAudioBus, (float)GetNode<HSlider>("MusicSlider").Value);
-		AudioServer.SetBusVolumeLinear(_sfxAudioBus, (float)GetNode<HSlider>("SfxSlider").Value);
+		GetNode<HSlider>("MasterSlider").Value = AudioServer.GetBusVolumeLinear(_masterAudioBus);
+		GetNode<HSlider>("MusicSlider").Value = AudioServer.GetBusVolumeLinear(_musicAudioBus);
+		GetNode<HSlider>("SfxSlider").Value = AudioServer.GetBusVolumeLinear(_sfxAudioBus);
 	}
 
 	public void OnMasterVolumeChanged(float value)

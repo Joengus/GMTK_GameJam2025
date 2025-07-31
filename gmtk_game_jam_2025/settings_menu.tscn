@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwcg2a1qy6eec"]
+[gd_scene load_steps=4 format=3 uid="uid://cwcg2a1qy6eec"]
 
 [ext_resource type="Script" uid="uid://b6ob8wg80ydb1" path="res://SettingsMenu.cs" id="1_ufg0w"]
+[ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://AudioController.cs" id="2_0cmel"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufg0w"]
 bg_color = Color(0.158472, 0.158472, 0.158472, 1)
@@ -29,7 +30,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ufg0w")
 
-[node name="SettingsTitle" type="RichTextLabel" parent="Panel"]
+[node name="AudioController" type="Control" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_0cmel")
+
+[node name="SettingsTitle" type="RichTextLabel" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -43,7 +53,7 @@ text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MasterTitle" type="RichTextLabel" parent="Panel"]
+[node name="MasterTitle" type="RichTextLabel" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -56,7 +66,7 @@ grow_horizontal = 2
 text = "Master"
 vertical_alignment = 1
 
-[node name="MasterSlider" type="HSlider" parent="Panel"]
+[node name="MasterSlider" type="HSlider" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -73,7 +83,7 @@ max_value = 1.0
 step = 0.01
 value = 0.5
 
-[node name="MusicTitle" type="RichTextLabel" parent="Panel"]
+[node name="MusicTitle" type="RichTextLabel" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -86,7 +96,7 @@ grow_horizontal = 2
 text = "Music"
 vertical_alignment = 1
 
-[node name="MusicSlider" type="HSlider" parent="Panel"]
+[node name="MusicSlider" type="HSlider" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -103,7 +113,7 @@ max_value = 1.0
 step = 0.01
 value = 0.5
 
-[node name="SfxTitle" type="RichTextLabel" parent="Panel"]
+[node name="SfxTitle" type="RichTextLabel" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -116,7 +126,7 @@ grow_horizontal = 2
 text = "Sound Effects"
 vertical_alignment = 1
 
-[node name="SfxSlider" type="HSlider" parent="Panel"]
+[node name="SfxSlider" type="HSlider" parent="Panel/AudioController"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -148,7 +158,7 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Return"
 
-[connection signal="value_changed" from="Panel/MasterSlider" to="." method="OnMasterVolumeChanged"]
-[connection signal="value_changed" from="Panel/MusicSlider" to="." method="OnMusicVolumeChanged"]
-[connection signal="value_changed" from="Panel/SfxSlider" to="." method="OnSfxVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/MasterSlider" to="Panel/AudioController" method="OnMasterVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/MusicSlider" to="Panel/AudioController" method="OnMusicVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/SfxSlider" to="Panel/AudioController" method="OnSfxVolumeChanged"]
 [connection signal="pressed" from="Panel/ReturnButton" to="." method="OnReturnButtonPressed"]
