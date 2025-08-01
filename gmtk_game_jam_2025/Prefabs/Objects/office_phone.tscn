@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4g7hv4jkwxpu"]
+
+[ext_resource type="PackedScene" uid="uid://disucq6jnvw6e" path="res://Assets/Models/Objects/OfficePhone/Office Phone.glb" id="1_qwthw"]
+
+[node name="OfficePhone" instance=ExtResource("1_qwthw")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
