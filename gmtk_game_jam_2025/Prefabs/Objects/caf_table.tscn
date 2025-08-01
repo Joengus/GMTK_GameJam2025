@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkwea1r32jwv0"]
+
+[ext_resource type="PackedScene" uid="uid://bm6iuh78g4ejy" path="res://Assets/Models/Objects/CafTable/Caf_table.fbx" id="1_8x7o3"]
+
+[node name="Caf_table" instance=ExtResource("1_8x7o3")]

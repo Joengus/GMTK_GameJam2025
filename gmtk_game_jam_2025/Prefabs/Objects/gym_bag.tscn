@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwiex7l57lvp8"]
+
+[ext_resource type="PackedScene" uid="uid://b0xgrqn0xss0a" path="res://Assets/Models/Objects/GymBag/Gym_bag.fbx" id="1_b7n41"]
+
+[node name="Gym_bag" instance=ExtResource("1_b7n41")]

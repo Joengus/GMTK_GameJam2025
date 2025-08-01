@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgu5casl3vw3y"]
+
+[ext_resource type="PackedScene" uid="uid://bbsodl7rhoos3" path="res://Assets/Models/Objects/CoffeeMaker/Coffee_Maker.fbx" id="1_eaowd"]
+
+[node name="Coffee_Maker" instance=ExtResource("1_eaowd")]

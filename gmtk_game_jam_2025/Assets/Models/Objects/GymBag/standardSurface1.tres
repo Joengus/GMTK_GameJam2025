@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://ww2grp7o85yh"]
+
+[ext_resource type="Texture2D" uid="uid://bplhr36t2o0hv" path="res://Assets/Models/Objects/GymBag/Gym_bag_standardSurface1_BaseColor.png" id="1_tyyti"]
+[ext_resource type="Texture2D" uid="uid://cilu485qovt61" path="res://Assets/Models/Objects/GymBag/Gym_bag_standardSurface1_Normal.png" id="2_d8fwv"]
+[ext_resource type="Texture2D" uid="uid://daw8iqfv3ksje" path="res://Assets/Models/Objects/GymBag/Gym_bag_standardSurface1_Roughness.png" id="3_5s1f2"]
+
+[resource]
+resource_name = "standardSurface1"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.665185, 0.665185, 0.665185, 1)
+albedo_texture = ExtResource("1_tyyti")
+roughness_texture = ExtResource("3_5s1f2")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_d8fwv")
