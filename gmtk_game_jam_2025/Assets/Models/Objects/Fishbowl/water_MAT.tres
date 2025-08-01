@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://312vn8l41oue"]
+
+[resource]
+resource_name = "water_MAT"
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.423529, 0.392157, 0.67451, 0.686275)
+emission_enabled = true
