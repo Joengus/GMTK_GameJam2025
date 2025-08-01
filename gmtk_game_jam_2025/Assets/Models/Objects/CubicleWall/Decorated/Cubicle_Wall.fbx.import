@@ -36,7 +36,7 @@ _subresources={
 "materials": {
 "standardSurface1": {
 "use_external/enabled": true,
-"use_external/path": "res://Assets/Models/Objects/CubicleWall/standardSurface1.tres"
+"use_external/path": "uid://cbwm8v8ohhrs8"
 }
 }
 }
