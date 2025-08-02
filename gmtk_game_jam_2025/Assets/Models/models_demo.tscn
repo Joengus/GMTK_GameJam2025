@@ -1,0 +1,143 @@
+[gd_scene load_steps=36 format=3 uid="uid://prhag7ysq88h"]
+
+[ext_resource type="PackedScene" uid="uid://wgxgtmng04p4" path="res://Assets/Models/Objects/BarCart/barcart.fbx" id="1_2w60t"]
+[ext_resource type="PackedScene" uid="uid://chuj6er6cluqw" path="res://Assets/Models/Objects/KeyLoop/key_loop.fbx" id="2_d6bst"]
+[ext_resource type="PackedScene" uid="uid://pfrielop4ko1" path="res://Assets/Models/Objects/Stapler/red_stapler.fbx" id="3_beyor"]
+[ext_resource type="PackedScene" uid="uid://cjnm2dr0xel3" path="res://Assets/Models/Objects/SideTable/side_table.fbx" id="4_b3avk"]
+[ext_resource type="PackedScene" uid="uid://cmfx6ckwr56e" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant.fbx" id="5_rs8oo"]
+[ext_resource type="PackedScene" uid="uid://bk5boibcebnj6" path="res://Assets/Models/Objects/WaterDispenser/water_dispensor.fbx" id="6_v1eae"]
+[ext_resource type="PackedScene" uid="uid://cvfsd2fgrcydb" path="res://Assets/Models/Player/PC_arm_PJ's.fbx" id="7_kgf87"]
+[ext_resource type="PackedScene" uid="uid://cgh1vykl5vjwe" path="res://Assets/Models/Objects/Decanter/ThirdPass/decanter3.fbx" id="8_3hva7"]
+[ext_resource type="PackedScene" uid="uid://bsg81dab8r1cv" path="res://Assets/Models/Objects/BigRedButton/big_red_button.fbx" id="9_sjjtq"]
+[ext_resource type="PackedScene" uid="uid://bm6iuh78g4ejy" path="res://Assets/Models/Objects/CafTable/Caf_table.fbx" id="10_6xuvn"]
+[ext_resource type="PackedScene" uid="uid://ly54k04utnlq" path="res://Assets/Models/Objects/Cellphone/cellphone.fbx" id="11_7qyr5"]
+[ext_resource type="PackedScene" uid="uid://deckjyvac7p2i" path="res://Assets/Models/Objects/CoffeeCup/Coffee_Cup.fbx" id="12_k8gax"]
+[ext_resource type="PackedScene" uid="uid://bbsodl7rhoos3" path="res://Assets/Models/Objects/CoffeeMaker/Coffee_Maker.fbx" id="13_sexo5"]
+[ext_resource type="PackedScene" uid="uid://hrquh41eppi" path="res://Assets/Models/Objects/CubicleWall/Blank/Cubicle_Wall.fbx" id="14_wa65p"]
+[ext_resource type="PackedScene" uid="uid://b75glox4tla02" path="res://Assets/Models/Objects/CubicleWall/Decorated/Cubicle_Wall.fbx" id="15_ouygj"]
+[ext_resource type="PackedScene" uid="uid://c67oxp5pgbf0b" path="res://Assets/Models/Objects/Fishbowl/fishbowl.fbx" id="16_tta7p"]
+[ext_resource type="PackedScene" uid="uid://b0xgrqn0xss0a" path="res://Assets/Models/Objects/GymBag/Gym_bag.fbx" id="17_rtch7"]
+[ext_resource type="PackedScene" uid="uid://b42lo4fjw0clo" path="res://Assets/Models/Objects/Lunch/LunchBag/SackLunch.fbx" id="18_uclmv"]
+[ext_resource type="PackedScene" uid="uid://b2i5f3q3ls6ec" path="res://Assets/Models/Objects/Lunch/Sandwich/lunch.fbx" id="19_v5a3s"]
+[ext_resource type="PackedScene" uid="uid://654jy2cklpf1" path="res://Assets/Models/Objects/OfficeChair/Office_Chair.fbx" id="20_jklwi"]
+[ext_resource type="PackedScene" uid="uid://dy7uhm3odajqf" path="res://Assets/Models/Objects/OfficeDesk/Office_Desk.fbx" id="21_wb2tj"]
+[ext_resource type="PackedScene" uid="uid://bcjjxkbfkkcp4" path="res://Assets/Models/Objects/Computer/Computer.fbx" id="22_2q3wr"]
+[ext_resource type="PackedScene" uid="uid://disucq6jnvw6e" path="res://Assets/Models/Objects/OfficePhone/Office Phone.glb" id="23_l784u"]
+[ext_resource type="PackedScene" uid="uid://7q8bw1iajbqe" path="res://Assets/Models/Objects/Paperclip/paperclips.fbx" id="24_djh86"]
+[ext_resource type="PackedScene" uid="uid://bqmr5y33j6v8o" path="res://Assets/Models/Objects/PartyHat/party_hat.fbx" id="25_5mu14"]
+[ext_resource type="PackedScene" uid="uid://dq7lyg0qj17ar" path="res://Assets/Models/Objects/PencilHolder/pencil_holder.fbx" id="26_hqs1e"]
+[ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/Plants/Potted/large_potted_plant.fbx" id="27_4eg0x"]
+[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/Plants/Potted/small_potted_plant.fbx" id="28_s0hat"]
+[ext_resource type="PackedScene" uid="uid://b515yvf3354vm" path="res://Assets/Models/Objects/Printer/printer.fbx" id="29_k8gax"]
+[ext_resource type="PackedScene" uid="uid://cqxvb0yld3n0m" path="res://Assets/Models/Objects/StickyNotes/post it note.fbx" id="30_sexo5"]
+[ext_resource type="PackedScene" uid="uid://c3bnwa0li7evy" path="res://Assets/Models/Objects/StickyNotes/post-it-note-stack.fbx" id="31_wa65p"]
+[ext_resource type="PackedScene" uid="uid://bx226ec8b0xac" path="res://Assets/Models/Objects/Tent/Tent.fbx" id="32_tta7p"]
+[ext_resource type="PackedScene" uid="uid://dbc44a2swwhjv" path="res://Assets/Models/Objects/Toothbrush/cup_toothbrush_combo.fbx" id="33_rtch7"]
+[ext_resource type="PackedScene" uid="uid://4sh6nhq18npm" path="res://Assets/Models/Objects/VendingMachine/Vending Machine.fbx" id="34_uclmv"]
+[ext_resource type="PackedScene" uid="uid://dhepf20iwpv41" path="res://Assets/Models/Objects/VhsTape/vhs tape.fbx" id="35_v5a3s"]
+
+[node name="ModelsDemo" type="Node3D"]
+
+[node name="barcart" parent="." instance=ExtResource("1_2w60t")]
+
+[node name="key_loop" parent="." instance=ExtResource("2_d6bst")]
+transform = Transform3D(0.0111193, 0.0413302, -0.999084, -0.965663, 0.259797, 0, 0.259559, 0.964778, 0.0427998, -1.01534, 1.29622, 0.342724)
+
+[node name="red_stapler" parent="." instance=ExtResource("3_beyor")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.237647, 1.02133, 0.164935)
+
+[node name="side_table" parent="." instance=ExtResource("4_b3avk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35741, 0, 0.740614)
+
+[node name="tall_plant" parent="." instance=ExtResource("5_rs8oo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69422, 0, -0.409164)
+
+[node name="water_dispensor" parent="." instance=ExtResource("6_v1eae")]
+transform = Transform3D(0.867609, 0, 0.497247, 0, 1, 0, -0.497247, 0, 0.867609, -1.60542, 0, -0.33722)
+
+[node name="PC_arm_PJ\'s" parent="." instance=ExtResource("7_kgf87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.572477, 0, -1.62402)
+
+[node name="decanter3" parent="." instance=ExtResource("8_3hva7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36446, 0.635546, 0.779308)
+
+[node name="big_red_button" parent="." instance=ExtResource("9_sjjtq")]
+transform = Transform3D(0.559526, 0, 0.828813, 0, 1, 0, -0.828813, 0, 0.559526, -2.98904, 0, 0.121359)
+
+[node name="Caf_table" parent="." instance=ExtResource("10_6xuvn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.26828, 0, 4.26631)
+
+[node name="cellphone" parent="." instance=ExtResource("11_7qyr5")]
+transform = Transform3D(-0.20065, 0, 0.979663, 0, 1, 0, -0.979663, 0, -0.20065, -2.74293, 0.949071, 4.51901)
+
+[node name="Coffee_Cup" parent="." instance=ExtResource("12_k8gax")]
+transform = Transform3D(-0.77108, 0, 0.636738, 0, 1, 0, -0.636738, 0, -0.77108, -3.8842, 0.936516, 4.54785)
+
+[node name="Coffee_Maker" parent="." instance=ExtResource("13_sexo5")]
+transform = Transform3D(-0.806341, 0, 0.59145, 0, 1, 0, -0.59145, 0, -0.806341, -3.66515, 0.935066, 4.80623)
+
+[node name="Cubicle_Wall" parent="." instance=ExtResource("14_wa65p")]
+transform = Transform3D(0.0496865, 0, 0.998765, 0, 1, 0, -0.998765, 0, 0.0496865, -4.95258, 0, 2.1938)
+
+[node name="Cubicle_Wall2" parent="." instance=ExtResource("15_ouygj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.28144, 2.38419e-07, 1.5214)
+
+[node name="fishbowl" parent="." instance=ExtResource("16_tta7p")]
+transform = Transform3D(-0.776168, 0, -0.630527, 0, 1, 0, 0.630527, 0, -0.776168, -3.33893, 0.945359, 5.00153)
+
+[node name="Gym_bag" parent="." instance=ExtResource("17_rtch7")]
+transform = Transform3D(0.760553, 0, 0.649276, 0, 1, 0, -0.649276, 0, 0.760553, -4.43101, 0, 2.06612)
+
+[node name="SackLunch" parent="." instance=ExtResource("18_uclmv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.06354, 0.937772, 5.00819)
+
+[node name="lunch" parent="." instance=ExtResource("19_v5a3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.23658, 0.935966, 4.78136)
+
+[node name="Office_Chair" parent="." instance=ExtResource("20_jklwi")]
+transform = Transform3D(-0.978249, 0, 0.207434, 0, 1, 0, -0.207434, 0, -0.978249, -0.953554, 0, 6.82726)
+
+[node name="Office_Desk" parent="." instance=ExtResource("21_wb2tj")]
+transform = Transform3D(-0.983, 0, 0.183608, 0, 1, 0, -0.183608, 0, -0.983, -1.21506, 1.19209e-07, 7.078)
+
+[node name="Computer" parent="." instance=ExtResource("22_2q3wr")]
+transform = Transform3D(-0.980512, 0, 0.196459, 0, 1, 0, -0.196459, 0, -0.980512, -1.05991, 0.766253, 7.2486)
+
+[node name="Root Scene" parent="." instance=ExtResource("23_l784u")]
+transform = Transform3D(0.772257, 0, -0.63531, 0, 1, 0, 0.63531, 0, 0.772257, 4.47445, 1.3441, 1.21348)
+
+[node name="paperclips" parent="." instance=ExtResource("24_djh86")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.91286, 0.939322, 4.77152)
+
+[node name="party_hat" parent="." instance=ExtResource("25_5mu14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33833, 1.22478, 5.00182)
+
+[node name="pencil_holder" parent="." instance=ExtResource("26_hqs1e")]
+transform = Transform3D(-0.695624, 0, 0.718406, 0, 1, 0, -0.718406, 0, -0.695624, -1.62086, 0.86426, 7.08105)
+
+[node name="large_potted_plant" parent="." instance=ExtResource("27_4eg0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.17607, 0, 6.37551)
+
+[node name="small_potted_plant" parent="." instance=ExtResource("28_s0hat")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.04415, 0.815295, 6.87176)
+
+[node name="printer" parent="." instance=ExtResource("29_k8gax")]
+transform = Transform3D(-0.82273, 0, -0.568433, 0, 1, 0, 0.568433, 0, -0.82273, 1.23179, 4.76837e-07, 7.97883)
+
+[node name="post it note" parent="." instance=ExtResource("30_sexo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13406, 0.952266, 4.95818)
+
+[node name="post-it-note-stack" parent="." instance=ExtResource("31_wa65p")]
+transform = Transform3D(-0.611237, 0, 0.791448, 0, 1, 0, -0.791448, 0, -0.611237, -1.72451, 0.774337, 6.92689)
+
+[node name="Tent" parent="." instance=ExtResource("32_tta7p")]
+transform = Transform3D(-0.879798, 0, 0.475348, 0, 1, 0, -0.475348, 0, -0.879798, -3.01566, 0, 10.006)
+
+[node name="cup_toothbrush_combo" parent="." instance=ExtResource("33_rtch7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6398, 0.936122, 4.09344)
+
+[node name="Vending Machine" parent="." instance=ExtResource("34_uclmv")]
+transform = Transform3D(-0.326459, 0, 0.945211, 0, 1, 0, -0.945211, 0, -0.326459, -6.09997, 1.19209e-07, 6.08915)
+
+[node name="vhs tape" parent="." instance=ExtResource("35_v5a3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.99999, 0, 4.82938)

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://biu843pp6cumm"]
+
+[ext_resource type="PackedScene" uid="uid://cgh1vykl5vjwe" path="res://Assets/Models/Objects/Decanter/ThirdPass/decanter3.fbx" id="1_c8t6d"]
+
+[node name="decanter3" instance=ExtResource("1_c8t6d")]

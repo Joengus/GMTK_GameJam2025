@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://jh6w52yso1rr"]
+
+[ext_resource type="PackedScene" uid="uid://chuj6er6cluqw" path="res://Assets/Models/Objects/KeyLoop/key_loop.fbx" id="1_t8305"]
+
+[node name="key_loop" instance=ExtResource("1_t8305")]

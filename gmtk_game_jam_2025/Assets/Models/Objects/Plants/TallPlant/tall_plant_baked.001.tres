@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cdjoidsnqkqud"]
+
+[ext_resource type="Texture2D" uid="uid://75doxghucxfv" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant_0.png" id="1_t0qvw"]
+[ext_resource type="Texture2D" uid="uid://cfegmsr0f8ut4" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant_normal.png" id="2_via2p"]
+[ext_resource type="Texture2D" uid="uid://dh4juiakjef3s" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant_roughness.png" id="3_llvwi"]
+
+[resource]
+resource_name = "tall_plant_baked.001"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_t0qvw")
+roughness_texture = ExtResource("3_llvwi")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_via2p")
