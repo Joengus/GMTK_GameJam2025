@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://q1sy42h2xl8l"]
+
+[ext_resource type="PackedScene" uid="uid://derlgiffq5tjl" path="res://Assets/Models/Objects/Paper/sheets of paper.fbx" id="1_8iu4l"]
+
+[node name="sheets of paper" instance=ExtResource("1_8iu4l")]
