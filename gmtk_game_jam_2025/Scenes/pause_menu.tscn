@@ -1,0 +1,180 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxfaxrrh8exdo"]
+
+[ext_resource type="Script" uid="uid://bdahqn7y1h265" path="res://Scripts/PauseMenu.cs" id="1_05uyy"]
+[ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://Scripts/AudioController.cs" id="1_hdmo1"]
+[ext_resource type="PackedScene" uid="uid://xio2gveaa1q8" path="res://Scenes/main_menu.tscn" id="2_p81d2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hdmo1"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_05uyy")
+MainMenuScene = ExtResource("2_p81d2")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = -266.0
+offset_right = 213.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hdmo1")
+
+[node name="PauseTitle" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -116.0
+offset_top = 32.0
+offset_right = 116.0
+offset_bottom = 109.0
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 24
+text = "Game Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioController" type="Control" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hdmo1")
+
+[node name="MasterTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 122.0
+offset_right = 48.0
+offset_bottom = 162.0
+grow_horizontal = 2
+text = "Master"
+vertical_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -113.0
+offset_right = 99.0
+offset_bottom = -97.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="MusicTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 179.0
+offset_right = 48.0
+offset_bottom = 219.0
+grow_horizontal = 2
+text = "Music"
+vertical_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -56.0
+offset_right = 99.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="SfxTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 240.0
+offset_right = 48.0
+offset_bottom = 280.0
+grow_horizontal = 2
+text = "Sound Effects"
+vertical_alignment = 1
+
+[node name="SfxSlider" type="HSlider" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = 5.0
+offset_right = 99.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="ResumeButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -194.0
+offset_right = 75.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Resume"
+
+[node name="MainMenuButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -120.0
+offset_right = 75.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Main Menu"
+
+[connection signal="pressed" from="Panel/ResumeButton" to="." method="OnResumeButtonPressed"]
+[connection signal="pressed" from="Panel/MainMenuButton" to="." method="OnMainMenuButtonPressed"]

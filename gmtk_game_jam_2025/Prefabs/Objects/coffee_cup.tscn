@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4uhhvj2lnqyr"]
+
+[ext_resource type="PackedScene" uid="uid://deckjyvac7p2i" path="res://Assets/Models/Objects/CoffeeCup/Coffee_Cup.fbx" id="1_rkbbr"]
+
+[node name="Coffee_Cup" instance=ExtResource("1_rkbbr")]

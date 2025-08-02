@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cjsf242xwf7m4"]
+
+[resource]
+resource_name = "glass_MAT"
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.387823, 0.215234, 0, 0.317647)
+roughness = 0.2
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0

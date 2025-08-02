@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfngocgru6lk2"]
+
+[ext_resource type="PackedScene" uid="uid://ly54k04utnlq" path="res://Assets/Models/Objects/Cellphone/cellphone.fbx" id="1_bn0ft"]
+
+[node name="cellphone" instance=ExtResource("1_bn0ft")]

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Task" load_steps=3 format=3 uid="uid://bqhkhjmj4gk0m"]
+
+[ext_resource type="Resource" uid="uid://bjyxdku67nhyx" path="res://Resources/Tasks/GetDressed.tres" id="1_d6ina"]
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_le3on"]
+
+[resource]
+script = ExtResource("1_le3on")
+ReputationAlignment = 1
+TaskName = "Brush Teeth"
+PointsTowardAlignment = 0
+DescriptionRebel = ""
+DescriptionNeutral = ""
+DescriptionCitizen = ""
+PrerequisiteTasks = Array[Object]([ExtResource("1_d6ina")])
+metadata/_custom_type_script = "uid://tsksdlunldfr"

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://duwvqy5yovw0q"]
+
+[ext_resource type="PackedScene" uid="uid://dy7uhm3odajqf" path="res://Assets/Models/Objects/OfficeDesk/Office_Desk.fbx" id="1_upsyg"]
+
+[node name="Office_Desk" instance=ExtResource("1_upsyg")]

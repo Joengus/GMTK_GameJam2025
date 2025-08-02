@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://5dubmyyoaa5r"]
+
+[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="1_n4lrg"]
+[ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="2_ovar5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3ykjp"]
+sky_top_color = Color(0.660593, 0.290983, 0.552217, 1)
+
+[sub_resource type="Sky" id="Sky_oyxwl"]
+sky_material = SubResource("ProceduralSkyMaterial_3ykjp")
+
+[sub_resource type="Environment" id="Environment_hu1ts"]
+background_mode = 2
+sky = SubResource("Sky_oyxwl")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mdi38"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uc33h"]
+size = Vector2(200, 200)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mdi38"]
+render_priority = 0
+shader = ExtResource("1_n4lrg")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(1, 1, 1, 1)
+shader_parameter/scale = 50.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4f72c"]
+size = Vector3(200, 1, 200)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hu1ts"]
+render_priority = 0
+shader = ExtResource("1_n4lrg")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(1, 1, 1, 1)
+shader_parameter/scale = 50.0
+
+[node name="Test Environment" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_hu1ts")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_mdi38")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_uc33h")
+surface_material_override/0 = SubResource("ShaderMaterial_mdi38")
+
+[node name="Floor" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_4f72c")
+
+[node name="Wall" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -100)
+physics_material_override = SubResource("PhysicsMaterial_mdi38")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall"]
+mesh = SubResource("PlaneMesh_uc33h")
+surface_material_override/0 = SubResource("ShaderMaterial_hu1ts")
+
+[node name="Collider" type="CollisionShape3D" parent="Wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_4f72c")
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("2_ovar5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0193367, 0, 0.0293798)
