@@ -18,6 +18,9 @@ public partial class PlayerCharacterController : CharacterBody3D
 
     Node3D camera_pivot;
     Camera3D camera;
+
+    PlayerInteractionBehavior interactScript;
+
     Vector3 input_direction = new Vector3(0, 0, 0);
 
     [Export] double slidingTime;
@@ -30,6 +33,7 @@ public partial class PlayerCharacterController : CharacterBody3D
         Input.MouseMode = Input.MouseModeEnum.Captured;
         camera_pivot = GetNode<Node3D>("CameraPivot");
         camera = GetNode<Camera3D>("CameraPivot/Camera3D");
+        interactScript = GetNode<PlayerInteractionBehavior>("PlayerInteractionBehavior");
     }
 
     public override void _Process(double delta)
@@ -40,13 +44,11 @@ public partial class PlayerCharacterController : CharacterBody3D
             {
                 jumpBufferCounter = 0;
                 Velocity += new Vector3(0, jump_force, 0);
-                GD.Print("Jump" + Velocity);
             }
             else if (!isSliding && Velocity.Y <= 0) //set direction
             {
                 var direction = Transform.Basis * new Vector3(input_direction.X * move_speed, Velocity.Y, input_direction.Z * move_speed);
                 Velocity = direction;
-                GD.Print("Move" + Velocity);
             }
         }
 
@@ -76,7 +78,6 @@ public partial class PlayerCharacterController : CharacterBody3D
                 // Rotate player horizontally
                 RotateY(-mouseMotion.Relative.X * mouse_sensitivity);
             }
-
 
             // Rotate camera vertically
             var camera_rotation_x = camera_pivot.Rotation.X - mouseMotion.Relative.Y * mouse_sensitivity;
@@ -136,8 +137,18 @@ public partial class PlayerCharacterController : CharacterBody3D
             {
                 isSliding = true;
                 slidingCounter = slidingTime;
-                Scale = new Vector3(1, .5f, 1);
+                Scale = new Vector3(1, .25f, 1);
                 Velocity = Transform.Basis * new Vector3(0, 0, -slidingSpeed);
+            }
+
+            if (@event.IsActionPressed("Interact"))
+            {
+                interactScript._Interact();
+            }
+            if (@event.IsActionPressed("ThrowSlap"))
+            {
+                GD.Print("ThrowSlap");
+                interactScript.throwSlap(-camera_pivot.GlobalTransform.Basis.Z, camera_pivot.GlobalPosition); //GlobalRotationDegrees * new Vector3())
             }
         }
     }
