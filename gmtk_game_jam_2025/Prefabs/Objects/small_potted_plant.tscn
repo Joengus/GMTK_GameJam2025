@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://du866xgtqo3wx"]
+
+[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/PottedPlants/small_potted_plant.fbx" id="1_qrnbn"]
+
+[node name="small_potted_plant" instance=ExtResource("1_qrnbn")]
