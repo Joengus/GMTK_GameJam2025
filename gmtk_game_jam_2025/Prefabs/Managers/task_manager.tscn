@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmjlxqbcgfq7g"]
+
+[ext_resource type="Script" uid="uid://53hfdi48h7qw" path="res://Scripts/Task/TaskManager.cs" id="1_6nu63"]
+[ext_resource type="Resource" uid="uid://bqhkhjmj4gk0m" path="res://Resources/Tasks/BrushTeeth.tres" id="2_6nu63"]
+[ext_resource type="Resource" uid="uid://bjyxdku67nhyx" path="res://Resources/Tasks/GetDressed.tres" id="3_d6k7i"]
+
+[node name="TaskManager" type="Node3D"]
+script = ExtResource("1_6nu63")
+TaskList = Array[Object]([ExtResource("2_6nu63"), ExtResource("3_d6k7i")])

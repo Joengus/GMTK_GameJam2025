@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://bpg0sl66jgn0f"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_qxj81"]
+
+[resource]
+script = ExtResource("1_qxj81")
+ReputationAlignment = 1
+TaskName = "Go to your Desk"
+PointsTowardAlignment = 200
+DescriptionRebel = "All it's missing are the iron bars."
+DescriptionNeutral = "Home away from Supply Closet!"
+DescriptionCitizen = "My kingdom!"
+PrerequisiteTasks = null
+metadata/_custom_type_script = "uid://tsksdlunldfr"
