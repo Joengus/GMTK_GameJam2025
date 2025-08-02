@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxcm6c2exa3d7"]
+
+[ext_resource type="PackedScene" uid="uid://bjmsoy21m6opb" path="res://Assets/Models/Objects/SoloCup/solocup.fbx" id="1_1da6p"]
+
+[node name="solocup" instance=ExtResource("1_1da6p")]
