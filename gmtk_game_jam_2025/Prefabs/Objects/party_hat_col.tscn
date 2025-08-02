@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://clt2wlqe6mldr"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_c6foc"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/party_hat.tscn" id="2_04kd4"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_enfyq"]
+height = 0.194733
+radius = 0.0913086
+
+[node name="PartyHat" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+script = ExtResource("1_c6foc")
+prompt = NodePath("Prompt")
+
+[node name="party_hat" parent="RigidBody3D" instance=ExtResource("2_04kd4")]
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00770569, 0)
+shape = SubResource("CylinderShape3D_enfyq")

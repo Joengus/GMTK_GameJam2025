@@ -1,5 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvk5ejet24n55"]
+[gd_scene load_steps=5 format=3 uid="uid://dojg2bq8uho8n"]
 
 [ext_resource type="PackedScene" uid="uid://bsg81dab8r1cv" path="res://Assets/Models/Objects/BigRedButton/big_red_button.fbx" id="1_mcleu"]
+[ext_resource type="Script" uid="uid://b6pggduv8wmew" path="res://Scripts/BigRedButtonBehavior.cs" id="2_110nb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mcleu"]
+size = Vector3(1.06009, 0.588013, 1.06293)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_110nb"]
+radius = 0.500692
 
 [node name="big_red_button" instance=ExtResource("1_mcleu")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+script = ExtResource("2_110nb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000320435, 0.256897, -0.00326538)
+shape = SubResource("BoxShape3D_mcleu")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.614237, 0)
+shape = SubResource("SphereShape3D_110nb")
+
+[node name="Prompt" type="Label3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28385, 0)
+visible = false
+billboard = 1
+text = "Push"
+font_size = 30

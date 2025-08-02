@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj73qpr11vnbg"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_kvsgn"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/vhs_tape.tscn" id="2_s830f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ls0nv"]
+size = Vector3(0.25267, 0.0492554, 0.149078)
+
+[node name="VhsTape" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+script = ExtResource("1_kvsgn")
+prompt = NodePath("Prompt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000953674, -0.00619507, -0.00498962)
+shape = SubResource("BoxShape3D_ls0nv")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30
+
+[node name="vhs tape" parent="RigidBody3D" instance=ExtResource("2_s830f")]
