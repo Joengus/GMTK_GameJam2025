@@ -1,5 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://neaykfc3hbg7"]
+[gd_scene load_steps=3 format=3 uid="uid://dqmdilmq68dvg"]
 
 [ext_resource type="PackedScene" uid="uid://di2072o21kq5a" path="res://Assets/Models/Objects/Parachute/parachute.fbx" id="1_hbfmw"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_hbfmw"]
+size = Vector3(0.417236, 0.577637, 0.352478)
+
 [node name="parachute" instance=ExtResource("1_hbfmw")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012207, 0.12085, -0.0923767)
+shape = SubResource("BoxShape3D_hbfmw")

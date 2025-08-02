@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://o2bryt7r12u2"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_m5lx6"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/pizza_slice.tscn" id="2_n4jeh"]
+
+[node name="PizzaSlice" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_m5lx6")
+prompt = NodePath("Prompt")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30
+
+[node name="pizza slice" parent="RigidBody3D" instance=ExtResource("2_n4jeh")]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.00951484, 0)
+depth = 0.02
+polygon = PackedVector2Array(-0.00115767, -0.153356, -0.037224, -0.149422, -0.0726346, -0.133684, -0.00246915, 0.00205709, 0.0742538, -0.133028, 0.0381875, -0.14811)

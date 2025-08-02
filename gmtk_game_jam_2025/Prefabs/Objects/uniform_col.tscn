@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ruarxnx2n33p"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_ltpww"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/uniform.tscn" id="1_wx4wm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ltpww"]
+size = Vector3(0.98877, 1.0354, 0.180817)
+
+[node name="Uniform" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_ltpww")
+prompt = NodePath("Prompt")
+
+[node name="uniform" parent="RigidBody3D" instance=ExtResource("1_wx4wm")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0212402, 0.052124, 0.00160217)
+shape = SubResource("BoxShape3D_ltpww")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.658796, 0)
+billboard = 1
+text = "Hold"
+font_size = 30
