@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cofhnddyefsbo"]
+
+[ext_resource type="PackedScene" uid="uid://b42lo4fjw0clo" path="res://Assets/Models/Objects/Lunch/LunchBag/SackLunch.fbx" id="1_nsafw"]
+
+[node name="SackLunch" instance=ExtResource("1_nsafw")]

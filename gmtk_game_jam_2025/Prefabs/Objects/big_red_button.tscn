@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvk5ejet24n55"]
+
+[ext_resource type="PackedScene" uid="uid://bsg81dab8r1cv" path="res://Assets/Models/Objects/BigRedButton/big_red_button.fbx" id="1_mcleu"]
+
+[node name="big_red_button" instance=ExtResource("1_mcleu")]

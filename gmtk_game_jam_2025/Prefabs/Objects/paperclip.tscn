@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://gxc6qfp71aqf"]
+
+[ext_resource type="PackedScene" uid="uid://7q8bw1iajbqe" path="res://Assets/Models/Objects/Paperclip/paperclips.fbx" id="1_b2pp6"]
+
+[node name="paperclips" instance=ExtResource("1_b2pp6")]

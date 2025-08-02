@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://omgnqvj2urrn"]
+
+[ext_resource type="PackedScene" uid="uid://bqmr5y33j6v8o" path="res://Assets/Models/Objects/PartyHat/party_hat.fbx" id="1_q5mnk"]
+
+[node name="party_hat" instance=ExtResource("1_q5mnk")]

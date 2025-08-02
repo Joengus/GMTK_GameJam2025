@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddq2t7u4upx3o"]
+
+[ext_resource type="PackedScene" uid="uid://dhepf20iwpv41" path="res://Assets/Models/Objects/VhsTape/vhs tape.fbx" id="1_wwuwc"]
+
+[node name="vhs tape" instance=ExtResource("1_wwuwc")]
