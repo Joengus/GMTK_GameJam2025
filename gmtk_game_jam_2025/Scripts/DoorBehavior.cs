@@ -67,7 +67,7 @@ public partial class DoorBehavior : StaticBody3D, IInteractable
     public void hidePrompt()
     {
         openPrompt.Visible = false;
-        lockedPrompt.Visible = true;
+        lockedPrompt.Visible = false;
     }
 
     public InteractableType getIType()
