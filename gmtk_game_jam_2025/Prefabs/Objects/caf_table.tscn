@@ -1,5 +1,41 @@
-[gd_scene load_steps=2 format=3 uid="uid://dkwea1r32jwv0"]
+[gd_scene load_steps=4 format=3 uid="uid://dkwea1r32jwv0"]
 
 [ext_resource type="PackedScene" uid="uid://bm6iuh78g4ejy" path="res://Assets/Models/Objects/CafTable/Caf_table.fbx" id="1_8x7o3"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8x7o3"]
+height = 0.035
+radius = 1.03369
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ovoof"]
+height = 0.925
+radius = 0.018
+
 [node name="Caf_table" instance=ExtResource("1_8x7o3")]
+
+[node name="Top" type="StaticBody3D" parent="Caf_table" index="0"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="TopCollider" type="CollisionShape3D" parent="Caf_table/Top" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.454077, 0)
+shape = SubResource("CylinderShape3D_8x7o3")
+
+[node name="Legs" type="StaticBody3D" parent="Caf_table" index="1"]
+collision_layer = 2
+collision_mask = 6
+
+[node name="LegCol" type="CollisionShape3D" parent="Caf_table/Legs" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.298745, 0, 0.917476)
+shape = SubResource("CylinderShape3D_ovoof")
+
+[node name="LegCol2" type="CollisionShape3D" parent="Caf_table/Legs" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.918243, 0, 0.298244)
+shape = SubResource("CylinderShape3D_ovoof")
+
+[node name="LegCol3" type="CollisionShape3D" parent="Caf_table/Legs" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.918698, 0, -0.299106)
+shape = SubResource("CylinderShape3D_ovoof")
+
+[node name="LegCol4" type="CollisionShape3D" parent="Caf_table/Legs" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.297486, 0, -0.918407)
+shape = SubResource("CylinderShape3D_ovoof")

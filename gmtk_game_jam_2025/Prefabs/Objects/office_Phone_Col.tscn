@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://i6utai72estt"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_83fet"]
+[ext_resource type="PackedScene" uid="uid://c4g7hv4jkwxpu" path="res://Prefabs/Objects/office_phone.tscn" id="2_3na38"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+script = ExtResource("1_83fet")
+prompt = NodePath("Prompt")
+
+[node name="OfficePhone" parent="RigidBody3D" instance=ExtResource("2_3na38")]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="RigidBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.052456, 0, 0)
+depth = 0.45
+polygon = PackedVector2Array(0.17976, 0.155782, 0.0883105, -0.0634364, 0.249157, -0.145805, 0.242671, -0.156831, 0.0824733, -0.0770565, 0.0779333, -0.0867851, 0.0669075, -0.0841908, 0.0364245, -0.154237, -0.00378714, -0.13932, 0.122036, 0.179779)
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0437043, 0.28994, -0.108323)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqdh02x6pv3dy"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_bfnqc"]
+[ext_resource type="PackedScene" uid="uid://b4uhhvj2lnqyr" path="res://Prefabs/Objects/coffee_cup.tscn" id="1_gf7oa"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bfnqc"]
+height = 0.174336
+radius = 0.0605469
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_bfnqc")
+prompt = NodePath("Prompt")
+
+[node name="Coffee_Cup" parent="RigidBody3D" instance=ExtResource("1_gf7oa")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0880369, 0)
+shape = SubResource("CylinderShape3D_bfnqc")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30
