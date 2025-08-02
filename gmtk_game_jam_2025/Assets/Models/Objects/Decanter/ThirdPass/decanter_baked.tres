@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://12nl8lyhvwx4"]
+
+[ext_resource type="Texture2D" uid="uid://bcgunhk64ckvn" path="res://Assets/Models/Objects/Decanter/ThirdPass/decanter3_0.png" id="1_3npih"]
+[ext_resource type="Texture2D" uid="uid://cp1gsyxhsl6gm" path="res://Assets/Models/Objects/Decanter/decanter_roughness.png" id="2_fq68j"]
+
+[resource]
+resource_name = "decanter_baked"
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.862745)
+albedo_texture = ExtResource("1_3npih")
+roughness_texture = ExtResource("2_fq68j")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0

@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dflqj6uul4t5"]
+
+[ext_resource type="Texture2D" uid="uid://cjmboqjjkkqhw" path="res://Assets/Models/Objects/KeyLoop/key_loop_0.png" id="1_mg8gy"]
+[ext_resource type="Texture2D" uid="uid://c2is3gqthl0sr" path="res://Assets/Models/Objects/KeyLoop/keyloop_roughness.png" id="2_3xkm1"]
+
+[resource]
+resource_name = "key_loop_baked"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_mg8gy")
+roughness_texture = ExtResource("2_3xkm1")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://0bqt830ymv2g"]
+
+[ext_resource type="PackedScene" uid="uid://2fmhmtxv4hyk" path="res://Assets/Models/Objects/Pizza/PizzaSlice/pizza slice.fbx" id="1_sjgrf"]
+
+[node name="pizza slice" instance=ExtResource("1_sjgrf")]

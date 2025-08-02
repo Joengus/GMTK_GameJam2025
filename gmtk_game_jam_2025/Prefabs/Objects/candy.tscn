@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dat67g57kolc1"]
+
+[ext_resource type="PackedScene" uid="uid://bgs24s2uibq5n" path="res://Assets/Models/Objects/Candy/candy.fbx" id="1_dkccb"]
+
+[node name="candy" instance=ExtResource("1_dkccb")]

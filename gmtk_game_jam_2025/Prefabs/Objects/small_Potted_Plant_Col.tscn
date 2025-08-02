@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3ksxsnnwql1n"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_48nr6"]
+[ext_resource type="PackedScene" uid="uid://du866xgtqo3wx" path="res://Prefabs/Objects/small_potted_plant.tscn" id="2_o8gi6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1o5f5"]
+height = 0.171478
+radius = 0.081543
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+script = ExtResource("1_48nr6")
+prompt = NodePath("Prompt")
+
+[node name="small_potted_plant" parent="RigidBody3D" instance=ExtResource("2_o8gi6")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0324249, 0)
+shape = SubResource("CylinderShape3D_1o5f5")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30

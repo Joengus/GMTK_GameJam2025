@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://71sm3egxulbh"]
+
+[ext_resource type="Texture2D" uid="uid://64k5fyipj13f" path="res://Assets/Models/Objects/PartyHat/party hat_texture.png" id="1_rubsd"]
+
+[resource]
+resource_name = "party_hat_MAT"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 0.8)
+albedo_texture = ExtResource("1_rubsd")
+emission_enabled = true
+uv1_scale = Vector3(3, 3, 1)

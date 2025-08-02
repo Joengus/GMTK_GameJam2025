@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvxcuecl66sk1"]
+
+[ext_resource type="Script" uid="uid://d27dkljwetoeh" path="res://Scripts/DoorBehavior.cs" id="1_bx7sw"]
+[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="2_mw28t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_inpyb"]
+size = Vector3(2, 5, 0.075)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7mbvs"]
+render_priority = 0
+shader = ExtResource("2_mw28t")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(1, 1, 1, 1)
+shader_parameter/scale = 50.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_et2cr"]
+material = SubResource("ShaderMaterial_7mbvs")
+size = Vector3(2, 5, 0.075)
+
+[node name="Door" type="Node3D"]
+
+[node name="OpenPosition" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="ClosePosition" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." node_paths=PackedStringArray("openPrompt", "lockedPrompt", "openPos", "closedPos")]
+collision_layer = 6
+collision_mask = 7
+script = ExtResource("1_bx7sw")
+openPrompt = NodePath("OpenPromptParent")
+lockedPrompt = NodePath("LockedPromptParent")
+openPos = NodePath("../OpenPosition")
+closedPos = NodePath("../ClosePosition")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_inpyb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+mesh = SubResource("BoxMesh_et2cr")
+skeleton = NodePath("../..")
+
+[node name="OpenPromptParent" type="Node3D" parent="StaticBody3D"]
+visible = false
+
+[node name="Prompt" type="Label3D" parent="StaticBody3D/OpenPromptParent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0.08)
+layers = 8
+text = "Open"
+
+[node name="Prompt2" type="Label3D" parent="StaticBody3D/OpenPromptParent"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.5, -0.08)
+layers = 8
+text = "Open"
+
+[node name="LockedPromptParent" type="Node3D" parent="StaticBody3D"]
+visible = false
+
+[node name="Prompt" type="Label3D" parent="StaticBody3D/LockedPromptParent"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0.08)
+layers = 8
+text = "Locked"
+
+[node name="Prompt2" type="Label3D" parent="StaticBody3D/LockedPromptParent"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.5, -0.08)
+layers = 8
+text = "Locked"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1b7y5grnf58s"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_hsxsc"]
+[ext_resource type="PackedScene" uid="uid://dhlr4472m5ssm" path="res://Prefabs/Objects/cup_toothbrush.tscn" id="2_kk25o"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pfuk5"]
+height = 0.12326
+radius = 0.0610352
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_hsxsc")
+prompt = NodePath("Prompt")
+
+[node name="cup_toothbrush_combo" parent="RigidBody3D" instance=ExtResource("2_kk25o")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.061203, 0.000887915)
+shape = SubResource("CylinderShape3D_pfuk5")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30

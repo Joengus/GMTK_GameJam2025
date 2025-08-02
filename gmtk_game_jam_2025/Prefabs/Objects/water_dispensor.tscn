@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://nbsd26vk2c1t"]
+
+[ext_resource type="PackedScene" uid="uid://bk5boibcebnj6" path="res://Assets/Models/Objects/WaterDispenser/water_dispensor.fbx" id="1_6cw7v"]
+
+[node name="water_dispensor" instance=ExtResource("1_6cw7v")]

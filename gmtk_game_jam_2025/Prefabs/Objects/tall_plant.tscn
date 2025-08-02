@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://be7383qwd5j4y"]
+
+[ext_resource type="PackedScene" uid="uid://cmfx6ckwr56e" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant.fbx" id="1_mm404"]
+
+[node name="tall_plant" instance=ExtResource("1_mm404")]

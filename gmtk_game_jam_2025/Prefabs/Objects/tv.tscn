@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpqsvrh4o1qgx"]
+
+[ext_resource type="PackedScene" uid="uid://ep8bfqgb2662" path="res://Assets/Models/Objects/TV/TV.fbx" id="1_ccuam"]
+
+[node name="TV" instance=ExtResource("1_ccuam")]

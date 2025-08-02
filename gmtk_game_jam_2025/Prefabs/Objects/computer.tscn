@@ -3,3 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://bcjjxkbfkkcp4" path="res://Assets/Models/Objects/Computer/Computer.fbx" id="1_dpalx"]
 
 [node name="Computer" instance=ExtResource("1_dpalx")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+collision_layer = 6
+collision_mask = 7
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+depth = 0.6
+polygon = PackedVector2Array(0.190221, 0.118833, -0.062261, 0.63789, -0.0963167, 0.624972, -0.10806, 0.430032, -0.111583, 0.12353, -0.163254, 0.120007, -0.160905, 0.000224829, 0.420392, -0.00564688, 0.419217, 0.0178399, 0.189047, 0.0507213)
