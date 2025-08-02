@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bixhydqy242lq"]
+[gd_scene load_steps=8 format=3 uid="uid://bixhydqy242lq"]
 
 [ext_resource type="Script" uid="uid://dwkmxhgklhjr8" path="res://Scripts/PlayerCharacterController.cs" id="1_02ohv"]
+[ext_resource type="Script" uid="uid://fhigqns7sgk8" path="res://Scripts/PlayerInteractionBehavior.cs" id="2_cmdk4"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tfo3t"]
 
@@ -14,16 +15,20 @@ emission = Color(1, 0, 0, 1)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tfo3t"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cmdk4"]
+size = Vector3(0.25, 1, 0.1)
+
 [node name="PlayerCharacter" type="Node3D"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_mask = 3
 script = ExtResource("1_02ohv")
-move_speed = 20.0
-jump_force = 30.0
+move_speed = 10.0
+jump_force = 25.0
 gravity_scale = 40.0
-slidingTime = 1.0
-slidingSpeed = 35.0
+slidingTime = 0.5
+slidingSpeed = 15.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_tfo3t")
@@ -33,6 +38,21 @@ surface_material_override/0 = SubResource("StandardMaterial3D_5up26")
 shape = SubResource("CapsuleShape3D_tfo3t")
 
 [node name="CameraPivot" type="Node3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.5)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/CameraPivot"]
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="CharacterBody3D/CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+shape = SubResource("BoxShape3D_cmdk4")
+target_position = Vector3(0, 0, -2)
+collision_mask = 6
+
+[node name="HandTransform" type="Node3D" parent="CharacterBody3D/CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, -1.25)
+
+[node name="PlayerInteractionBehavior" type="Node3D" parent="CharacterBody3D" node_paths=PackedStringArray("shapeCast", "handTransform")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+script = ExtResource("2_cmdk4")
+shapeCast = NodePath("../CameraPivot/ShapeCast3D")
+handTransform = NodePath("../CameraPivot/HandTransform")
