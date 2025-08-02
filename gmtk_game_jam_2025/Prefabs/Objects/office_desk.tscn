@@ -3,3 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dy7uhm3odajqf" path="res://Assets/Models/Objects/OfficeDesk/Office_Desk.fbx" id="1_upsyg"]
 
 [node name="Office_Desk" instance=ExtResource("1_upsyg")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+depth = 0.91
+polygon = PackedVector2Array(0.675818, 0.72481, 0.675913, 0.48888, 0.675818, -0.000870973, 1.18033, -0.00167391, 1.1806, 0.765501, -1.18155, 0.764329, -1.18129, -0.000613028, -1.148, -0.000613028, -1.14826, 0.725705)

@@ -1,5 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5la5ivs7rbei"]
+[gd_scene load_steps=3 format=3 uid="uid://b5la5ivs7rbei"]
 
 [ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/PottedPlants/large_potted_plant.fbx" id="1_6e6he"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6e6he"]
+height = 0.517578
+radius = 0.317383
+
 [node name="large_potted_plant" instance=ExtResource("1_6e6he")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="3"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0742188, 0)
+shape = SubResource("CylinderShape3D_6e6he")

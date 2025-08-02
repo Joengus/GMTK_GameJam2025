@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg7sxib7afh75"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_t5uy8"]
+[ext_resource type="PackedScene" uid="uid://3k3ygkbfhjdn" path="res://Prefabs/Objects/whiskey_bottle.tscn" id="2_0uc5o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mab8k"]
+size = Vector3(0.126709, 0.211548, 0.126694)
+
+[node name="Whiskey Bottle" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+script = ExtResource("1_t5uy8")
+prompt = NodePath("Prompt")
+
+[node name="whiskey_bottle" parent="RigidBody3D" instance=ExtResource("2_0uc5o")]
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00158691, 0.0337524, -0.000450134)
+shape = SubResource("BoxShape3D_mab8k")

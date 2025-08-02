@@ -137,7 +137,7 @@ public partial class PlayerCharacterController : CharacterBody3D
             {
                 isSliding = true;
                 slidingCounter = slidingTime;
-                Scale = new Vector3(1, .25f, 1);
+                Scale = new Vector3(.25f, .25f, 1);
                 Velocity = Transform.Basis * new Vector3(0, 0, -slidingSpeed);
             }
 

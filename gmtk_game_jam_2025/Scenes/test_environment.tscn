@@ -3,8 +3,8 @@
 [ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="1_n4lrg"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="2_ovar5"]
 [ext_resource type="PackedScene" uid="uid://em2wtwgag1cn" path="res://Scenes/mug.tscn" id="3_k0r8c"]
-[ext_resource type="PackedScene" uid="uid://b7mklu7mr4b1p" path="res://Scenes/Bench.tscn" id="3_ovar5"]
-[ext_resource type="PackedScene" uid="uid://cvxcuecl66sk1" path="res://Scenes/Door.tscn" id="5_ncdvc"]
+[ext_resource type="PackedScene" uid="uid://b7mklu7mr4b1p" path="res://Prefabs/Objects/Bench.tscn" id="3_ovar5"]
+[ext_resource type="PackedScene" uid="uid://cvxcuecl66sk1" path="res://Prefabs/Objects/Door.tscn" id="5_ncdvc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3ykjp"]
 sky_top_color = Color(0.660593, 0.290983, 0.552217, 1)

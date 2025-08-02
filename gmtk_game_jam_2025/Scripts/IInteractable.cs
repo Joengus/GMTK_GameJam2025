@@ -14,5 +14,6 @@ public interface IInteractable
 public enum InteractableType
 {
     Hold,
-    Activate
+    Activate,
+    Move
 }

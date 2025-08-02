@@ -14,7 +14,7 @@ public partial class DoorBehavior : StaticBody3D, IInteractable
     [Export] Node3D closedPos;
     private bool active = false;
     [Export] bool unlocked = true;
-    private float _tweenDuration = 1f; // Example duration
+    private float _tweenDuration = .25f; // Example duration
 
 
     private InteractableType iType = InteractableType.Activate;
@@ -36,6 +36,7 @@ public partial class DoorBehavior : StaticBody3D, IInteractable
             newTween.SetTrans(TransitionType);
 
             newTween.TweenProperty(this, "global_position", openPos.GlobalPosition, _tweenDuration);
+            newTween.TweenInterval(1f);
             newTween.Chain().TweenProperty(this, "global_position", closedPos.GlobalPosition, _tweenDuration);
             newTween.Connect("finished", new Callable(this, nameof(OnTweenFinished))); // Connect the finished signal
 

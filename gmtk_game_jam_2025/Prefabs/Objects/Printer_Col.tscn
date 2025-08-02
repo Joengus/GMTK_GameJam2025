@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://caqhcwbqy1v1r"]
+
+[ext_resource type="Script" uid="uid://dhrw53bd3jch6" path="res://Scripts/MoveableBehavior.cs" id="1_0y5jj"]
+[ext_resource type="PackedScene" uid="uid://c8bfkes0hch6w" path="res://Prefabs/Objects/printer.tscn" id="2_v8wwt"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+axis_lock_linear_y = true
+axis_lock_angular_x = true
+axis_lock_angular_z = true
+script = ExtResource("1_0y5jj")
+prompt = NodePath("Prompt")
+
+[node name="printer" parent="RigidBody3D" instance=ExtResource("2_v8wwt")]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.438837)
+depth = 0.5
+polygon = PackedVector2Array(0.00649232, 1.08676, -0.21291, 1.08668, -0.239967, 1.07009, -0.287914, 0.974641, -0.286223, 0.867022, -0.670197, 0.945091, -0.676856, 0.923781, -0.411372, 0.843869, -0.388447, 0.817822, -0.285805, 0.784694, -0.286236, 0.531186, -0.57422, 0.529873, -0.573228, -0.00395586, 0.610524, -0.00787417, 0.610941, 0.710718, 0.321483, 0.710274, 0.321039, 0.770652, 0.4267, 0.770652, 0.458221, 0.79063, 0.735692, 0.790186, 0.735692, 0.81194, 0.458665, 0.81194, 0.426919, 0.849843, 0.321702, 0.848955, 0.321992, 0.976841, 0.275528, 1.06989, 0.247559, 1.08676)
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28405, 0.424286)
+visible = false
+billboard = 1
+text = "Move
+"
+font_size = 30
