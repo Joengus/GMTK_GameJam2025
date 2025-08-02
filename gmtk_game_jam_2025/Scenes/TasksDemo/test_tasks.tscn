@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://bq1h24n37mluu"]
+
+[ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="1_dkym5"]
+[ext_resource type="Script" uid="uid://d10yqm7q54jc8" path="res://Scripts/Task/ForDemo/PretendNpc.cs" id="2_murpa"]
+[ext_resource type="Resource" uid="uid://bqhkhjmj4gk0m" path="res://Resources/Tasks/BrushTeeth.tres" id="3_fwm2f"]
+[ext_resource type="Script" uid="uid://dtn0frdaqvg3o" path="res://Scripts/Task/ForDemo/AnotherPretendNPC.cs" id="4_m8542"]
+[ext_resource type="Resource" uid="uid://bjyxdku67nhyx" path="res://Resources/Tasks/GetDressed.tres" id="5_aqolx"]
+[ext_resource type="Script" uid="uid://dtd8fx8cegd3a" path="res://Scripts/Task/ForDemo/HowAnotherNPC.cs" id="6_de0u1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="TaskManager" parent="." instance=ExtResource("1_dkym5")]
+
+[node name="PretendNPC" type="Node3D" parent="."]
+script = ExtResource("2_murpa")
+_associatedTasks = Array[Object]([ExtResource("3_fwm2f")])
+
+[node name="PretendNPC2" type="Node3D" parent="."]
+script = ExtResource("4_m8542")
+_associatedTasks = Array[Object]([ExtResource("5_aqolx")])
+
+[node name="PretendNPC3" type="Node3D" parent="."]
+script = ExtResource("6_de0u1")
+
+[connection signal="GetDressed" from="PretendNPC2" to="PretendNPC3" method="OnGetDressedComplete"]

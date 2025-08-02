@@ -1,0 +1,40 @@
+using Godot;
+
+public partial class AudioController : Control
+{
+	private string _masterAudioBusName = "Master";
+	private string _musicAudioBusName = "Music";
+	private string _sfxAudioBusName = "SFX";
+	private int _masterAudioBus;
+	private int _musicAudioBus;
+	private int _sfxAudioBus;
+
+	private HSlider _masterSlider;
+	private HSlider _musicSlider;
+	private HSlider _sfxSlider;
+
+	public override void _Ready()
+	{
+		_masterAudioBus = AudioServer.GetBusIndex(_masterAudioBusName);
+		_musicAudioBus = AudioServer.GetBusIndex(_musicAudioBusName);
+		_sfxAudioBus = AudioServer.GetBusIndex(_sfxAudioBusName);
+		GetNode<HSlider>("MasterSlider").Value = AudioServer.GetBusVolumeLinear(_masterAudioBus);
+		GetNode<HSlider>("MusicSlider").Value = AudioServer.GetBusVolumeLinear(_musicAudioBus);
+		GetNode<HSlider>("SfxSlider").Value = AudioServer.GetBusVolumeLinear(_sfxAudioBus);
+	}
+
+	public void OnMasterVolumeChanged(float value)
+	{
+		AudioServer.SetBusVolumeLinear(_masterAudioBus, value);
+	}
+
+	public void OnMusicVolumeChanged(float value)
+	{
+		AudioServer.SetBusVolumeLinear(_musicAudioBus, value);
+	}
+
+	public void OnSfxVolumeChanged(float value)
+	{
+		AudioServer.SetBusVolumeLinear(_sfxAudioBus, value);
+	}
+}
