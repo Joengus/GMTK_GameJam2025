@@ -1,11 +1,13 @@
+using System.Collections.Generic;
 using Godot;
+using Godot.Collections;
 
 public partial class TaskManager : Node3D
 {
 	public static TaskManager Instance;
 
 	private const int NON_NEUTRAL_FLAVOR_TEXT_POINT_THRESHOLD = 50;
-	[Export] public TaskResource[] TaskList;
+	[Export] public Dictionary GlobalTaskList = new Dictionary();
 	private RichTextLabel _flavorText;
 
 	public override void _EnterTree()
@@ -20,25 +22,27 @@ public partial class TaskManager : Node3D
 
 	public void CompleteTask(TaskResource taskToMarkComplete)
 	{
-		TaskResource task = FindTask(taskToMarkComplete);
-		if (task == null) return;
+		if (!GlobalTaskList.ContainsKey(taskToMarkComplete))
+		{
+			GD.PrintErr($"Task does not exist: '{taskToMarkComplete.TaskName}'");
+			return;
+		}
 		foreach (TaskResource t in taskToMarkComplete.PrerequisiteTasks)
 		{
 			if (!t.IsComplete) return;
 		}
-		task.IsComplete = true;
+		taskToMarkComplete.IsComplete = true;
 		DisplayFlavorText(taskToMarkComplete);
 	}
 
-	private TaskResource FindTask(TaskResource taskToFind)
+	public Array<Node3D> GetPossibleTargets(TaskResource task)
 	{
-		foreach (TaskResource t in TaskList)
-		{
-			if (t == taskToFind)
-				return t;
-		}
-		GD.PrintErr($"Could not find task '{taskToFind.TaskName}'.");
-		return null;
+		return GlobalTaskList[task].AsGodotArray<Node3D>();
+	}
+
+	public void AddObjectToTask(TaskResource task, Node3D node)
+	{
+		GlobalTaskList[task].AsGodotArray<Node3D>().Add(node);
 	}
 
 	private void DisplayFlavorText(TaskResource task)

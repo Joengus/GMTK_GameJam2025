@@ -1,0 +1,1100 @@
+[gd_scene load_steps=65 format=3 uid="uid://bk3qxsojobapk"]
+
+[ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="1_wyj3b"]
+[ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="2_yagfq"]
+[ext_resource type="PackedScene" uid="uid://cb3ucad42ifwa" path="res://Prefabs/Objects/tent.tscn" id="3_n6782"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/Printer_Col.tscn" id="4_rpvp3"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/Gymbag_Col.tscn" id="5_vww6j"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/uniform.tscn" id="6_qbd8j"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/side_table.tscn" id="7_t5h0e"]
+[ext_resource type="PackedScene" uid="uid://b5s5yo25wajn0" path="res://Prefabs/Objects/solo_cup_col.tscn" id="8_k7h6n"]
+[ext_resource type="PackedScene" uid="uid://o2bryt7r12u2" path="res://Prefabs/Objects/pizza_slice_col.tscn" id="9_hiefh"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/whiskey_bottle_col.tscn" id="10_us075"]
+[ext_resource type="PackedScene" uid="uid://d1b7y5grnf58s" path="res://Prefabs/Objects/Cup_Toothbrush_Col.tscn" id="11_8r4k4"]
+[ext_resource type="PackedScene" uid="uid://dmr61qjdkgsbu" path="res://Prefabs/Objects/cubicle_wall_blank.tscn" id="12_i1jgt"]
+[ext_resource type="PackedScene" uid="uid://b5la5ivs7rbei" path="res://Prefabs/Objects/large_potted_plant.tscn" id="13_vkdyt"]
+[ext_resource type="PackedScene" uid="uid://cwrmii1upoc1n" path="res://Prefabs/Objects/computer.tscn" id="14_l4tmx"]
+[ext_resource type="PackedScene" uid="uid://duwvqy5yovw0q" path="res://Prefabs/Objects/office_desk.tscn" id="15_qtewk"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/office_desk_mirror.tscn" id="16_aqypb"]
+[ext_resource type="PackedScene" uid="uid://fwfnkey4yhxi" path="res://Prefabs/Objects/cubicle_wall.tscn" id="17_cyds2"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/lunch_bag_col.tscn" id="18_kak4n"]
+[ext_resource type="PackedScene" uid="uid://dy2304ba75eyl" path="res://Prefabs/Objects/office_desk_noSlide.tscn" id="19_10npq"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/OfficeChair_Col.tscn" id="20_41p3v"]
+[ext_resource type="PackedScene" uid="uid://banw2lydb62ab" path="res://characters/Scene/Lucas.tscn" id="21_hcwkd"]
+[ext_resource type="PackedScene" uid="uid://bcq4835jtlqih" path="res://characters/Scene/Cheryl.tscn" id="22_bu0wl"]
+[ext_resource type="PackedScene" uid="uid://be78hygk0rqh3" path="res://characters/Scene/Sally.tscn" id="23_i2jcu"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/office_Phone_Col.tscn" id="24_sfkc6"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/DeskCluster.tscn" id="25_ospo0"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/Door.tscn" id="26_veo8j"]
+[ext_resource type="PackedScene" uid="uid://b0dsbgcb3xeh2" path="res://Prefabs/Objects/c_suite_door.tscn" id="27_1aky7"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/water_dispensor.tscn" id="28_143w2"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/TableCluster.tscn" id="29_sht1b"]
+[ext_resource type="PackedScene" uid="uid://dclxbo0c453m7" path="res://Prefabs/Objects/paper_plate_col.tscn" id="30_tojr5"]
+[ext_resource type="PackedScene" uid="uid://bfkns6ftdg70a" path="res://Prefabs/Objects/vending_machine.tscn" id="31_2f5t6"]
+[ext_resource type="PackedScene" uid="uid://djusqjyn4p0hb" path="res://characters/Scene/Gus.tscn" id="32_olov7"]
+[ext_resource type="PackedScene" uid="uid://dkwea1r32jwv0" path="res://Prefabs/Objects/caf_table.tscn" id="33_tie1a"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/tv.tscn" id="34_1a1s1"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/vhs_player.tscn" id="35_py3l1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6o3rs"]
+
+[sub_resource type="Sky" id="Sky_s5aij"]
+sky_material = SubResource("ProceduralSkyMaterial_6o3rs")
+
+[sub_resource type="Environment" id="Environment_kuv5p"]
+background_mode = 2
+sky = SubResource("Sky_s5aij")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p8twe"]
+size = Vector3(101, 1, 101)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xooo4"]
+material = ExtResource("2_yagfq")
+size = Vector3(101, 1, 101)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ptysm"]
+size = Vector3(60, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ptysm"]
+size = Vector3(60, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6o3rs"]
+size = Vector3(32.5, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s5aij"]
+size = Vector3(32.5, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kuv5p"]
+size = Vector3(0.25, 11, 101)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgsb2"]
+size = Vector3(0.25, 11, 101)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rowip"]
+size = Vector3(0.25, 11, 101)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p887g"]
+size = Vector3(0.25, 11, 101)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4rasj"]
+size = Vector3(101, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v7ntd"]
+size = Vector3(101, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5uf5g"]
+size = Vector3(101, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5mv7s"]
+size = Vector3(101, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0km7k"]
+size = Vector3(25, 11, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6ad6f"]
+size = Vector3(25, 11, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qftvg"]
+size = Vector3(70, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4te1i"]
+size = Vector3(70, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hio85"]
+size = Vector3(70.5, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wt4mj"]
+size = Vector3(70.5, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s5aij"]
+size = Vector3(2.25, 11, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kuv5p"]
+size = Vector3(2.25, 11, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p887g"]
+size = Vector3(2.5, 5.5, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4rasj"]
+size = Vector3(2.5, 5.5, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lgsb2"]
+size = Vector3(11, 5.5, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rowip"]
+size = Vector3(11, 5.5, 0.25)
+
+[node name="Office" type="Node3D"]
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("1_wyj3b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2344, 0, 7.31723)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_kuv5p")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("BoxShape3D_p8twe")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("BoxMesh_xooo4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/MeshInstance3D"]
+mesh = SubResource("BoxMesh_xooo4")
+
+[node name="Ceiling" type="StaticBody3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 10, 0)
+visible = false
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ceiling"]
+shape = SubResource("BoxShape3D_p8twe")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ceiling"]
+mesh = SubResource("BoxMesh_xooo4")
+
+[node name="Walls" type="StaticBody3D" parent="."]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 5, 0)
+shape = SubResource("BoxShape3D_ptysm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 5, 0)
+mesh = SubResource("BoxMesh_ptysm")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 5, 0)
+shape = SubResource("BoxShape3D_6o3rs")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 5, 0)
+mesh = SubResource("BoxMesh_s5aij")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 5, 0)
+shape = SubResource("BoxShape3D_kuv5p")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 5, 0)
+mesh = SubResource("BoxMesh_lgsb2")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 5, 0)
+shape = SubResource("BoxShape3D_rowip")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 5, 0)
+mesh = SubResource("BoxMesh_p887g")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 50)
+shape = SubResource("BoxShape3D_4rasj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 50)
+mesh = SubResource("BoxMesh_v7ntd")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -50)
+shape = SubResource("BoxShape3D_5uf5g")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -50)
+mesh = SubResource("BoxMesh_5mv7s")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 5, 20)
+shape = SubResource("BoxShape3D_0km7k")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 5, 20)
+mesh = SubResource("BoxMesh_6ad6f")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 25, 5, 0)
+shape = SubResource("BoxShape3D_qftvg")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 25, 5, 0)
+mesh = SubResource("BoxMesh_4te1i")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -19.25)
+shape = SubResource("BoxShape3D_hio85")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -19.25)
+mesh = SubResource("BoxMesh_wt4mj")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 19.0919)
+shape = SubResource("BoxShape3D_s5aij")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 19.0919)
+mesh = SubResource("BoxMesh_kuv5p")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 7.5, 17)
+shape = SubResource("BoxShape3D_p887g")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 7.5, 17)
+mesh = SubResource("BoxMesh_4rasj")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.5, 0)
+shape = SubResource("BoxShape3D_lgsb2")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.5, 0)
+mesh = SubResource("BoxMesh_rowip")
+
+[node name="ClosetRoom" type="Node3D" parent="."]
+
+[node name="Tent" parent="ClosetRoom" instance=ExtResource("3_n6782")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 21.25, 0, 3.5)
+
+[node name="Printer" parent="ClosetRoom" instance=ExtResource("4_rpvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 1)
+
+[node name="Printer2" parent="ClosetRoom" instance=ExtResource("4_rpvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.31771, 0, 1)
+
+[node name="Gym bag" parent="ClosetRoom" instance=ExtResource("5_vww6j")]
+transform = Transform3D(-0.158348, 0, 0.987383, 0, 1, 0, -0.987383, 0, -0.158348, 23.6634, 0.196149, 8.07971)
+
+[node name="uniform" parent="ClosetRoom" instance=ExtResource("6_qbd8j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24.782, 1.56568, 10.5587)
+
+[node name="side_table" parent="ClosetRoom" instance=ExtResource("7_t5h0e")]
+transform = Transform3D(-0.999806, 0, -0.0196859, 0, 1, 0, 0.0196859, 0, -0.999806, 18.8121, 2.50041e-05, 7.3635)
+
+[node name="SoloCup" parent="ClosetRoom/side_table" instance=ExtResource("8_k7h6n")]
+transform = Transform3D(-0.0506976, 0, -0.998714, 0, 1, 0, 0.998714, 0, -0.0506976, 0.235838, 1.0416, -0.373074)
+
+[node name="PizzaSlice" parent="ClosetRoom/side_table" instance=ExtResource("9_hiefh")]
+transform = Transform3D(-0.50838, 0, -0.861133, 0, 1, 0, 0.861133, 0, -0.50838, -0.244898, 1.0416, -0.467977)
+
+[node name="Whiskey Bottle" parent="ClosetRoom/side_table" instance=ExtResource("10_us075")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.173794, 1.18674, -0.00308132)
+
+[node name="Node3D" parent="ClosetRoom" instance=ExtResource("11_8r4k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9736, 1.10122, 7.05187)
+
+[node name="Cubicle_Wall" parent="ClosetRoom" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.4379, 0.000299692, 1.61128)
+
+[node name="Cubicle_Wall2" parent="ClosetRoom" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.4379, 0.000299692, 4.35547)
+
+[node name="Cubicle_Wall3" parent="ClosetRoom" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.4379, 0.000299692, 7.09966)
+
+[node name="Cubicle_Wall4" parent="ClosetRoom" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.4379, 0.000299692, 9.84731)
+
+[node name="large_potted_plant" parent="ClosetRoom" instance=ExtResource("13_vkdyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 1.93667)
+
+[node name="large_potted_plant2" parent="ClosetRoom" instance=ExtResource("13_vkdyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 3.83638)
+
+[node name="large_potted_plant3" parent="ClosetRoom" instance=ExtResource("13_vkdyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 5.61611)
+
+[node name="large_potted_plant4" parent="ClosetRoom" instance=ExtResource("13_vkdyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 7.29586)
+
+[node name="large_potted_plant5" parent="ClosetRoom" instance=ExtResource("13_vkdyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 8.95561)
+
+[node name="large_potted_plant6" parent="ClosetRoom" instance=ExtResource("13_vkdyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 10.5949)
+
+[node name="Printer3" parent="ClosetRoom" instance=ExtResource("4_rpvp3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.865808, 0, 4.14321)
+
+[node name="Printer4" parent="ClosetRoom" instance=ExtResource("4_rpvp3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.828083, 0, 7.82531)
+
+[node name="Bullpen" type="Node3D" parent="."]
+
+[node name="Computer" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.0544, 1.55633, 11.7876)
+
+[node name="Cubicle_Wall3" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -34.5422, 0, 12.028)
+
+[node name="Cubicle_Wall4" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -34.5422, 0, 9.06594)
+
+[node name="Cubicle_Wall5" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.0689, 0, 12.028)
+
+[node name="Cubicle_Wall6" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.0689, 0, 9.06594)
+
+[node name="Office_Desk3" parent="Bullpen" instance=ExtResource("15_qtewk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8607, 0, 11.523)
+
+[node name="Office_Desk4" parent="Bullpen" instance=ExtResource("16_aqypb")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -31.8777, 0, 9.63386)
+
+[node name="Cubicle_Wall7" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -23.3945, 0, 12.0435)
+
+[node name="Cubicle_Wall8" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -23.3945, 0, 9.0814)
+
+[node name="Cubicle_Wall" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0664, 0, 10.5765)
+
+[node name="Cubicle_Wall2" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -38.7991, 0, 10.5833)
+
+[node name="Cubicle_Wall9" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.7582, 0, 10.5765)
+
+[node name="Cubicle_Wall10" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -27.4909, 0, 10.5833)
+
+[node name="Cubicle_Wall11" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.3868, 0, 12.0435)
+
+[node name="Cubicle_Wall12" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.3868, 0, 9.0814)
+
+[node name="LunchBag" parent="Bullpen" instance=ExtResource("18_kak4n")]
+transform = Transform3D(0.872138, 0, -0.489261, 0, 1, 0, 0.489261, 0, 0.872138, -36.0653, 1.53266, 11.7728)
+
+[node name="Computer2" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -40.0033, 1.55633, 35.2689)
+
+[node name="Cubicle_Wall13" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.719, 0, 31.76)
+
+[node name="Cubicle_Wall14" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.5683, 0, 31.723)
+
+[node name="Cubicle_Wall15" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.6506, 0, 26.4971)
+
+[node name="Cubicle_Wall16" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.6124, 0, 26.4601)
+
+[node name="Office_Desk9" parent="Bullpen" instance=ExtResource("15_qtewk")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -40.1904, 0, 29.0724)
+
+[node name="Office_Desk10" parent="Bullpen" instance=ExtResource("16_aqypb")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -42.0796, 0, 29.0658)
+
+[node name="Cubicle_Wall17" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.5642, 0, 21.0858)
+
+[node name="Cubicle_Wall18" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.526, 0, 21.0488)
+
+[node name="Cubicle_Wall19" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -41.1894, 0, 33.0634)
+
+[node name="Cubicle_Wall20" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -41.2168, 0, 35.7885)
+
+[node name="Cubicle_Wall21" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -41.0481, 0, 22.4311)
+
+[node name="Cubicle_Wall22" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -41.0755, 0, 25.1636)
+
+[node name="Cubicle_Wall23" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.7765, 0, 37.25)
+
+[node name="Cubicle_Wall24" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.7384, 0, 37.213)
+
+[node name="LunchBag2" parent="Bullpen" instance=ExtResource("18_kak4n")]
+transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, -39.9932, 1.53266, 33.2798)
+
+[node name="Computer3" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.0351, 1.55633, 27.9457)
+
+[node name="Cubicle_Wall25" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.4888, 0, 31.76)
+
+[node name="Cubicle_Wall26" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.4506, 0, 31.723)
+
+[node name="Office_Desk13" parent="Bullpen" instance=ExtResource("15_qtewk")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -25.9484, 0, 34.3057)
+
+[node name="Office_Desk14" parent="Bullpen" instance=ExtResource("16_aqypb")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -28.1072, 0, 34.2735)
+
+[node name="Cubicle_Wall27" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.4204, 0, 26.2871)
+
+[node name="Cubicle_Wall28" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.3822, 0, 26.2501)
+
+[node name="Cubicle_Wall29" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.334, 0, 21.1491)
+
+[node name="Cubicle_Wall30" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.2958, 0, 21.1121)
+
+[node name="Office_Desk17" parent="Bullpen" instance=ExtResource("15_qtewk")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -25.8807, 0, 23.7372)
+
+[node name="Office_Desk18" parent="Bullpen" instance=ExtResource("16_aqypb")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -27.8409, 0, 23.6649)
+
+[node name="Cubicle_Wall31" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -26.9592, 0, 27.6561)
+
+[node name="Cubicle_Wall32" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -26.9866, 0, 30.3887)
+
+[node name="Cubicle_Wall35" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.5463, 0, 36.9461)
+
+[node name="Cubicle_Wall36" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.5082, 0, 36.9091)
+
+[node name="LunchBag3" parent="Bullpen" instance=ExtResource("18_kak4n")]
+transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, -26.1199, 1.53266, 33.2219)
+
+[node name="Computer4" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -12.0422, 1.55633, 35.2689)
+
+[node name="Cubicle_Wall37" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.7579, 0, 31.76)
+
+[node name="Cubicle_Wall38" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.7197, 0, 31.723)
+
+[node name="Cubicle_Wall39" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.6895, 0, 26.5014)
+
+[node name="Cubicle_Wall40" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.6513, 0, 26.4643)
+
+[node name="Office_Desk21" parent="Bullpen" instance=ExtResource("15_qtewk")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -12.2293, 0, 29.0724)
+
+[node name="Office_Desk22" parent="Bullpen" instance=ExtResource("16_aqypb")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -14.1185, 0, 29.0658)
+
+[node name="Cubicle_Wall41" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.6031, 0, 21.0954)
+
+[node name="Cubicle_Wall42" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.5649, 0, 21.0584)
+
+[node name="Cubicle_Wall43" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -13.2283, 0, 33.016)
+
+[node name="Cubicle_Wall44" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -13.2557, 0, 35.7485)
+
+[node name="Cubicle_Wall45" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -13.087, 0, 22.5121)
+
+[node name="Cubicle_Wall46" parent="Bullpen" instance=ExtResource("17_cyds2")]
+transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -13.1144, 0, 25.2447)
+
+[node name="Cubicle_Wall47" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.8154, 0, 37.0212)
+
+[node name="Cubicle_Wall48" parent="Bullpen" instance=ExtResource("12_i1jgt")]
+transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.7773, 0, 36.9841)
+
+[node name="LunchBag4" parent="Bullpen" instance=ExtResource("18_kak4n")]
+transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, -12.0321, 1.53266, 33.2798)
+
+[node name="Office_Desk" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -37.6177, 0, 8.98059)
+
+[node name="Office_Desk2" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.3615, 0, 12.1286)
+
+[node name="Office_Desk5" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -26.1159, 9.53674e-07, 9.05067)
+
+[node name="Office_Desk6" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.272, 0, 12.043)
+
+[node name="Office_Desk8" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -39.7092, 0, 23.822)
+
+[node name="Office_Desk11" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42.6586, 0, 34.52)
+
+[node name="Office_Desk12" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -39.7679, 0, 34.598)
+
+[node name="Office_Desk15" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.1695, 0, 29.03)
+
+[node name="Office_Desk16" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -25.7232, 0, 29.03)
+
+[node name="Office_Desk19" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.5206, 0, 23.7213)
+
+[node name="Office_Desk20" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.7892, 0, 23.7213)
+
+[node name="Office_Desk23" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.7017, 0, 34.3373)
+
+[node name="Office_Desk24" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.789, 0, 34.3427)
+
+[node name="Computer5" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -12.0422, 1.55633, 23.9563)
+
+[node name="Computer6" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.4125, 1.55633, 32.8615)
+
+[node name="Computer7" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.0783, 1.55633, 24.22)
+
+[node name="Computer8" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -26.1531, 1.55633, 30.0379)
+
+[node name="Computer9" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42.2752, 1.55633, 23.3927)
+
+[node name="OfficeChair4" parent="Bullpen" instance=ExtResource("20_41p3v")]
+transform = Transform3D(-0.702314, 0, -0.711867, 0, 1, 0, 0.711867, 0, -0.702314, -45.1995, 0, 22.6256)
+
+[node name="Lucas" parent="Bullpen" instance=ExtResource("21_hcwkd")]
+transform = Transform3D(1.02951, 0, -1.71468, 0, 2, 0, 1.71468, 0, 1.02951, -43.9521, -9.53674e-07, 24.3854)
+
+[node name="Skeleton3D" parent="Bullpen/Lucas/Lucas_Master_ANIM" index="0"]
+bones/0/position = Vector3(0.000424976, 0.0659435, -0.0819562)
+bones/0/rotation = Quaternion(-0.658452, 0.0101744, -0.012502, 0.75245)
+bones/1/position = Vector3(0, 0.0901555, -0.00165811)
+bones/1/rotation = Quaternion(0.0273797, -0.00092142, -0.000152213, 0.999625)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/position = Vector3(0, 0.105199, 1e-08)
+bones/2/rotation = Quaternion(0.0730742, -0.00205869, -0.00166345, 0.997323)
+bones/3/position = Vector3(0, 0.120228, 1.73472e-18)
+bones/3/rotation = Quaternion(0.0730743, -0.00205869, -0.00166345, 0.997323)
+bones/4/position = Vector3(0, 0.135256, -5.17148e-08)
+bones/4/rotation = Quaternion(0.258444, 0.0785559, 0.0224965, 0.962564)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/position = Vector3(0, 0.076655, -0.00836046)
+bones/5/rotation = Quaternion(0.0800528, -0.0358901, -0.00937105, 0.9961)
+bones/7/position = Vector3(0.0549786, 0.107197, -0.000705171)
+bones/7/rotation = Quaternion(-0.608929, -0.385019, 0.559342, -0.410002)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/position = Vector3(5.21701e-08, 0.12544, 4.8802e-07)
+bones/8/rotation = Quaternion(0.183944, 0.249075, -0.135764, 0.941114)
+bones/8/scale = Vector3(0.999999, 1, 1)
+bones/9/position = Vector3(-6.15983e-08, 0.353727, -1.72364e-07)
+bones/9/rotation = Quaternion(0.0115874, -0.060464, 0.473832, 0.878461)
+bones/9/scale = Vector3(1, 0.999999, 1)
+bones/10/position = Vector3(5.42184e-08, 0.295038, 6.23075e-07)
+bones/10/rotation = Quaternion(0.0746389, 0.696606, 0.0741389, 0.709699)
+bones/10/scale = Vector3(0.999999, 1, 0.999999)
+bones/11/position = Vector3(-0.024662, 0.0726492, -6.38249e-08)
+bones/11/rotation = Quaternion(-0.0739164, 0.0140215, 0.218722, 0.972883)
+bones/11/scale = Vector3(1, 1, 1)
+bones/12/position = Vector3(-0.00950106, 0.0606384, -6.8389e-07)
+bones/12/rotation = Quaternion(-0.0807448, -0.253958, -0.130416, 0.954975)
+bones/12/scale = Vector3(1, 1, 1)
+bones/13/position = Vector3(0.0012928, 0.0522162, 1.70478e-07)
+bones/13/rotation = Quaternion(-0.00127744, -0.0105907, 0.0951347, 0.995407)
+bones/13/scale = Vector3(1, 1, 1)
+bones/15/position = Vector3(4.9242e-07, 0.105676, 0.00535026)
+bones/15/rotation = Quaternion(-0.0467849, -0.0637825, 0.0195774, 0.996674)
+bones/15/scale = Vector3(1, 1, 1)
+bones/16/position = Vector3(0.00679054, 0.0528648, -6.32311e-07)
+bones/16/rotation = Quaternion(0.036219, 0.00207001, -0.0809648, 0.996057)
+bones/16/scale = Vector3(1, 1, 1)
+bones/17/position = Vector3(-0.00428761, 0.0455662, -2.21776e-07)
+bones/17/rotation = Quaternion(-0.000132696, 0.00171704, 0.0168203, 0.999857)
+bones/17/scale = Vector3(1, 1, 1)
+bones/19/position = Vector3(-0.0549786, 0.10719, -0.000327223)
+bones/19/rotation = Quaternion(0.632778, -0.360756, 0.555415, 0.4012)
+bones/19/scale = Vector3(1, 1, 1)
+bones/20/position = Vector3(3.5738e-08, 0.12544, 1.717e-07)
+bones/20/rotation = Quaternion(0.109706, -0.371352, 0.166364, 0.906855)
+bones/20/scale = Vector3(1, 1, 1)
+bones/21/position = Vector3(3.14276e-08, 0.353727, 7.82594e-07)
+bones/21/rotation = Quaternion(0.0105441, 0.0665836, -0.517424, 0.85307)
+bones/21/scale = Vector3(0.999999, 1, 0.999999)
+bones/22/position = Vector3(-4.85567e-07, 0.295039, 7.80123e-07)
+bones/22/rotation = Quaternion(-0.0206481, -0.639993, -0.035135, 0.767299)
+bones/22/scale = Vector3(1, 1, 1)
+bones/23/position = Vector3(0.0373005, 0.0646748, -6.76466e-07)
+bones/23/rotation = Quaternion(-0.0416172, 0.0875278, -0.128493, 0.986963)
+bones/23/scale = Vector3(1, 0.999999, 1)
+bones/24/position = Vector3(0.00884209, 0.0590724, -2.12182e-07)
+bones/24/rotation = Quaternion(-0.0161416, 0.125238, -0.0440083, 0.991019)
+bones/24/scale = Vector3(1, 1, 1)
+bones/25/position = Vector3(-0.00222527, 0.0531457, -1.3122e-07)
+bones/25/rotation = Quaternion(-0.000877826, 0.00838114, -0.0624503, 0.998013)
+bones/25/scale = Vector3(1, 1, 1)
+bones/27/position = Vector3(-6.93917e-08, 0.110936, 0.0027035)
+bones/27/rotation = Quaternion(-0.0365536, 0.0942939, 0.116785, 0.987995)
+bones/27/scale = Vector3(1, 0.999999, 1)
+bones/28/position = Vector3(0.00902844, 0.0490982, -1.02966e-07)
+bones/28/rotation = Quaternion(0.138401, -0.0119977, -0.260821, 0.95534)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/position = Vector3(-0.00535452, 0.0445459, -9.52008e-08)
+bones/29/rotation = Quaternion(0.000149422, -0.00137644, 0.011367, 0.999934)
+bones/29/scale = Vector3(1, 1, 1)
+bones/31/position = Vector3(0.081017, -0.0501885, -0.00821499)
+bones/31/rotation = Quaternion(0.300966, 0.138482, 0.941494, -0.0618982)
+bones/31/scale = Vector3(1, 1, 1)
+bones/32/position = Vector3(8.68541e-09, 0.366741, -2.67066e-08)
+bones/32/rotation = Quaternion(-0.0750444, 0.0588424, -0.0336826, 0.994873)
+bones/32/scale = Vector3(1, 1, 1)
+bones/33/position = Vector3(-5.02205e-08, 0.350833, -6.66351e-09)
+bones/33/rotation = Quaternion(0.441136, -0.251917, -0.00475141, 0.861345)
+bones/33/scale = Vector3(1, 1, 1)
+bones/34/position = Vector3(3.04794e-10, 0.170863, -1.37711e-08)
+bones/34/rotation = Quaternion(0.296164, 0.137609, -0.0569139, 0.943457)
+bones/34/scale = Vector3(1, 1, 1)
+bones/36/position = Vector3(-0.081017, -0.0501887, -0.00661166)
+bones/36/rotation = Quaternion(-0.34027, 0.0970732, 0.932632, 0.0706434)
+bones/36/scale = Vector3(1, 1, 1)
+bones/37/position = Vector3(5.93275e-08, 0.366742, 9.69439e-09)
+bones/37/rotation = Quaternion(0.00246997, -0.100663, 0.0272436, 0.994545)
+bones/37/scale = Vector3(1, 1, 1)
+bones/38/position = Vector3(-5.45208e-08, 0.350634, -2.4435e-08)
+bones/38/rotation = Quaternion(0.394446, 0.210174, 0.149244, 0.882024)
+bones/38/scale = Vector3(0.999999, 1, 1)
+bones/39/position = Vector3(5.37387e-09, 0.167471, -8.04853e-08)
+bones/39/rotation = Quaternion(0.279915, -0.0856909, 0.0118966, 0.956119)
+bones/39/scale = Vector3(1, 0.999999, 0.999999)
+
+[node name="Office_Desk7" parent="Bullpen" instance=ExtResource("19_10npq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -42.4167, 0, 23.7541)
+
+[node name="Computer10" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.0148, 1.55633, 24.975)
+
+[node name="Computer11" parent="Bullpen" instance=ExtResource("14_l4tmx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42.372, 1.55633, 33.2413)
+
+[node name="OfficeChair2" parent="Bullpen" instance=ExtResource("20_41p3v")]
+transform = Transform3D(-0.375092, 0, 0.926988, 0, 1, 0, -0.926988, 0, -0.375092, -37.6861, 0, 35.0074)
+
+[node name="OfficeChair" parent="Bullpen" instance=ExtResource("20_41p3v")]
+transform = Transform3D(0.703072, 0, -0.711119, 0, 1, 0, 0.711119, 0, 0.703072, -30.511, 0, 29.9742)
+
+[node name="Cheryl" parent="Bullpen" instance=ExtResource("22_bu0wl")]
+transform = Transform3D(-1.45161, 0, 1.3758, 0, 2, 0, -1.3758, 0, -1.45161, -30.5133, 0.409426, 29.8091)
+
+[node name="Skeleton3D" parent="Bullpen/Cheryl/Cheryl_MasterANIM" index="0"]
+bones/0/rotation = Quaternion(0.000903214, 0.00505341, 0.01123, 0.999924)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/position = Vector3(0, 0.0927219, -0.00172525)
+bones/1/rotation = Quaternion(0.0820139, -0.00236022, -0.0161429, 0.996498)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/position = Vector3(-8.67362e-19, 0.108194, 1e-08)
+bones/3/position = Vector3(-8.67362e-19, 0.123651, -3.46945e-18)
+bones/3/rotation = Quaternion(-0.00174715, 0.00211993, -0.0025906, 0.999993)
+bones/4/position = Vector3(-8.67362e-19, 0.139107, 4.30136e-08)
+bones/4/rotation = Quaternion(0.000513826, -0.0112099, 0.00409513, 0.999929)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/rotation = Quaternion(-0.0755592, -0.0411894, -0.043325, 0.995348)
+bones/7/position = Vector3(0.0430568, 0.109219, -0.00133738)
+bones/7/rotation = Quaternion(-0.714464, -0.265791, 0.560246, -0.324069)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/position = Vector3(-3.74029e-08, 0.100232, 1.38995e-07)
+bones/8/rotation = Quaternion(0.102949, 0.160897, 0.12661, 0.973388)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/position = Vector3(-2.30669e-08, 0.265063, 6.89588e-07)
+bones/9/rotation = Quaternion(0.000734243, -0.104832, 0.505784, 0.856266)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/position = Vector3(-1.19687e-07, 0.31662, -3.93409e-07)
+bones/10/rotation = Quaternion(-0.349452, 0.250831, 0.122899, 0.894351)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/position = Vector3(3.8538e-07, 0.121624, 2.49404e-07)
+bones/11/rotation = Quaternion(0.231923, -0.0289255, -0.0292676, 0.971863)
+bones/11/scale = Vector3(1, 1, 0.999999)
+bones/12/position = Vector3(2.06931e-08, 0.037102, 2.36601e-08)
+bones/12/rotation = Quaternion(0.265653, 0.0280382, -0.188303, 0.945084)
+bones/13/position = Vector3(-0.0173688, 0.0496097, -0.00917193)
+bones/14/rotation = Quaternion(2.25514e-17, 3.12964e-34, 1.38778e-17, 1)
+bones/15/position = Vector3(-0.0430566, 0.10919, 0.000224654)
+bones/15/rotation = Quaternion(0.626776, -0.322575, 0.657424, 0.266254)
+bones/15/scale = Vector3(1, 0.999999, 1)
+bones/16/position = Vector3(-3.30578e-08, 0.100232, 1.19736e-07)
+bones/16/rotation = Quaternion(0.1664, -0.153582, -0.243588, 0.943074)
+bones/16/scale = Vector3(0.999999, 1, 1)
+bones/17/position = Vector3(-3.10002e-08, 0.265188, -5.12223e-07)
+bones/17/rotation = Quaternion(0.0392042, 0.0939852, -0.4515, 0.886441)
+bones/17/scale = Vector3(1, 0.999999, 1)
+bones/18/position = Vector3(1.39915e-07, 0.316619, 1.04164e-06)
+bones/18/rotation = Quaternion(-0.25117, -0.306431, -0.247473, 0.884178)
+bones/18/scale = Vector3(1, 1, 0.999999)
+bones/19/position = Vector3(-2.6003e-08, 0.118597, -1.07684e-06)
+bones/19/rotation = Quaternion(0.101664, -0.527717, -0.0613324, 0.841081)
+bones/19/scale = Vector3(1, 1, 1)
+bones/20/position = Vector3(-2.49871e-10, 0.0351122, -3.38972e-09)
+bones/20/rotation = Quaternion(0.355838, -0.0440473, -0.148868, 0.921563)
+bones/21/position = Vector3(0.0028872, 0.0521516, -0.0257621)
+bones/21/rotation = Quaternion(0.0813289, -0.0846706, -0.171495, 0.978165)
+bones/23/position = Vector3(0.0783234, -0.05162, -0.0124892)
+bones/23/rotation = Quaternion(0.0490348, 0.698153, 0.704708, -0.116467)
+bones/23/scale = Vector3(1, 1, 1)
+bones/24/position = Vector3(1.98608e-08, 0.359184, -1.83221e-08)
+bones/24/rotation = Quaternion(-0.693263, -0.040995, 0.00259423, 0.719513)
+bones/24/scale = Vector3(1, 0.999999, 0.999999)
+bones/25/position = Vector3(4.67991e-08, 0.337569, -3.78047e-08)
+bones/25/rotation = Quaternion(0.434801, 0.0347113, -0.0933637, 0.895001)
+bones/25/scale = Vector3(1, 1, 1)
+bones/26/position = Vector3(2.52047e-08, 0.172432, -3.42949e-08)
+bones/26/rotation = Quaternion(0.309572, 0.1219, -0.0398475, 0.942188)
+bones/26/scale = Vector3(1, 1, 1)
+bones/27/rotation = Quaternion(-1.76508e-09, -1.66533e-16, -2.93946e-25, 1)
+bones/28/position = Vector3(-0.0783233, -0.0516207, -0.0305563)
+bones/28/rotation = Quaternion(-0.0182092, 0.703656, 0.702118, 0.107548)
+bones/28/scale = Vector3(1, 0.999999, 1)
+bones/29/position = Vector3(-3.11508e-08, 0.359255, -1.20546e-08)
+bones/29/rotation = Quaternion(-0.674507, 0.0321586, -0.0139933, 0.737435)
+bones/29/scale = Vector3(0.999999, 0.999999, 1)
+bones/30/position = Vector3(-1.59705e-08, 0.336597, -5.8795e-08)
+bones/30/rotation = Quaternion(0.40318, 0.0231151, 0.069053, 0.912219)
+bones/30/scale = Vector3(1, 1, 1)
+bones/31/position = Vector3(2.5294e-08, 0.168099, 1.19104e-08)
+bones/31/rotation = Quaternion(0.318798, -0.116795, 0.0392502, 0.93978)
+bones/31/scale = Vector3(1, 1, 1)
+
+[node name="OfficeChair3" parent="Bullpen" instance=ExtResource("20_41p3v")]
+transform = Transform3D(-0.122597, 0, -0.992457, 0, 1, 0, 0.992457, 0, -0.122597, -44.0941, 0, 33.4437)
+
+[node name="Sally" parent="Bullpen" instance=ExtResource("23_i2jcu")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -44.1937, 0.356827, 33.364)
+
+[node name="Skeleton3D" parent="Bullpen/Sally/Sally_Master_ANIM2" index="0"]
+bones/0/position = Vector3(-0.00123459, 0.781302, 0.0275925)
+bones/0/rotation = Quaternion(0.175958, 0.00211697, 0.00633356, 0.984375)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/position = Vector3(0, 0.0899887, -0.00146481)
+bones/1/rotation = Quaternion(-0.00813797, 0, 0, 0.999967)
+bones/1/scale = Vector3(1, 0.999999, 0.999999)
+bones/2/position = Vector3(-8.67362e-19, 0.105001, -1e-08)
+bones/2/rotation = Quaternion(0, 0, 0, 1)
+bones/3/position = Vector3(-8.67362e-19, 0.120001, -6.93889e-18)
+bones/3/rotation = Quaternion(0, 0, 0, 1)
+bones/4/position = Vector3(-8.67362e-19, 0.135002, 3.60876e-08)
+bones/4/rotation = Quaternion(0.00813797, 0, 0, 0.999967)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/rotation = Quaternion(0, 0, 0, 1)
+bones/7/position = Vector3(0.0437131, 0.115266, -0.000818876)
+bones/7/rotation = Quaternion(-0.590619, -0.383639, 0.602139, -0.376057)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/position = Vector3(3.85637e-09, 0.0912118, -4.73309e-07)
+bones/8/rotation = Quaternion(-0.18947, 0.000934258, -0.00484156, 0.981874)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/position = Vector3(6.94927e-08, 0.236707, -5.48135e-08)
+bones/9/rotation = Quaternion(-0.0147759, -0.000214175, 0.0144886, 0.999786)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/position = Vector3(4.72088e-07, 0.332043, 3.80149e-07)
+bones/10/rotation = Quaternion(-0.0185284, 0.393302, 0.144262, 0.907832)
+bones/10/scale = Vector3(1, 1, 0.999999)
+bones/11/position = Vector3(-0.0219789, 0.0787824, -4.89957e-07)
+bones/11/rotation = Quaternion(-2.28963e-07, 1.60974e-07, 0.0874121, 0.996172)
+bones/11/scale = Vector3(1, 1, 1)
+bones/12/position = Vector3(-0.00633766, 0.0651233, 2.94504e-07)
+bones/12/rotation = Quaternion(0.0726314, -3.50186e-07, -3.52184e-07, 0.997359)
+bones/12/scale = Vector3(1, 1, 1)
+bones/13/position = Vector3(0.00515869, 0.0530755, -7.91277e-07)
+bones/13/rotation = Quaternion(0.03051, 4.01241e-07, 2.44262e-07, 0.999534)
+bones/13/scale = Vector3(1, 1, 1)
+bones/14/rotation = Quaternion(1.05351e-08, -7.31017e-25, -6.9389e-17, 1)
+bones/15/position = Vector3(-1.49871e-07, 0.125517, 0.00909574)
+bones/15/rotation = Quaternion(-0.0687833, 0.0127716, -0.182112, 0.980786)
+bones/15/scale = Vector3(1, 1, 1)
+bones/16/position = Vector3(0.0102062, 0.0419234, -7.28995e-07)
+bones/16/rotation = Quaternion(0.257546, 3.57865e-08, 2.14577e-07, 0.966266)
+bones/16/scale = Vector3(1, 1, 1)
+bones/17/position = Vector3(-0.00923114, 0.0534959, -4.32671e-07)
+bones/17/rotation = Quaternion(-0.095608, 2.03909e-07, -4.98284e-08, 0.995419)
+bones/17/scale = Vector3(1, 1, 1)
+bones/18/rotation = Quaternion(7.869e-09, -2.77556e-17, 3.46944e-17, 1)
+bones/19/position = Vector3(-0.0437123, 0.115251, 0.000176208)
+bones/19/rotation = Quaternion(0.597761, -0.378878, 0.595198, 0.380621)
+bones/19/scale = Vector3(1, 1, 1)
+bones/20/position = Vector3(2.13304e-08, 0.091213, -1.83898e-07)
+bones/20/rotation = Quaternion(-0.189498, -0.00472759, 0.024488, 0.981564)
+bones/20/scale = Vector3(1, 0.999999, 1)
+bones/21/position = Vector3(1.41744e-09, 0.236816, -2.55915e-07)
+bones/21/rotation = Quaternion(-0.0150188, 0.000317341, -0.0211228, 0.999664)
+bones/21/scale = Vector3(1, 1, 1)
+bones/22/position = Vector3(-1.30742e-07, 0.332043, 1.50008e-06)
+bones/22/rotation = Quaternion(-0.0416585, -0.348058, -0.0512569, 0.935143)
+bones/22/scale = Vector3(1, 0.999999, 0.999999)
+bones/23/position = Vector3(0.0361649, 0.0720977, -8.42241e-08)
+bones/23/rotation = Quaternion(3.35503e-08, -7.40698e-09, -0.173309, 0.984868)
+bones/24/position = Vector3(0.00750457, 0.0640896, 1.62739e-07)
+bones/24/rotation = Quaternion(0.0719358, 2.04102e-07, 3.98149e-07, 0.997409)
+bones/24/scale = Vector3(1, 1, 1)
+bones/25/position = Vector3(-0.00395363, 0.0552867, -1.10264e-06)
+bones/25/rotation = Quaternion(-0.0343939, -4.90196e-07, -4.24454e-07, 0.999408)
+bones/25/scale = Vector3(1, 1, 1)
+bones/26/rotation = Quaternion(1.04432e-09, 1.44929e-26, 1.38778e-17, 1)
+bones/27/position = Vector3(-7.39732e-07, 0.136892, 0.0028138)
+bones/27/rotation = Quaternion(0.142706, -0.00465927, -0.0322973, 0.989227)
+bones/27/scale = Vector3(1, 0.999999, 1)
+bones/28/position = Vector3(0.00240522, 0.0454704, 4.95925e-07)
+bones/28/rotation = Quaternion(-0.0483222, 5.16125e-09, 1.08093e-07, 0.998832)
+bones/28/scale = Vector3(1, 1, 0.999999)
+bones/29/position = Vector3(-0.000958701, 0.0376506, 5.7213e-08)
+bones/29/rotation = Quaternion(-0.00635452, 1.20308e-07, -2.33992e-08, 0.99998)
+bones/29/scale = Vector3(1, 1, 1)
+bones/30/rotation = Quaternion(1.70678e-09, 5.5511e-17, 2.77556e-17, 1)
+bones/31/position = Vector3(0.08119, -0.0498633, -0.0119578)
+bones/31/rotation = Quaternion(-3.72328e-05, -0.00708142, 0.999961, -0.00525752)
+bones/31/scale = Vector3(1, 1, 0.999999)
+bones/32/position = Vector3(-4.81652e-08, 0.358991, 5.02076e-09)
+bones/32/rotation = Quaternion(-0.0212682, 0.000675156, -0.0317216, 0.99927)
+bones/32/scale = Vector3(1, 1, 1)
+bones/33/position = Vector3(7.9558e-08, 0.324631, 1.02112e-07)
+bones/33/rotation = Quaternion(0.474984, 0.0245526, -0.0132591, 0.879552)
+bones/33/scale = Vector3(0.999999, 0.999999, 1)
+bones/34/position = Vector3(-1.43934e-08, 0.169502, -1.3743e-08)
+bones/34/rotation = Quaternion(0.310088, 0.112824, -0.0370899, 0.943261)
+bones/34/scale = Vector3(1, 1, 1)
+bones/35/rotation = Quaternion(-6.38675e-10, 3.46945e-18, -1.38778e-17, 1)
+bones/36/position = Vector3(-0.08119, -0.0498639, -0.0187023)
+bones/36/rotation = Quaternion(5.11801e-07, -9.73326e-05, 0.999986, 0.00525818)
+bones/36/scale = Vector3(0.999999, 0.999999, 1)
+bones/37/position = Vector3(3.80853e-08, 0.358955, -1.34377e-09)
+bones/37/rotation = Quaternion(-0.0268927, -0.000854211, 0.0317361, 0.999134)
+bones/37/scale = Vector3(1, 1, 1)
+bones/38/position = Vector3(-5.20136e-09, 0.324582, 3.14663e-08)
+bones/38/rotation = Quaternion(0.475845, -0.0240319, 0.0130081, 0.879104)
+bones/38/scale = Vector3(0.999999, 1, 1)
+bones/39/position = Vector3(1.38398e-09, 0.170571, -1.07846e-08)
+bones/39/rotation = Quaternion(0.308011, -0.115219, 0.0376086, 0.943631)
+bones/39/scale = Vector3(1, 1, 1)
+bones/40/rotation = Quaternion(-1.05038e-10, 1.16226e-16, 1.38778e-17, 1)
+
+[node name="OfficePhone" parent="Bullpen" instance=ExtResource("24_sfkc6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.447, 0, 25.612)
+
+[node name="DeskCluster" parent="Bullpen" instance=ExtResource("25_ospo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.57666, -0.0133924, 22.223)
+
+[node name="Computer9" parent="Bullpen/DeskCluster" index="0"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10142, 1.55633, 0.928013)
+
+[node name="OfficeChair4" parent="Bullpen/DeskCluster" index="1"]
+transform = Transform3D(0.725459, 0, -0.688265, 0, 1, 0, 0.688265, 0, 0.725459, -6.55466, 0, -0.217323)
+
+[node name="OfficePhone" parent="Bullpen/DeskCluster" index="3"]
+transform = Transform3D(0.264883, 0, -0.964281, 0, 1, 0, 0.964281, 0, 0.264883, 0.929579, 1.61453, -1.18555)
+
+[node name="DeskCluster2" parent="Bullpen" instance=ExtResource("25_ospo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.0391, 0, 22.2242)
+
+[node name="OfficeChair4" parent="Bullpen/DeskCluster2" index="1"]
+transform = Transform3D(0.307756, 0, -0.951465, 0, 1, 0, 0.951465, 0, 0.307756, -3.11105, 0, 1.42049)
+
+[node name="DeskCluster3" parent="Bullpen" instance=ExtResource("25_ospo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.2054, 0, 22.2242)
+
+[node name="Computer9" parent="Bullpen/DeskCluster3" index="0"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10142, 1.55633, 0.992136)
+
+[node name="OfficeChair4" parent="Bullpen/DeskCluster3" index="1"]
+transform = Transform3D(0.649156, 0, -0.760655, 0, 1, 0, 0.760655, 0, 0.649156, -2.06284, 0, 2.98086)
+
+[node name="OfficePhone" parent="Bullpen/DeskCluster3" index="3"]
+transform = Transform3D(0.25715, 0, -0.966372, 0, 1, 0, 0.966372, 0, 0.25715, 0.929579, 1.61453, -0.596628)
+
+[node name="DeskCluster4" parent="Bullpen" instance=ExtResource("25_ospo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -26.1019, -0.0133944, 47.9754)
+
+[node name="Computer9" parent="Bullpen/DeskCluster4" index="0"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10142, 1.55633, 0.928013)
+
+[node name="OfficeChair4" parent="Bullpen/DeskCluster4" index="1"]
+transform = Transform3D(-0.177565, 0, -0.984109, 0, 1, 0, 0.984109, 0, -0.177565, -3.32293, 0, -0.161119)
+
+[node name="OfficePhone" parent="Bullpen/DeskCluster4" index="3"]
+transform = Transform3D(0.264883, 0, -0.964281, 0, 1, 0, 0.964281, 0, 0.264883, 0.929579, 1.61453, -1.18555)
+
+[node name="DeskCluster5" parent="Bullpen" instance=ExtResource("25_ospo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -32.5628, -1.90735e-06, 47.9706)
+
+[node name="OfficeChair4" parent="Bullpen/DeskCluster5" index="1"]
+transform = Transform3D(0.307756, 0, -0.951465, 0, 1, 0, 0.951465, 0, 0.307756, -0.76527, 0, 1.39238)
+
+[node name="DeskCluster6" parent="Bullpen" instance=ExtResource("25_ospo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -40.7272, -1.90735e-06, 47.9011)
+
+[node name="Computer9" parent="Bullpen/DeskCluster6" index="0"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10142, 1.55633, 0.992136)
+
+[node name="OfficeChair4" parent="Bullpen/DeskCluster6" index="1"]
+transform = Transform3D(0.791905, 0, 0.610643, 0, 1, 0, -0.610643, 0, 0.791905, -1.64132, 0, 1.18233)
+
+[node name="OfficePhone" parent="Bullpen/DeskCluster6" index="3"]
+transform = Transform3D(0.25715, 0, -0.966372, 0, 1, 0, 0.966372, 0, 0.25715, 0.929579, 1.61453, -0.596628)
+
+[node name="Doors" type="Node3D" parent="."]
+
+[node name="Closet Door" parent="Doors" instance=ExtResource("26_veo8j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 17)
+
+[node name="cSuiteDoor" parent="Doors" instance=ExtResource("27_1aky7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 0)
+
+[node name="Kitchen" type="Node3D" parent="."]
+
+[node name="water_dispensor" parent="Kitchen" instance=ExtResource("28_143w2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.194, 4.76837e-07, 15.2915)
+
+[node name="water_dispensor2" parent="Kitchen" instance=ExtResource("28_143w2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.194, 4.76837e-07, 17.3764)
+
+[node name="water_dispensor3" parent="Kitchen" instance=ExtResource("28_143w2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.8039, 4.76837e-07, 17.7324)
+
+[node name="water_dispensor4" parent="Kitchen" instance=ExtResource("28_143w2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.7688, 4.76837e-07, 15.6478)
+
+[node name="TableCluster" parent="Kitchen" instance=ExtResource("29_sht1b")]
+transform = Transform3D(0.857895, 0, -0.513826, 0, 1, 0, 0.513826, 0, 0.857895, 32.8714, 0, 30.9344)
+
+[node name="TableCluster2" parent="Kitchen" instance=ExtResource("29_sht1b")]
+transform = Transform3D(0.467637, 0, 0.883921, 0, 1, 0, -0.883921, 0, 0.467637, 31.7176, -0.0218859, 42.8474)
+
+[node name="TableCluster3" parent="Kitchen" instance=ExtResource("29_sht1b")]
+transform = Transform3D(-0.714265, 0, -0.699875, 0, 1, 0, 0.699875, 0, -0.714265, 43.5076, -9.53674e-07, 27.9273)
+
+[node name="TableCluster4" parent="Kitchen" instance=ExtResource("29_sht1b")]
+transform = Transform3D(-0.930692, 0, -0.365803, 0, 1, 0, 0.365803, 0, -0.930692, 43.4208, 0, 42.238)
+
+[node name="TableCluster5" parent="Kitchen" instance=ExtResource("29_sht1b")]
+transform = Transform3D(0.467637, 0, 0.883921, 0, 1, 0, -0.883921, 0, 0.467637, 38.5714, -0.0218859, 36.3157)
+
+[node name="PaperPlate" parent="Kitchen" instance=ExtResource("30_tojr5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2183, 1.90125, 30.5314)
+
+[node name="Vending Machine" parent="Kitchen" instance=ExtResource("31_2f5t6")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.3766, 0.00287074, 11.9994)
+
+[node name="Gus" parent="Kitchen" instance=ExtResource("32_olov7")]
+transform = Transform3D(-1.93932, 0, 0.488922, 0, 2, 0, -0.488922, 0, -1.93932, 26.1615, 0, 13.8321)
+
+[node name="Skeleton3D" parent="Kitchen/Gus/Gus_Master_ANIM2" index="0"]
+bones/0/position = Vector3(0.0108226, 0.823517, -0.0383918)
+bones/0/rotation = Quaternion(0.00760108, -0.090962, 0.158115, 0.983193)
+bones/0/scale = Vector3(1, 1, 1)
+bones/1/position = Vector3(0, 0.0942038, -0.00172624)
+bones/1/rotation = Quaternion(-0.00916109, 0, 0, 0.999958)
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/position = Vector3(0, 0.109923, 0)
+bones/2/rotation = Quaternion(0, 0, 0, 1)
+bones/3/position = Vector3(0, 0.125626, -1.73472e-18)
+bones/3/rotation = Quaternion(0, 0, 0, 1)
+bones/4/position = Vector3(0, 0.141329, 1.22702e-08)
+bones/4/rotation = Quaternion(0.00916109, 0, 0, 0.999958)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/rotation = Quaternion(0, 0, 0, 1)
+bones/7/position = Vector3(0.0541095, 0.1127, -0.000776751)
+bones/7/rotation = Quaternion(-0.598067, -0.372941, 0.606492, -0.367966)
+bones/7/scale = Vector3(1, 1, 0.999999)
+bones/8/position = Vector3(2.19859e-08, 0.127024, 4.46089e-07)
+bones/8/rotation = Quaternion(-0.197958, -0.00162129, 0.00802759, 0.980176)
+bones/8/scale = Vector3(1, 1, 0.999999)
+bones/9/position = Vector3(-1.6038e-09, 0.309976, -1.09921e-06)
+bones/9/rotation = Quaternion(-0.0267816, 2.65169e-05, -0.0009897, 0.999641)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/position = Vector3(-5.98084e-08, 0.329741, -5.0389e-08)
+bones/10/rotation = Quaternion(0.0274074, 0.00304077, 0.110229, 0.993524)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/position = Vector3(2.11968e-07, 0.114022, 2.65023e-07)
+bones/11/rotation = Quaternion(0.22676, 0.689442, -0.242904, 0.643621)
+bones/11/scale = Vector3(1, 1, 1)
+bones/12/position = Vector3(-1.69831e-09, 0.0393657, 2.01897e-09)
+bones/12/rotation = Quaternion(-1.38778e-17, 7.70374e-34, -1.73472e-18, 1)
+bones/13/rotation = Quaternion(-1.38778e-17, 7.70374e-34, -1.73472e-18, 1)
+bones/14/rotation = Quaternion(-2.77556e-17, 3.46945e-18, 1.73472e-18, 1)
+bones/15/position = Vector3(-0.0541093, 0.11269, -0.000272563)
+bones/15/rotation = Quaternion(0.600843, -0.371286, 0.603801, 0.369538)
+bones/15/scale = Vector3(1, 0.999999, 0.999999)
+bones/16/position = Vector3(-2.72851e-08, 0.127023, -6.8469e-07)
+bones/16/rotation = Quaternion(-0.19812, 9.91158e-05, -0.000490419, 0.980178)
+bones/16/scale = Vector3(1, 1, 1)
+bones/17/position = Vector3(6.18254e-08, 0.309976, -4.88275e-07)
+bones/17/rotation = Quaternion(-0.0267185, 4.71107e-05, -0.00176127, 0.999641)
+bones/17/scale = Vector3(1, 1, 1)
+bones/18/position = Vector3(-4.31796e-07, 0.329742, 7.24328e-07)
+bones/18/rotation = Quaternion(0.0330923, -0.00371015, -0.111355, 0.993223)
+bones/18/scale = Vector3(0.999999, 1, 1)
+bones/19/position = Vector3(3.115e-08, 0.117462, -3.79873e-07)
+bones/19/rotation = Quaternion(0.209912, -0.685812, 0.217444, 0.662055)
+bones/19/scale = Vector3(1, 1, 1)
+bones/20/position = Vector3(-3.27487e-10, 0.0372513, 3.9417e-09)
+bones/20/rotation = Quaternion(-1.38778e-17, 1.73472e-18, 1.73472e-18, 1)
+bones/21/rotation = Quaternion(-1.38778e-17, 1.73472e-18, 1.73472e-18, 1)
+bones/22/rotation = Quaternion(-1.20371e-35, 1.73472e-18, 6.9389e-18, 1)
+bones/23/position = Vector3(0.0789306, -0.052357, -0.00744094)
+bones/23/rotation = Quaternion(-5.9095e-06, -0.005773, 0.999983, -0.00102363)
+bones/23/scale = Vector3(1, 1, 1)
+bones/24/position = Vector3(5.09188e-08, 0.363975, 1.34623e-08)
+bones/24/rotation = Quaternion(-0.0266807, 0.000673523, -0.0252267, 0.999325)
+bones/24/scale = Vector3(1, 1, 1)
+bones/25/position = Vector3(-6.32077e-08, 0.329713, -1.62809e-08)
+bones/25/rotation = Quaternion(0.485531, -0.0159316, 0.00885017, 0.87403)
+bones/25/scale = Vector3(1, 1, 0.999999)
+bones/26/position = Vector3(-2.01232e-08, 0.173122, -5.53352e-08)
+bones/26/rotation = Quaternion(0.310287, 0.0294602, -0.00962085, 0.950137)
+bones/26/scale = Vector3(1, 0.999999, 1)
+bones/27/rotation = Quaternion(1.47445e-10, -9.9751e-18, 1.6263e-19, 1)
+bones/28/position = Vector3(-0.0789306, -0.0523574, -0.00732377)
+bones/28/rotation = Quaternion(2.41482e-06, -0.00235891, 0.999997, 0.0010237)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/position = Vector3(-4.04879e-08, 0.363955, -1.91191e-08)
+bones/29/rotation = Quaternion(-0.0260931, -0.000658957, 0.0252375, 0.999341)
+bones/29/scale = Vector3(1, 1, 1)
+bones/30/position = Vector3(6.332e-08, 0.329552, 5.4588e-08)
+bones/30/rotation = Quaternion(0.475054, 0.016797, -0.00907022, 0.87975)
+bones/30/scale = Vector3(1, 0.999999, 1)
+bones/31/position = Vector3(1.82528e-08, 0.169387, 2.94764e-08)
+bones/31/rotation = Quaternion(0.317878, -0.0298667, 0.0100189, 0.947608)
+bones/31/scale = Vector3(1, 1, 1)
+bones/32/rotation = Quaternion(-3.16526e-10, 6.2211e-17, -5.421e-19, 1)
+
+[node name="Caf_table" parent="Kitchen" instance=ExtResource("33_tie1a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3369, 0, 4.4257)
+
+[node name="TV" parent="Kitchen/Caf_table" instance=ExtResource("34_1a1s1")]
+transform = Transform3D(-0.70076, 0, -0.713397, 0, 1, 0, 0.713397, 0, -0.70076, 1.26062, 2.41182, 0.428889)
+
+[node name="VHS_player" parent="Kitchen/Caf_table" instance=ExtResource("35_py3l1")]
+transform = Transform3D(-0.512328, 0, -0.85879, 0, 1, 0, 0.85879, 0, -0.512328, 0.125519, 2.04854, 1.51408)
+
+[node name="Vending Machine2" parent="Kitchen" instance=ExtResource("31_2f5t6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5297, 0, 1.42058)
+
+[editable path="Bullpen/Lucas"]
+[editable path="Bullpen/Lucas/Lucas_Master_ANIM"]
+[editable path="Bullpen/Cheryl"]
+[editable path="Bullpen/Sally"]
+[editable path="Bullpen/DeskCluster"]
+[editable path="Bullpen/DeskCluster2"]
+[editable path="Bullpen/DeskCluster3"]
+[editable path="Bullpen/DeskCluster4"]
+[editable path="Bullpen/DeskCluster5"]
+[editable path="Bullpen/DeskCluster6"]
+[editable path="Kitchen/Gus"]

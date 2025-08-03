@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://cfyu3i438ey0k"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_nn2s8"]
+
+[resource]
+script = ExtResource("1_nn2s8")
+ReputationAlignment = 2
+TaskName = "Retrieve a slice of pizza from pizza party."
+PointsTowardAlignment = 200
+DescriptionRebel = "I'd rather have a raise."
+DescriptionNeutral = "Tastes like cardboard."
+DescriptionCitizen = "I'd better leave some for everyone else."
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"

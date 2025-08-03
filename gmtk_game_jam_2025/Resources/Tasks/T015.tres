@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_qqrhs")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Suck up to your boss, Jack"
+PointsTowardAlignment = 600
+DescriptionRebel = "What a Jack-Off"
+DescriptionNeutral = "You schmooze, you lose."
+DescriptionCitizen = "I hope to be him, one day."
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

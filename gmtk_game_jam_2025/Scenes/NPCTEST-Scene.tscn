@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://d4jqac87yg17q"]
+[gd_scene load_steps=13 format=3 uid="uid://d4jqac87yg17q"]
 
-[ext_resource type="Script" uid="uid://dt5leut1xx8xc" path="res://Scripts/NPC Scripts/StateMachine.cs" id="1_lyupf"]
-[ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="2_iyg6u"]
+[ext_resource type="PackedScene" uid="uid://bcq4835jtlqih" path="res://characters/Scene/Cheryl.tscn" id="1_daot0"]
+[ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="2_iyg6u"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="3_r47yj"]
+[ext_resource type="Script" uid="uid://53hfdi48h7qw" path="res://Scripts/Task/TaskManager.cs" id="4_r47yj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cn623"]
 sky_top_color = Color(0.660593, 0.290983, 0.552217, 1)
@@ -13,6 +15,10 @@ sky_material = SubResource("ProceduralSkyMaterial_cn623")
 background_mode = 2
 sky = SubResource("Sky_oyxwl")
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_daot0"]
+vertices = PackedVector3Array(-99.5, 0.5, -99.25, -99.5, 0.5, 99.5, 99.5, 0.5, 99.5, 99.5, 0.5, -99.25)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lyupf"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_iyg6u"]
@@ -21,54 +27,95 @@ size = Vector2(200, 200)
 [sub_resource type="BoxShape3D" id="BoxShape3D_r47yj"]
 size = Vector3(200, 1, 200)
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_cn623"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_daot0"]
+[sub_resource type="BoxMesh" id="BoxMesh_b03l7"]
 
 [node name="Npctest-scene" type="Node3D"]
+
+[node name="TaskManager" type="Node3D" parent="."]
+script = ExtResource("4_r47yj")
+GlobalTaskList = {
+ExtResource("3_r47yj"): []
+}
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 5.50907, 7.04655)
+transform = Transform3D(0.677221, -0.154893, 0.719292, 0.0338837, 0.983119, 0.179804, -0.734999, -0.0973947, 0.671037, 3.79272, 4.89445, 4.75276)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_daot0")
 
-[node name="Floor" type="StaticBody3D" parent="."]
+[node name="Cherly" parent="." instance=ExtResource("1_daot0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -0.0465534, 1.05384)
+
+[node name="Skeleton3D" parent="Cherly/Cheryl_MasterANIM" index="0"]
+bones/0/position = Vector3(0.00248165, 0.848527, 0.0236387)
+bones/0/rotation = Quaternion(0.0322049, 0.0662096, 0.00541615, 0.997271)
+bones/1/rotation = Quaternion(0.0482174, -0.016067, 0.0133817, 0.998618)
+bones/2/rotation = Quaternion(0.128465, -0.00447305, 0.00220633, 0.991701)
+bones/3/rotation = Quaternion(0.128465, -0.00446105, 0.00226866, 0.991701)
+bones/4/rotation = Quaternion(0.0367483, -0.00670401, 0.00491641, 0.99929)
+bones/5/rotation = Quaternion(0.184413, -0.0367607, 0.021662, 0.981922)
+bones/7/rotation = Quaternion(-0.722623, -0.203574, 0.618733, -0.231394)
+bones/8/rotation = Quaternion(0.0679321, -0.0577358, 0.288019, 0.953466)
+bones/9/rotation = Quaternion(0.000263404, -0.0406745, 0.181509, 0.982548)
+bones/10/rotation = Quaternion(-0.066485, 0.0815853, 0.0711, 0.991901)
+bones/11/rotation = Quaternion(0.128447, -0.0201847, -0.0346206, 0.990906)
+bones/12/rotation = Quaternion(0.293213, 0.0324194, -0.191309, 0.93615)
+bones/13/rotation = Quaternion(0.168354, 0.0539769, -0.0182739, 0.984078)
+bones/15/rotation = Quaternion(0.701775, -0.222369, 0.631764, 0.242771)
+bones/16/rotation = Quaternion(0.0782377, 0.113169, -0.270749, 0.952768)
+bones/17/rotation = Quaternion(0.00672191, 0.0175173, -0.0774122, 0.996823)
+bones/18/rotation = Quaternion(0.0284141, -0.00382029, -0.0718002, 0.997007)
+bones/19/rotation = Quaternion(0.101421, -0.493411, -0.0768726, 0.860436)
+bones/20/rotation = Quaternion(0.373248, -0.0503469, -0.173911, 0.909893)
+bones/21/rotation = Quaternion(0.160828, -0.127803, -0.265234, 0.942047)
+bones/23/rotation = Quaternion(0.0315908, 0.2556, 0.965586, -0.0362623)
+bones/24/rotation = Quaternion(-0.485005, -0.0387248, -0.0114616, 0.873578)
+bones/25/rotation = Quaternion(0.504096, -0.0223011, -0.0781611, 0.859814)
+bones/26/rotation = Quaternion(0.478195, 0.149963, -0.0250371, 0.864994)
+bones/28/rotation = Quaternion(-0.0857612, 0.183712, 0.978723, 0.031569)
+bones/29/rotation = Quaternion(-0.323052, 0.0816249, 0.0288459, 0.942413)
+bones/30/rotation = Quaternion(0.600636, 0.0322046, 0.0123418, 0.798779)
+bones/31/rotation = Quaternion(0.317233, -0.116644, 0.0393506, 0.940324)
+
+[node name="StateMachine" parent="Cherly" index="1" node_paths=PackedStringArray("currentState")]
+currentState = NodePath("Walk")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_daot0")
+
+[node name="Enviorment" type="Node3D" parent="NavigationRegion3D"]
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
 physics_material_override = SubResource("PhysicsMaterial_lyupf")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Enviorment/Floor"]
 mesh = SubResource("PlaneMesh_iyg6u")
 
-[node name="Floor" type="CollisionShape3D" parent="Floor"]
+[node name="Floor" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_r47yj")
 
-[node name="Wall" type="StaticBody3D" parent="."]
+[node name="Wall" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -100)
 physics_material_override = SubResource("PhysicsMaterial_lyupf")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Enviorment/Wall"]
 mesh = SubResource("PlaneMesh_iyg6u")
 
-[node name="Collider" type="CollisionShape3D" parent="Wall"]
+[node name="Collider" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/Wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_r47yj")
 
-[node name="NPC" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.84307, 1.05384)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NPC"]
-mesh = SubResource("CapsuleMesh_cn623")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="NPC"]
-shape = SubResource("CapsuleShape3D_daot0")
-
-[node name="StateMachine" type="Node3D" parent="NPC"]
-script = ExtResource("1_lyupf")
-
-[node name="NpcData" type="Node3D" parent="NPC"]
+[node name="Target" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.87362, -23.8879)
 script = ExtResource("2_iyg6u")
+linkedTask = Array[Object]([ExtResource("3_r47yj")])
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Target"]
+mesh = SubResource("BoxMesh_b03l7")
+
+[editable path="Cherly"]

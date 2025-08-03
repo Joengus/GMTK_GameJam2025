@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=3 format=3 uid="uid://bpp6s7smpo4qs"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_383er"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T028.tres" id="1_nus1g"]
+
+[resource]
+script = ExtResource("1_383er")
+ReputationAlignment = 2
+TaskName = "Update your boss on your progress"
+PointsTowardAlignment = 100
+DescriptionRebel = "How do I have eight different bosses?"
+DescriptionNeutral = "Same old and getting older."
+DescriptionCitizen = "Just wanted to keep you in the loop. "
+PrerequisiteTasks = Array[Object]([ExtResource("1_nus1g")])
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"
