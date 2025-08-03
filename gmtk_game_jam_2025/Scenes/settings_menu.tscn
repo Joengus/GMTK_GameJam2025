@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwcg2a1qy6eec"]
 
-[ext_resource type="Script" uid="uid://b6ob8wg80ydb1" path="res://Scripts/SettingsMenu.cs" id="1_ufg0w"]
+[ext_resource type="Script" uid="uid://b6p0su4h28naj" path="res://SettingsMenu.cs" id="1_ufg0w"]
 [ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://Scripts/AudioController.cs" id="2_0cmel"]
 [ext_resource type="Texture2D" uid="uid://vgq5cekw2dx3" path="res://Assets/Art/UI/SVG/button_square_depth_line.svg" id="2_7y5a0"]
 

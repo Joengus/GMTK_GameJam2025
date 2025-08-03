@@ -1,9 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmjlxqbcgfq7g"]
+[gd_scene load_steps=5 format=3 uid="uid://cmjlxqbcgfq7g"]
 
 [ext_resource type="Script" uid="uid://53hfdi48h7qw" path="res://Scripts/Task/TaskManager.cs" id="1_6nu63"]
-[ext_resource type="Resource" uid="uid://bqhkhjmj4gk0m" path="res://Resources/Tasks/BrushTeeth.tres" id="2_6nu63"]
-[ext_resource type="Resource" uid="uid://bjyxdku67nhyx" path="res://Resources/Tasks/GetDressed.tres" id="3_d6k7i"]
+[ext_resource type="Resource" uid="uid://bqhkhjmj4gk0m" path="res://Resources/Tasks/T002.tres" id="2_6nu63"]
+[ext_resource type="Resource" uid="uid://bjyxdku67nhyx" path="res://Resources/Tasks/T001.tres" id="3_d6k7i"]
+[ext_resource type="Script" uid="uid://bpdq4ivujdhst" path="res://Prefabs/Managers/FlavorText.cs" id="4_vq6m6"]
 
 [node name="TaskManager" type="Node3D"]
 script = ExtResource("1_6nu63")
 TaskList = Array[Object]([ExtResource("2_6nu63"), ExtResource("3_d6k7i")])
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_vq6m6")
+
+[node name="Text" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 168.0
+offset_bottom = 218.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Some cool text"
+horizontal_alignment = 1
+vertical_alignment = 1
