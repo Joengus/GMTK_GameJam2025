@@ -84,9 +84,6 @@ bones/31/rotation = Quaternion(0.317233, -0.116644, 0.0393506, 0.940324)
 [node name="StateMachine" parent="Cherly" index="1" node_paths=PackedStringArray("currentState")]
 currentState = NodePath("Walk")
 
-[node name="NpcData" parent="Cherly" index="2"]
-walkSpeed = 10000.0
-
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_daot0")
 

@@ -669,6 +669,8 @@ radius = 0.245245
 height = 1.68816
 
 [node name="Cheryl" type="CharacterBody3D"]
+axis_lock_angular_x = true
+axis_lock_angular_z = true
 
 [node name="Cheryl_MasterANIM" type="Node3D" parent="."]
 
@@ -942,7 +944,7 @@ animations = {
 "idle": "sad_idle"
 }
 playback = NodePath("../Cheryl_MasterANIM/AnimationPlayer")
-walkSpeed = 10.0
+walkSpeed = 45.0
 body3D = NodePath("..")
 agent = NodePath("../NavigationAgent3D")
 
