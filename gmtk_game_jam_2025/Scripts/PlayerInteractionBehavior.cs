@@ -91,10 +91,11 @@ public partial class PlayerInteractionBehavior : Node3D
                 currentHeldObject = (RigidBody3D)currentSelectedInteractable;
                 currentSelectedInteractable = null;
             }
-            else if (script.getIType() == InteractableType.Activate)
-            {
-                script.interact();
-            }
+            script.interact();
+            // else if (script.getIType() == InteractableType.Activate)
+            // {
+            //     script.interact();
+            // }
         }
 
     }
