@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://eyeewd56fkfc"]
+
+[ext_resource type="PackedScene" uid="uid://pdyn27vi4n0b" path="res://characters/animation/Player Character/PC_throw.fbx" id="1_g41ir"]
+
+[node name="PC_throw" instance=ExtResource("1_g41ir")]
+
+[node name="Skeleton3D" parent="FitSkeleton" index="0"]
+bones/5/rotation = Quaternion(0.178217, 0.717291, 0.0682815, 0.670127)
+bones/6/rotation = Quaternion(-0.103539, 0.101158, -0.110667, 0.98326)
+bones/7/rotation = Quaternion(-0.0631526, -0.119324, 0.589111, 0.796694)
+bones/8/rotation = Quaternion(0.653433, 0.0981554, -0.0779769, 0.746533)
+bones/9/rotation = Quaternion(-0.0371251, -0.115407, -0.0845769, 0.989015)
+bones/10/rotation = Quaternion(-0.0546216, 0.284381, 0.108292, 0.951008)
+bones/11/rotation = Quaternion(0.0218049, -0.125897, 0.0443364, 0.990812)
+bones/13/rotation = Quaternion(-0.118863, 0.371343, 0.62376, 0.677421)
+bones/14/rotation = Quaternion(-0.0118448, -0.152813, -0.152893, 0.976285)
+bones/15/rotation = Quaternion(-0.0473312, -0.0868224, -0.0212792, 0.994871)
+bones/17/rotation = Quaternion(0.024372, 0.0260198, 0.188802, 0.981368)
+bones/18/rotation = Quaternion(0.0544931, 0.163964, -0.104805, 0.979368)
+bones/19/rotation = Quaternion(0.017223, -0.134479, -0.0182138, 0.990599)
+bones/21/rotation = Quaternion(-0.0352382, 0.119854, -0.250954, 0.959904)
+bones/22/rotation = Quaternion(-0.0259095, 0.235346, 0.114856, 0.964753)
+bones/23/rotation = Quaternion(0.00902855, -0.0900926, 0.0213202, 0.995664)
+bones/25/rotation = Quaternion(-0.0420968, 0.21247, -0.327675, 0.919627)
+bones/26/rotation = Quaternion(0.013085, 0.2314, 0.0122561, 0.972694)
+bones/27/rotation = Quaternion(0.02421, -0.158999, 0.0374722, 0.98627)
+
+[node name="Skeleton3D" parent="." index="2"]
+bones/0/position = Vector3(-0.539744, 1.0939, 0.3895)
+bones/1/position = Vector3(-0.509282, 1.24772, -0.646234)
+bones/1/rotation = Quaternion(0.00556012, 0.616018, 0.787158, -0.0295637)

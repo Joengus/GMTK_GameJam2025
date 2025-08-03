@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bixhydqy242lq"]
+[gd_scene load_steps=10 format=3 uid="uid://bixhydqy242lq"]
 
 [ext_resource type="Script" uid="uid://dwkmxhgklhjr8" path="res://Scripts/PlayerCharacterController.cs" id="1_02ohv"]
 [ext_resource type="Script" uid="uid://fhigqns7sgk8" path="res://Scripts/PlayerInteractionBehavior.cs" id="2_cmdk4"]
+[ext_resource type="PackedScene" uid="uid://eyeewd56fkfc" path="res://Scripts/pc_throw.tscn" id="4_wko77"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tfo3t"]
+height = 3.0
 
 [sub_resource type="ImageTexture" id="ImageTexture_02ohv"]
 
@@ -14,31 +16,38 @@ emission_enabled = true
 emission = Color(1, 0, 0, 1)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tfo3t"]
+height = 3.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cmdk4"]
 size = Vector3(0.25, 1, 0.1)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_o0f8b"]
+radius = 0.15
+
 [node name="PlayerCharacter" type="Node3D"]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." node_paths=PackedStringArray("shapeCast")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 collision_mask = 3
 script = ExtResource("1_02ohv")
 move_speed = 10.0
-jump_force = 25.0
+jump_force = 15.0
 gravity_scale = 40.0
+shapeCast = NodePath("HeadRoomCast")
 slidingTime = 0.5
 slidingSpeed = 15.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = SubResource("CapsuleMesh_tfo3t")
 surface_material_override/0 = SubResource("StandardMaterial3D_5up26")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CapsuleShape3D_tfo3t")
 
 [node name="CameraPivot" type="Node3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28171, 0.5)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/CameraPivot"]
 
@@ -48,11 +57,53 @@ shape = SubResource("BoxShape3D_cmdk4")
 target_position = Vector3(0, 0, -2)
 collision_mask = 4
 
-[node name="HandTransform" type="Node3D" parent="CharacterBody3D/CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, -1.25)
-
-[node name="PlayerInteractionBehavior" type="Node3D" parent="CharacterBody3D" node_paths=PackedStringArray("shapeCast", "handTransform")]
+[node name="PlayerInteractionBehavior" type="Node3D" parent="CharacterBody3D" node_paths=PackedStringArray("shapeCast", "handTransform", "anim")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 script = ExtResource("2_cmdk4")
 shapeCast = NodePath("../CameraPivot/ShapeCast3D")
-handTransform = NodePath("../CameraPivot/HandTransform")
+handTransform = NodePath("../HandTransform")
+anim = NodePath("../HandTransform/PC_throw/AnimationPlayer")
+
+[node name="HandTransform" type="Node3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.680952, -0.551852)
+
+[node name="PC_throw" parent="CharacterBody3D/HandTransform" instance=ExtResource("4_wko77")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 0.23, -2.49, 1.3111)
+
+[node name="Skeleton3D" parent="CharacterBody3D/HandTransform/PC_throw/FitSkeleton" index="0"]
+bones/5/rotation = Quaternion(0.0492189, 0.705452, -0.0494603, 0.705314)
+bones/6/rotation = Quaternion(-0.0952116, 0.00783688, -0.0622113, 0.99348)
+bones/7/rotation = Quaternion(0, 2.06795e-25, 0.0879768, 0.996123)
+bones/8/rotation = Quaternion(0.684167, 0.00367808, -0.0038051, 0.729306)
+bones/9/rotation = Quaternion(-0.0035282, 0.255266, -0.0922988, 0.962449)
+bones/10/rotation = Quaternion(-0.0847858, 0.558405, 0.0867301, 0.820654)
+bones/11/rotation = Quaternion(0.0193417, -0.0713951, 0.045465, 0.996224)
+bones/13/rotation = Quaternion(-0.580488, 0.242279, 0.646685, 0.43143)
+bones/14/rotation = Quaternion(0.0281458, 0.105175, -0.150746, 0.982559)
+bones/15/rotation = Quaternion(-0.038159, 0.232632, -0.0351701, 0.971179)
+bones/17/rotation = Quaternion(-0.00222142, 0.243031, 0.0394054, 0.969215)
+bones/18/rotation = Quaternion(0.0836097, 0.452182, -0.0834443, 0.884069)
+bones/19/rotation = Quaternion(0.0181955, -0.0799758, -0.0172423, 0.996482)
+bones/21/rotation = Quaternion(0.0197686, 0.330868, -0.142429, 0.932657)
+bones/22/rotation = Quaternion(-0.0593984, 0.515814, 0.101662, 0.848571)
+bones/23/rotation = Quaternion(0.00784628, -0.0353783, 0.021783, 0.999106)
+bones/25/rotation = Quaternion(0.0497466, 0.41544, -0.120165, 0.900275)
+bones/26/rotation = Quaternion(0.00877084, 0.514451, 0.0156365, 0.857333)
+bones/27/rotation = Quaternion(0.0221195, -0.104696, 0.038743, 0.993503)
+
+[node name="ikHandle1" parent="CharacterBody3D/HandTransform/PC_throw" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85169, 1.23632, -0.0169053)
+
+[node name="Skeleton3D" parent="CharacterBody3D/HandTransform/PC_throw" index="2"]
+bones/0/position = Vector3(-0.85169, 1.23632, -0.0169052)
+bones/0/rotation = Quaternion(-0.612233, -2.98023e-08, -1.49012e-08, 0.790678)
+bones/1/position = Vector3(-0.509282, 1.24772, -0.646234)
+bones/1/rotation = Quaternion(0.00556012, 0.616018, 0.787158, -0.0295637)
+
+[node name="HeadRoomCast" type="ShapeCast3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62366, 0)
+shape = SubResource("SphereShape3D_o0f8b")
+target_position = Vector3(0, 10, 0)
+collision_mask = 2
+
+[editable path="CharacterBody3D/HandTransform/PC_throw"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bndtbtgh1miye"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_5xfeo"]
+[ext_resource type="PackedScene" uid="uid://6wim4ke12a30" path="res://Prefabs/Objects/paper_plate.tscn" id="2_3j5st"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dv6k2"]
+height = 0.0242309
+radius = 0.0986328
+
+[node name="PaperPlate" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_5xfeo")
+prompt = NodePath("Prompt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.00366209, 0)
+shape = SubResource("CylinderShape3D_dv6k2")
+
+[node name="paper plate" parent="RigidBody3D" instance=ExtResource("2_3j5st")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0.165692)
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30

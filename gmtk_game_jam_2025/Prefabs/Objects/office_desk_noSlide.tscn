@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy2304ba75eyl"]
+
+[ext_resource type="PackedScene" uid="uid://dy7uhm3odajqf" path="res://Assets/Models/Objects/OfficeDesk/Office_Desk.fbx" id="1_bftgo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bftgo"]
+size = Vector3(2.38557, 0.778534, 0.930115)
+
+[node name="Office_Desk" instance=ExtResource("1_bftgo")]
+
+[node name="Office_Desk" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.787306, 0.00986191)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011673, 0.389389, -0.00521851)
+shape = SubResource("BoxShape3D_bftgo")

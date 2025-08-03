@@ -6,6 +6,8 @@
 [node name="Tent" instance=ExtResource("1_jp5yf")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="11" node_paths=PackedStringArray("SleepPrompt")]
+collision_layer = 6
+collision_mask = 7
 script = ExtResource("2_fb5mj")
 SleepPrompt = NodePath("Prompt")
 
@@ -15,6 +17,7 @@ polygon = PackedVector2Array(1.06579, 3.21736, 8.95485e-05, 4.05417, -2.11755, 2
 
 [node name="Prompt" type="Label3D" parent="StaticBody3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.391998, 1.08418, 2.07891)
+visible = false
 billboard = 1
 text = "Sleep"
 font_size = 30

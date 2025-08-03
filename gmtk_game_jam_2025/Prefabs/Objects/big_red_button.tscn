@@ -12,6 +12,8 @@ radius = 0.500692
 [node name="big_red_button" instance=ExtResource("1_mcleu")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+collision_layer = 6
+collision_mask = 7
 script = ExtResource("2_110nb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]

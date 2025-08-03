@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c85y1cq00vdvc"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_lran1"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/post_it_note_stack.tscn" id="2_2jb3n"]
+[ext_resource type="PackedScene" uid="uid://cdbv4ps88ix4e" path="res://Prefabs/Objects/post_it_note_stack.tscn" id="2_2jb3n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p8ua3"]
 size = Vector3(0.0792236, 0.0360985, 0.0802612)
@@ -9,6 +9,8 @@ size = Vector3(0.0792236, 0.0360985, 0.0802612)
 [node name="PostItNoteStack" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_lran1")
 prompt = NodePath("Prompt")
 

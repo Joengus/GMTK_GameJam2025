@@ -1,23 +1,27 @@
 [gd_scene load_steps=3 format=3 uid="uid://bfufpgxgx2t6v"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_7512j"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/lunch_bag.tscn" id="2_mtn5u"]
+[ext_resource type="PackedScene" uid="uid://cofhnddyefsbo" path="res://Prefabs/Objects/lunch_bag.tscn" id="2_mtn5u"]
 
 [node name="LunchBag" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_7512j")
 prompt = NodePath("Prompt")
 
 [node name="SackLunch" parent="RigidBody3D" instance=ExtResource("2_mtn5u")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="RigidBody3D"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.00177583, 0, 0)
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 0.00177583, 0, 0)
 depth = 0.14
 polygon = PackedVector2Array(-0.00893664, 0.0993529, 0.00107452, 0.130817, 0.010609, 0.1332, 0.01919, 0.126049, 0.01919, 0.114131, 0.0187133, 0.094109, 0.0315847, 0.0640755, 0.0334916, 0.0316584, 0.0458864, -0.000282012, -0.0451973, -0.000674635, -0.0265513, 0.0636987)
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
 billboard = 1
 text = "Hold"
 font_size = 30

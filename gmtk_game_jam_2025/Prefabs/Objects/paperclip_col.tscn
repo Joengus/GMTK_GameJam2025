@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://j5wadndxxiqq"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_niv3n"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/paperclip.tscn" id="2_uudyu"]
+[ext_resource type="PackedScene" uid="uid://gxc6qfp71aqf" path="res://Prefabs/Objects/paperclip.tscn" id="2_uudyu"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_csa6i"]
 radius = 0.0193148
@@ -10,6 +10,8 @@ height = 0.11289
 [node name="Paperclip" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_niv3n")
 
 [node name="paperclips" parent="RigidBody3D" instance=ExtResource("2_uudyu")]
