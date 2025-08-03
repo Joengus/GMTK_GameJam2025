@@ -2,24 +2,24 @@
 
 [ext_resource type="Script" uid="uid://53hfdi48h7qw" path="res://Scripts/Task/TaskManager.cs" id="1_6nu63"]
 [ext_resource type="Resource" uid="uid://6dbp2pf2w2y3" path="res://Resources/Tasks/T001.tres" id="2_oe8ff"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T002.tres" id="3_r61gb"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T003.tres" id="4_fpjma"]
+[ext_resource type="Resource" uid="uid://bqhkhjmj4gk0m" path="res://Resources/Tasks/T002.tres" id="3_r61gb"]
+[ext_resource type="Resource" uid="uid://udrlim437obo" path="res://Resources/Tasks/T003.tres" id="4_fpjma"]
 [ext_resource type="Script" uid="uid://bpdq4ivujdhst" path="res://Prefabs/Managers/FlavorText.cs" id="4_vq6m6"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T004.tres" id="5_vcbcg"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T005.tres" id="6_mddbl"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T006.tres" id="7_yludm"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T007.tres" id="8_vyhpt"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T008.tres" id="9_q6kjx"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T009.tres" id="10_y1ttb"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T010.tres" id="11_r61gb"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T011.tres" id="12_vyhpt"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T012.tres" id="13_q6kjx"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T013.tres" id="14_y1ttb"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T014.tres" id="15_el1fn"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T015.tres" id="16_p1gnx"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T016.tres" id="17_3tlua"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T017.tres" id="18_5j2hs"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T018.tres" id="19_2bcyp"]
+[ext_resource type="Resource" uid="uid://c8eghl5nvyq6e" path="res://Resources/Tasks/T004.tres" id="5_vcbcg"]
+[ext_resource type="Resource" uid="uid://bs5viutheufnh" path="res://Resources/Tasks/T005.tres" id="6_mddbl"]
+[ext_resource type="Resource" uid="uid://dscnvalbllvr8" path="res://Resources/Tasks/T006.tres" id="7_yludm"]
+[ext_resource type="Resource" uid="uid://bpg0sl66jgn0f" path="res://Resources/Tasks/T007.tres" id="8_vyhpt"]
+[ext_resource type="Resource" uid="uid://btax0ovqistck" path="res://Resources/Tasks/T008.tres" id="9_q6kjx"]
+[ext_resource type="Resource" uid="uid://bv41kkk4xdpft" path="res://Resources/Tasks/T009.tres" id="10_y1ttb"]
+[ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="11_r61gb"]
+[ext_resource type="Resource" uid="uid://mc7b67prm1lo" path="res://Resources/Tasks/T011.tres" id="12_vyhpt"]
+[ext_resource type="Resource" uid="uid://c084xykbf3hj5" path="res://Resources/Tasks/T012.tres" id="13_q6kjx"]
+[ext_resource type="Resource" uid="uid://c6nwlwcjtw14d" path="res://Resources/Tasks/T013.tres" id="14_y1ttb"]
+[ext_resource type="Resource" uid="uid://bd6saxiu12kub" path="res://Resources/Tasks/T014.tres" id="15_el1fn"]
+[ext_resource type="Resource" uid="uid://cd8xx2xvnblfa" path="res://Resources/Tasks/T015.tres" id="16_p1gnx"]
+[ext_resource type="Resource" uid="uid://bdavxegfu7wqm" path="res://Resources/Tasks/T016.tres" id="17_3tlua"]
+[ext_resource type="Resource" uid="uid://olmrru64vpuj" path="res://Resources/Tasks/T017.tres" id="18_5j2hs"]
+[ext_resource type="Resource" uid="uid://cmmiepeeoa5m1" path="res://Resources/Tasks/T018.tres" id="19_2bcyp"]
 [ext_resource type="Resource" uid="uid://dkpwfjtntjuo6" path="res://Resources/Tasks/T019.tres" id="20_tlxno"]
 [ext_resource type="Resource" uid="uid://bxnrw7k28tdho" path="res://Resources/Tasks/T020.tres" id="21_48ygd"]
 [ext_resource type="Resource" uid="uid://dckmlr5563gpt" path="res://Resources/Tasks/T21.tres" id="22_p47nb"]
@@ -115,6 +115,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("4_vq6m6")
 
 [node name="Text" type="RichTextLabel" parent="Control"]
@@ -127,6 +128,7 @@ offset_top = 168.0
 offset_bottom = 218.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 text = "Some cool text"
 horizontal_alignment = 1
 vertical_alignment = 1

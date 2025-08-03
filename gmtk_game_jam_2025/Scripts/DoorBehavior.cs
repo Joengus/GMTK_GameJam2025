@@ -1,9 +1,4 @@
 using Godot;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 
 public partial class DoorBehavior : StaticBody3D, IInteractable
 {
@@ -15,22 +10,26 @@ public partial class DoorBehavior : StaticBody3D, IInteractable
     private bool active = false;
     [Export] bool unlocked = true;
     [Export] private float _tweenDuration = 1.5f; // Example duration
+    private TentBehavoir _tent;
 
 
     private InteractableType iType = InteractableType.Activate;
 
     public override void _Ready()
     {
-        base._Ready();
+        _tent = GetNode<TentBehavoir>("../../../ClosetRoom/Tent");
+        if (_tent == null) GD.Print("I don't know da wei");
     }
 
     public void interact()
     {
+        // GameManager.Instance.StartGame();
+        _tent.AllowSleep();
         if (!active && unlocked)
         {
             active = true;
             hidePrompt();
-            
+
             Tween newTween = CreateTween();
 
             newTween.SetTrans(TransitionType);

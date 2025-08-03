@@ -1,23 +1,25 @@
 using Godot;
-using System;
 
 public partial class TentBehavoir : StaticBody3D, IInteractable
 {
-
     [Export] Node3D SleepPrompt;
     private InteractableType iType = InteractableType.Activate;
+    private bool _canSleep = false;
 
 
     public void interact()
     {
-        //activate end of day 
+        if (_canSleep)
+        {
+            GameManager.Instance.ResetDay();
+        }
     }
-    
+
     public void showPrompt()
     {
-        SleepPrompt.Visible = true;
+        if (_canSleep) SleepPrompt.Visible = true;
     }
-    
+
 
     public void hidePrompt()
     {
@@ -27,5 +29,10 @@ public partial class TentBehavoir : StaticBody3D, IInteractable
     public InteractableType getIType()
     {
         return iType;
+    }
+
+    public void AllowSleep()
+    {
+        _canSleep = true;
     }
 }
