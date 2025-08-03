@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8ayejcbsmvbb"
+path="res://.godot/imported/Keyboard typing_1.mp3-897eb6839d1fc518394039b2774eb25a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Keyboard typing_1.mp3"
+dest_files=["res://.godot/imported/Keyboard typing_1.mp3-897eb6839d1fc518394039b2774eb25a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
