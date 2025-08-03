@@ -1,0 +1,111 @@
+[gd_scene load_steps=17 format=3 uid="uid://djusqjyn4p0hb"]
+
+[ext_resource type="PackedScene" uid="uid://dxtxywn7pm30y" path="res://characters/animation/Gus_ANIM/Gus_Master_ANIM.fbx" id="1_hh37t"]
+[ext_resource type="Script" uid="uid://dt5leut1xx8xc" path="res://Scripts/NPC Scripts/StateMachine.cs" id="2_gucos"]
+[ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="3_p17nc"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hh37t"]
+animation = &"Gus_pout"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gucos"]
+animation = &"Gus_pout01"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_p17nc"]
+animation = &"Gus_run"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_e0pxq"]
+switch_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wf5ks"]
+switch_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3sew7"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ulhgx"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rvuvh"]
+switch_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vps20"]
+switch_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_eslfr"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_r4isv"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_e0pxq"]
+states/Gus_pout/node = SubResource("AnimationNodeAnimation_hh37t")
+states/Gus_pout/position = Vector2(579, 199)
+states/Gus_pout01/node = SubResource("AnimationNodeAnimation_gucos")
+states/Gus_pout01/position = Vector2(584, 55)
+states/Gus_run/node = SubResource("AnimationNodeAnimation_p17nc")
+states/Gus_run/position = Vector2(358, 110)
+states/Start/position = Vector2(739, 72)
+transitions = ["Gus_run", "Gus_pout", SubResource("AnimationNodeStateMachineTransition_e0pxq"), "Gus_run", "Gus_pout01", SubResource("AnimationNodeStateMachineTransition_wf5ks"), "Gus_pout", "Gus_pout01", SubResource("AnimationNodeStateMachineTransition_3sew7"), "Gus_pout01", "Gus_pout", SubResource("AnimationNodeStateMachineTransition_ulhgx"), "Gus_pout01", "Gus_run", SubResource("AnimationNodeStateMachineTransition_rvuvh"), "Gus_pout", "Gus_run", SubResource("AnimationNodeStateMachineTransition_vps20"), "Start", "Gus_pout01", SubResource("AnimationNodeStateMachineTransition_eslfr"), "Start", "Gus_pout", SubResource("AnimationNodeStateMachineTransition_r4isv")]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jpxrh"]
+radius = 0.245245
+height = 1.68816
+
+[node name="Gus" type="CharacterBody3D"]
+
+[node name="Gus_Master_ANIM" parent="." instance=ExtResource("1_hh37t")]
+
+[node name="Skeleton3D" parent="Gus_Master_ANIM" index="0"]
+bones/0/position = Vector3(0.000256856, 0.876032, -0.0109515)
+bones/0/rotation = Quaternion(-0.0292393, -0.0536123, -0.0272534, 0.997762)
+bones/1/rotation = Quaternion(0.0227188, 0.0125069, 0.0220315, 0.999421)
+bones/2/rotation = Quaternion(0.0146091, 0.00236204, 0.0145324, 0.999785)
+bones/3/rotation = Quaternion(0.0144453, 0.00262473, 0.0146433, 0.999785)
+bones/4/rotation = Quaternion(0.0603221, -8.01547e-06, 0.0104133, 0.998125)
+bones/5/rotation = Quaternion(-0.0810114, 0.0155398, 0.0212538, 0.996365)
+bones/7/rotation = Quaternion(-0.729272, -0.26097, 0.534796, -0.337714)
+bones/8/rotation = Quaternion(0.367581, 0.143282, 0.0882413, 0.914641)
+bones/9/rotation = Quaternion(0.000334442, 2.65187e-05, 0.0129359, 0.999916)
+bones/10/rotation = Quaternion(0.0465711, -0.284025, 0.0228706, 0.957412)
+bones/11/rotation = Quaternion(0.0425221, 0.730128, 0.0543143, 0.67982)
+bones/12/rotation = Quaternion(0.259383, 0.0388235, 0.118316, 0.957713)
+bones/13/rotation = Quaternion(-0.0193653, 0.120364, 0.218851, 0.968112)
+bones/15/rotation = Quaternion(0.730133, -0.253874, 0.54812, 0.319403)
+bones/16/rotation = Quaternion(0.293488, -0.23598, -0.0848676, 0.922484)
+bones/17/rotation = Quaternion(0.00107714, 4.70757e-05, -0.0563696, 0.998409)
+bones/18/rotation = Quaternion(0.0492869, 0.15322, 0.00270205, 0.986959)
+bones/19/rotation = Quaternion(0.050106, -0.717908, -0.0590991, 0.691813)
+bones/20/rotation = Quaternion(0.241397, -0.035331, -0.162168, 0.956128)
+bones/21/rotation = Quaternion(0.0258872, -0.0399958, -0.0762926, 0.995947)
+bones/23/rotation = Quaternion(0.135022, 0.0794555, 0.983792, -0.087233)
+bones/24/rotation = Quaternion(-0.123747, -0.0227822, 0.0112457, 0.991989)
+bones/25/rotation = Quaternion(0.464986, -0.0540831, -0.0552972, 0.881933)
+bones/26/rotation = Quaternion(0.351493, 0.0289217, -0.010729, 0.935682)
+bones/28/rotation = Quaternion(-0.090438, 0.00860581, 0.995725, -0.0167114)
+bones/29/rotation = Quaternion(-0.105894, 0.0773531, -0.0047869, 0.991353)
+bones/30/rotation = Quaternion(0.507369, 0.0423033, 0.0166624, 0.860529)
+bones/31/rotation = Quaternion(0.377781, -0.0290306, 0.0116586, 0.925366)
+
+[node name="AnimationTree" type="AnimationTree" parent="Gus_Master_ANIM"]
+tree_root = SubResource("AnimationNodeStateMachine_e0pxq")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="StateMachine" type="Node3D" parent="." node_paths=PackedStringArray("data")]
+script = ExtResource("2_gucos")
+data = NodePath("../NpcData")
+
+[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("anim", "body3D")]
+script = ExtResource("3_p17nc")
+name = "Gus"
+playbackPath = "Gus_rig/AnimationPlayer"
+animations = {
+"Pout_0": "Gus_pout",
+"Pout_1": "Gus_pout01",
+"Walk": "Gus_run"
+}
+anim = NodePath("../Gus_Master_ANIM/AnimationTree")
+body3D = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.853146, 0.0128183)
+shape = SubResource("CapsuleShape3D_jpxrh")
+
+[editable path="Gus_Master_ANIM"]

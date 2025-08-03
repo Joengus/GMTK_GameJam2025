@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Godot;
+using Godot.Collections;
 
 public partial class NpcData : Node3D
 {
@@ -9,12 +10,12 @@ public partial class NpcData : Node3D
 
     [Export] public TaskResource[] taskList;
     [Export] public String name;
-    [Export] public String openingLine;
 
     [ExportCategory("Animation Variables")]
     [Export] string playbackPath;
-    [Export] AnimationTree anim;
-    AnimationNodeStateMachinePlayback playback => (AnimationNodeStateMachinePlayback)anim.Get(playbackPath);
+    [Export] public Dictionary animations = new Dictionary();
+    [Export] public AnimationTree anim;
+    public AnimationNodeStateMachinePlayback playback => (AnimationNodeStateMachinePlayback)anim.Get(playbackPath);
 
     [ExportCategory("Movement Variables")]
     [Export] public float walkSpeed = 0.8f;

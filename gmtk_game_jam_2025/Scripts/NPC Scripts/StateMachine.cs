@@ -4,7 +4,7 @@ using System;
 
 public partial class StateMachine : Node3D
 {
-    [Export] NpcData Npc;
+    [Export] public NpcData data;
     [Export] public NpcState currentState;
     public NpcState previousState;
 
