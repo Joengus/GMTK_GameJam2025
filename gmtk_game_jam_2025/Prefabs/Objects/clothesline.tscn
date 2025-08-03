@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://m5nhbjk5b2at"]
+
+[ext_resource type="PackedScene" uid="uid://dcof7pxrhja8s" path="res://Assets/Models/Objects/ClothesLine/clothesline.fbx" id="1_5l57o"]
+
+[node name="clothesline" instance=ExtResource("1_5l57o")]
