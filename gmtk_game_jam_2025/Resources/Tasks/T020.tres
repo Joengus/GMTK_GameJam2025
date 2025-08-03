@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_2j35o")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Rainbowtize the finance cabinet"
+PointsTowardAlignment = 700
+DescriptionRebel = "This'll teach 'em not to mess with my budget."
+DescriptionNeutral = "Who was Roy G. Biv, anyway?"
+DescriptionCitizen = "Anything to help out our Finance Fam!"
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

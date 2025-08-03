@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_2wwjy")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Steal whiskey from Executive Lounge"
+PointsTowardAlignment = 1000
+DescriptionRebel = "Leave the cup, take the decanter. "
+DescriptionNeutral = "I think its whiskey. "
+DescriptionCitizen = "Delicious, 10-year aged apple juice. "
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

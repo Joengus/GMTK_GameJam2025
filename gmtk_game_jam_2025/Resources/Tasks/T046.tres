@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_vpyms")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Hide your co-worker's keys in the vending machine"
+PointsTowardAlignment = 400
+DescriptionRebel = "I just need someone to hurt like I do."
+DescriptionNeutral = "I'll give them back before closing time. Probably."
+DescriptionCitizen = "If they were really motivated then this wouldn't be an issue. "
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

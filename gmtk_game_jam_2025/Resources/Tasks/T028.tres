@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_digm3")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Update your boss on your progress."
+PointsTowardAlignment = 200
+DescriptionRebel = "Little does he know, I have no idea what I do around here."
+DescriptionNeutral = "Same old, same old."
+DescriptionCitizen = "One day they'll be updating me. "
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

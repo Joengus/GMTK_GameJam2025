@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_1t7ox")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 1
+TaskName = "Feed office fish"
+PointsTowardAlignment = 500
+DescriptionRebel = "Free food and housing? Lucky fish. "
+DescriptionNeutral = "Soup's on, fishy!"
+DescriptionCitizen = "Has HR approved an office pet..?"
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

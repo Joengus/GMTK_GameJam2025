@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_3xdb4")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Eradicate childish folly from essence"
+PointsTowardAlignment = 500
+DescriptionRebel = "Devour feculence."
+DescriptionNeutral = "When I was your age!"
+DescriptionCitizen = "Thank you, I really needed that."
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

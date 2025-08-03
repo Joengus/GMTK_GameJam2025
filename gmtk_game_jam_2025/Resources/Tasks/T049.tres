@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_ibefg")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Knock office supplies off of co-worker's desk. "
+PointsTowardAlignment = 500
+DescriptionRebel = "Won't be needing this anymore!"
+DescriptionNeutral = "MEOW!!"
+DescriptionCitizen = "Fetch, Corporate Dog."
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

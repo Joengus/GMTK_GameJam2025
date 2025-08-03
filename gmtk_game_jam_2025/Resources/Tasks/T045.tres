@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_mmb50")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Find a VHS in the executive's desk. Put it in the VHS player in his office"
+PointsTowardAlignment = 10000
+DescriptionRebel = "Thank you for completing today's training! See you again tomorrow!"
+DescriptionNeutral = "Thank you for completing today's training! See you again tomorrow!"
+DescriptionCitizen = "Thank you for completing today's training! See you again tomorrow!"
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

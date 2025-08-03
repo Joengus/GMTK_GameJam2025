@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_7a8u3")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Type up TPS report"
+PointsTowardAlignment = 800
+DescriptionRebel = "What if I stopped doing these?"
+DescriptionNeutral = "We're putting new coversheets on the TPS reports. I've got to remembber that going forward. "
+DescriptionCitizen = "I might need to come in on Saturday to finish this. "
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

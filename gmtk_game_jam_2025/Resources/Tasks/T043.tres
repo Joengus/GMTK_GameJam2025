@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_d16v6")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Press the Big Red Button"
+PointsTowardAlignment = 10000
+DescriptionRebel = "You've saved the company! And all it cost was the Economy! Thank you, Federal Bailout!"
+DescriptionNeutral = "You've saved the company! And all it cost was the Economy! Thank you, Federal Bailout!"
+DescriptionCitizen = "You've saved the company! And all it cost was the Economy! Thank you, Federal Bailout!"
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

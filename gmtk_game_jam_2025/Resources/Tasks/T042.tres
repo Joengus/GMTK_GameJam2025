@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_05e6s")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Steal the Red Stapler"
+PointsTowardAlignment = 500
+DescriptionRebel = "One more for my collection."
+DescriptionNeutral = "Red is my favorite color!"
+DescriptionCitizen = "Don't they know this is against regulations?!"
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

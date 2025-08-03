@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_iykwi")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Forrage at the Vending Machine"
+PointsTowardAlignment = 200
+DescriptionRebel = "This feels like an all-time low for me."
+DescriptionNeutral = "Armed with their wallet, the Hunter-Gatherer slowly approaches the food-put-outer."
+DescriptionCitizen = "Oo, fruit snacks!"
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"
