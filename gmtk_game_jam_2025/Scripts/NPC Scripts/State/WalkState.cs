@@ -4,6 +4,7 @@ using Godot;
 
 public partial class WalkState : NpcState
 {
+    private Vector3 desiredVel;
     private Node3D targetReference;
     public override void _Ready()
     {
@@ -11,6 +12,10 @@ public partial class WalkState : NpcState
         machine.data.agent.VelocityComputed += VelocityComputed;
         targetReference = TaskManager.Instance.GetPossibleTargets(machine.data.taskList[0])[0];
         GD.Print(targetReference.GlobalPosition);
+        machine.data.agent.TargetPosition = targetReference.GlobalPosition;
+        machine.data.agent.AvoidanceEnabled = true;
+        machine.data.agent.SetProcess(true);
+        machine.data.agent.SetPhysicsProcess(true);
 
     }
     public override void Enter()
@@ -20,7 +25,6 @@ public partial class WalkState : NpcState
     }
     public override void Update(double delta)
     {
-        machine.data.agent.TargetPosition = targetReference.GlobalPosition;
         Vector3 currentLocation = machine.data.body3D.Position;
         Vector3 nextLocation = machine.data.agent.GetNextPathPosition();
         Vector3 newVel = (nextLocation - currentLocation).Normalized() * machine.data.walkSpeed * (float)delta;
@@ -47,9 +51,10 @@ public partial class WalkState : NpcState
         machine.data.playback.Stop();
     }
 
-    private void VelocityComputed(Vector3 safeVelocity)
+    private void VelocityComputed(Vector3 safetyVelocity)
     {
-        machine.data.body3D.Velocity = machine.data.body3D.Velocity.MoveToward(safeVelocity, 0.25f);
+        GD.Print("Safe velocity: ", safetyVelocity);
+        machine.data.body3D.Velocity = machine.data.body3D.Velocity.MoveToward(safetyVelocity, 0.25f);
         machine.data.body3D.MoveAndSlide();
     }
 }

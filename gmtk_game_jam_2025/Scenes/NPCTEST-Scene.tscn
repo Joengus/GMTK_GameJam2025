@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d4jqac87yg17q"]
+[gd_scene load_steps=15 format=3 uid="uid://d4jqac87yg17q"]
 
 [ext_resource type="PackedScene" uid="uid://bcq4835jtlqih" path="res://characters/Scene/Cheryl.tscn" id="1_daot0"]
 [ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="2_iyg6u"]
@@ -18,6 +18,7 @@ sky = SubResource("Sky_oyxwl")
 [sub_resource type="NavigationMesh" id="NavigationMesh_daot0"]
 vertices = PackedVector3Array(-99.5, 0.5, -99.25, -99.5, 0.5, 99.5, 99.5, 0.5, 99.5, 99.5, 0.5, -99.25)
 polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+agent_height = 5.0
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lyupf"]
 
@@ -28,6 +29,12 @@ size = Vector2(200, 200)
 size = Vector3(200, 1, 200)
 
 [sub_resource type="BoxMesh" id="BoxMesh_b03l7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r47yj"]
+size = Vector3(6.816, 4.357, 5.42)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b03l7"]
+size = Vector3(6.816, 4.357, 5.42)
 
 [node name="Npctest-scene" type="Node3D"]
 
@@ -84,6 +91,9 @@ bones/31/rotation = Quaternion(0.317233, -0.116644, 0.0393506, 0.940324)
 [node name="StateMachine" parent="Cherly" index="1" node_paths=PackedStringArray("currentState")]
 currentState = NodePath("Walk")
 
+[node name="NpcData" parent="Cherly" index="2"]
+walkSpeed = 65.0
+
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_daot0")
 
@@ -117,5 +127,19 @@ linkedTask = Array[Object]([ExtResource("3_r47yj")])
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Target"]
 mesh = SubResource("BoxMesh_b03l7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.32898, -9.36785)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_r47yj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_b03l7")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="StaticBody3D"]
+radius = 1.49
+affect_navigation_mesh = true
+use_3d_avoidance = true
 
 [editable path="Cherly"]

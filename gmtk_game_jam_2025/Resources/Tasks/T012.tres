@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TaskResource" load_steps=3 format=3 uid="uid://c084xykbf3hj5"]
 
-[ext_resource type="Resource" uid="uid://mc7b67prm1lo" path="res://Resources/Tasks/T011.tres" id="1_ervhh"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T011.tres" id="1_ervhh"]
 [ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_f2s18"]
 
 [resource]
