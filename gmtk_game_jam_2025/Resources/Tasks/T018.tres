@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_if8lo")
 ReputationAlignment = 0
-TaskName = ""
+TaskName = "Test 3 pens. Burn the worst."
 PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+DescriptionRebel = "If only I could solve all my problems this way."
+DescriptionNeutral = "If only I could solve all my problems this way."
+DescriptionCitizen = "I like to imagine the pens are Debbie..."
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"
