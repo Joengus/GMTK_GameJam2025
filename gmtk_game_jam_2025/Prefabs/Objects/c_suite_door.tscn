@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0dsbgcb3xeh2"]
+[gd_scene load_steps=7 format=3 uid="uid://b0dsbgcb3xeh2"]
 
 [ext_resource type="Script" uid="uid://d27dkljwetoeh" path="res://Scripts/DoorBehavior.cs" id="1_rx3ib"]
 [ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="2_10f8q"]
+[ext_resource type="PackedScene" uid="uid://dcg3hqsr22kwh" path="res://Prefabs/Objects/exec_doors.tscn" id="3_10f8q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n02nc"]
-size = Vector3(8, 5, 0.075)
+size = Vector3(10.0168, 5.06976, 0.0837524)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7mbvs"]
 render_priority = 0
@@ -36,13 +37,16 @@ unlocked = false
 _tweenDuration = 2.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0330811, 2.51382, 0.00437622)
 shape = SubResource("BoxShape3D_n02nc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+visible = false
 mesh = SubResource("BoxMesh_2tvkn")
 skeleton = NodePath("../..")
+
+[node name="Exec_doors" parent="StaticBody3D" instance=ExtResource("3_10f8q")]
 
 [node name="OpenPromptParent" type="Node3D" parent="StaticBody3D"]
 visible = false

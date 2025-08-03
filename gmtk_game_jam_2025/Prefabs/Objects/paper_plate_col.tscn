@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bndtbtgh1miye"]
+[gd_scene load_steps=4 format=3 uid="uid://dclxbo0c453m7"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_5xfeo"]
 [ext_resource type="PackedScene" uid="uid://6wim4ke12a30" path="res://Prefabs/Objects/paper_plate.tscn" id="2_3j5st"]

@@ -4,5 +4,11 @@
 
 [node name="Exec_doors" instance=ExtResource("1_og83g")]
 
+[node name="exec_door" parent="." index="0"]
+transform = Transform3D(3.75, 0, 0, 0, 1.68, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="DoorFrame" parent="exec_door" index="0"]
+visible = false
+
 [node name="Door" parent="exec_door" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.658998, 1.50421, 0.00597101)

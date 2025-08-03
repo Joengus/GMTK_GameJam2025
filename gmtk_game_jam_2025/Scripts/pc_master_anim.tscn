@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://wheufvsgrx4y"]
+
+[ext_resource type="PackedScene" uid="uid://baher4j02f1fv" path="res://characters/animation/Player Character/PC_MasterAnim.fbx" id="1_akgtd"]
+
+[node name="PC_MasterAnim" instance=ExtResource("1_akgtd")]
