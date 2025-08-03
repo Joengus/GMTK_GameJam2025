@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Collections;
 using System.Diagnostics;
 
 public partial class PlayerInteractionBehavior : Node3D
@@ -11,6 +12,7 @@ public partial class PlayerInteractionBehavior : Node3D
     bool ItemHeld = false;
     PhysicsBody3D currentHeldObject = null;
     [Export] Node3D handTransform;
+    [Export] AnimationPlayer anim;
 
     public override void _EnterTree()
     {
@@ -76,7 +78,7 @@ public partial class PlayerInteractionBehavior : Node3D
     {
         if (currentSelectedInteractable is IInteractable script)
         {
-            if (script.getIType() == InteractableType.Hold )//&& currentHeldObject == null)
+            if (script.getIType() == InteractableType.Hold)//&& currentHeldObject == null)
             {
                 if (currentHeldObject != null)
                 {
@@ -91,7 +93,7 @@ public partial class PlayerInteractionBehavior : Node3D
             else if (script.getIType() == InteractableType.Activate)
             {
                 script.interact();
-            }            
+            }
         }
 
     }
@@ -108,5 +110,19 @@ public partial class PlayerInteractionBehavior : Node3D
             obj.LinearVelocity = Vector3.Zero;
             obj.ApplyCentralImpulse(direction * 20);
         }
+        else
+        {
+            //anim.Play("PC_throw", 1, 3);
+            slap();
+        }
+    }
+
+    private async void slap()
+    {
+        anim.Play("PC_throw", 0, 3);
+
+        await ToSignal(anim, AnimationPlayer.SignalName.AnimationFinished);
+
+        anim.Seek(0,true);
     }
 }

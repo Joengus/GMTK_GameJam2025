@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://bixhydqy242lq"]
+[gd_scene load_steps=10 format=3 uid="uid://bixhydqy242lq"]
 
 [ext_resource type="Script" uid="uid://dwkmxhgklhjr8" path="res://Scripts/PlayerCharacterController.cs" id="1_02ohv"]
 [ext_resource type="Script" uid="uid://fhigqns7sgk8" path="res://Scripts/PlayerInteractionBehavior.cs" id="2_cmdk4"]
-[ext_resource type="PackedScene" uid="uid://4m8mn835lhwl" path="res://characters/animation/Player Character/PC_Slap.fbx" id="2_o0f8b"]
 [ext_resource type="PackedScene" uid="uid://eyeewd56fkfc" path="res://Scripts/pc_throw.tscn" id="4_wko77"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tfo3t"]
@@ -58,21 +57,18 @@ shape = SubResource("BoxShape3D_cmdk4")
 target_position = Vector3(0, 0, -2)
 collision_mask = 4
 
-[node name="PlayerInteractionBehavior" type="Node3D" parent="CharacterBody3D" node_paths=PackedStringArray("shapeCast", "handTransform")]
+[node name="PlayerInteractionBehavior" type="Node3D" parent="CharacterBody3D" node_paths=PackedStringArray("shapeCast", "handTransform", "anim")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 script = ExtResource("2_cmdk4")
 shapeCast = NodePath("../CameraPivot/ShapeCast3D")
 handTransform = NodePath("../HandTransform")
+anim = NodePath("../HandTransform/PC_throw/AnimationPlayer")
 
 [node name="HandTransform" type="Node3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0.680952, -0.551852)
 
-[node name="PC_Slap" parent="CharacterBody3D/HandTransform" instance=ExtResource("2_o0f8b")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.236884, -1.24468, 1)
-visible = false
-
 [node name="PC_throw" parent="CharacterBody3D/HandTransform" instance=ExtResource("4_wko77")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.23, -1.245, 1)
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 0.23, -2.49, 1.3111)
 
 [node name="Skeleton3D" parent="CharacterBody3D/HandTransform/PC_throw/FitSkeleton" index="0"]
 bones/5/rotation = Quaternion(0.0492189, 0.705452, -0.0494603, 0.705314)
