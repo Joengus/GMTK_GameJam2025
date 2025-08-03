@@ -131,6 +131,7 @@ size = Vector3(11, 5.5, 0.25)
 [node name="SceneManager" parent="." instance=ExtResource("1_5jsaf")]
 
 [node name="PauseMenu" parent="." instance=ExtResource("1_2w47o")]
+visible = false
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("1_xooo4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2344, 0, 7.31723)
