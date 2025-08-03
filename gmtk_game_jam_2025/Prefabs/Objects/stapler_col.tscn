@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dfqt4kcfj801s"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_fbgxj"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/red_stapler.tscn" id="2_vchyb"]
+[ext_resource type="PackedScene" uid="uid://bbcaj653qysot" path="res://Prefabs/Objects/red_stapler.tscn" id="2_vchyb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t0v4k"]
 size = Vector3(0.210083, 0.0712891, 0.0653076)

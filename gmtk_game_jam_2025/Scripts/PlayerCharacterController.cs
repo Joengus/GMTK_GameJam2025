@@ -15,6 +15,7 @@ public partial class PlayerCharacterController : CharacterBody3D
     [Export] float gravity_scale;
     [Export] float mouse_sensitivity = .002f;
     [Export] float vertical_look_limit = 70f;
+    [Export] ShapeCast3D shapeCast;
 
     Node3D camera_pivot;
     Camera3D camera;
@@ -45,12 +46,23 @@ public partial class PlayerCharacterController : CharacterBody3D
                 jumpBufferCounter = 0;
                 Velocity += new Vector3(0, jump_force, 0);
             }
-            else if (!isSliding && Velocity.Y <= 0) //set direction
+            // else if (!isSliding && Velocity.Y <= 0) //set direction
+            // {
+            //     var direction = Transform.Basis * new Vector3(input_direction.X * move_speed, Velocity.Y, input_direction.Z * move_speed);
+            //     Velocity = direction;
+            // }
+        }
+
+        if (isSliding)
+        {
+            Velocity = Transform.Basis * new Vector3(0, Velocity.Y, -slidingSpeed*4);
+
+        }
+        if (!isSliding)
             {
                 var direction = Transform.Basis * new Vector3(input_direction.X * move_speed, Velocity.Y, input_direction.Z * move_speed);
                 Velocity = direction;
             }
-        }
 
         MoveAndSlide();
         counters(delta);
@@ -137,8 +149,8 @@ public partial class PlayerCharacterController : CharacterBody3D
             {
                 isSliding = true;
                 slidingCounter = slidingTime;
-                Scale = new Vector3(.25f, .25f, 1);
-                Velocity = Transform.Basis * new Vector3(0, 0, -slidingSpeed);
+                Scale = new Vector3(.25f, .25f, .25f);
+                Velocity = Transform.Basis * new Vector3(0, 0, -slidingSpeed*4);
             }
 
             if (@event.IsActionPressed("Interact"))
@@ -155,15 +167,20 @@ public partial class PlayerCharacterController : CharacterBody3D
 
     private void counters(double delta)
     {
-        if (isSliding && slidingCounter > 0f)
+        if (isSliding)
         {
-            slidingCounter -= delta;
-            if (slidingCounter <= 0)
+            shapeCast.ForceShapecastUpdate();
+            if (isSliding && slidingCounter > 0f && shapeCast.GetCollisionCount() <= 0)
             {
-                isSliding = false;
-                Scale = new Vector3(1, 1, 1);
+                slidingCounter -= delta;
+                if (slidingCounter <= 0)
+                {
+                    isSliding = false;
+                    Scale = new Vector3(1, 1, 1);
+                }
             }
         }
+        
         if (jumpBufferCounter > 0)
         {
             jumpBufferCounter -= delta;

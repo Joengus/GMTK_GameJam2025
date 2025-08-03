@@ -1,5 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7i6ao0sfcjpb"]
+[gd_scene load_steps=3 format=3 uid="uid://b7i6ao0sfcjpb"]
 
 [ext_resource type="PackedScene" uid="uid://bjjadw34kpjys" path="res://Assets/Models/Objects/VhsPlayer/VHS_player.fbx" id="1_cpits"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cpits"]
+size = Vector3(0.775269, 0.295837, 0.505402)
+
 [node name="VHS_player" instance=ExtResource("1_cpits")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+collision_layer = 6
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.112366, -0.00735474, 0.26384)
+shape = SubResource("BoxShape3D_cpits")
+
+[node name="Prompt" type="Label3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0985897, 0.309933, 0.309183)
+visible = false
+billboard = 1
+text = "Play Tape"
+font_size = 30

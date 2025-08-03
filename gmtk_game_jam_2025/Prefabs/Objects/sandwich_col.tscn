@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dl5s8fhy76i75"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_p500j"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/sandwich.tscn" id="2_l8mqk"]
+[ext_resource type="PackedScene" uid="uid://ng62c4wuip0d" path="res://Prefabs/Objects/sandwich.tscn" id="2_l8mqk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kax1x"]
 size = Vector3(0.166565, 0.0429077, 0.154236)
@@ -9,6 +9,8 @@ size = Vector3(0.166565, 0.0429077, 0.154236)
 [node name="Sandwich" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_p500j")
 prompt = NodePath("Prompt")
 
@@ -20,7 +22,8 @@ text = "Hold"
 font_size = 30
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000152588, 0.0174255, -0.0105896)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.000152588, 0.0174255, -0.0105896)
 shape = SubResource("BoxShape3D_kax1x")
 
 [node name="lunch" parent="RigidBody3D" instance=ExtResource("2_l8mqk")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

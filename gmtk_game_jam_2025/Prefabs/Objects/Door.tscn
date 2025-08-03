@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cvxcuecl66sk1"]
+[gd_scene load_steps=7 format=3 uid="uid://cvxcuecl66sk1"]
 
 [ext_resource type="Script" uid="uid://d27dkljwetoeh" path="res://Scripts/DoorBehavior.cs" id="1_bx7sw"]
 [ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="2_mw28t"]
+[ext_resource type="PackedScene" uid="uid://diyg7jdjr8up8" path="res://Prefabs/Objects/MetalDoor.tscn" id="3_tgt3j"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_inpyb"]
 size = Vector3(2, 5, 0.075)
@@ -37,8 +38,12 @@ closedPos = NodePath("../ClosePosition")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
 shape = SubResource("BoxShape3D_inpyb")
 
+[node name="MetalDoor" parent="StaticBody3D" instance=ExtResource("3_tgt3j")]
+transform = Transform3D(2, 0, 0, 0, 2.55, 0, 0, 0, 1, 0.10655, 0, 0)
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+visible = false
 mesh = SubResource("BoxMesh_et2cr")
 skeleton = NodePath("../..")
 

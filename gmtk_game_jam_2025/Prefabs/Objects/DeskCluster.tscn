@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmuiei5qh12sp"]
+
+[ext_resource type="PackedScene" uid="uid://cwrmii1upoc1n" path="res://Prefabs/Objects/computer.tscn" id="1_s4y8q"]
+[ext_resource type="PackedScene" uid="uid://b061cx8p0iv23" path="res://Prefabs/Objects/OfficeChair_Col.tscn" id="2_1jahj"]
+[ext_resource type="PackedScene" uid="uid://dy2304ba75eyl" path="res://Prefabs/Objects/office_desk_noSlide.tscn" id="3_3wg02"]
+[ext_resource type="PackedScene" uid="uid://i6utai72estt" path="res://Prefabs/Objects/office_Phone_Col.tscn" id="4_vhs8b"]
+
+[node name="DeskCluster" type="Node3D"]
+
+[node name="Computer9" parent="." instance=ExtResource("1_s4y8q")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10142, 1.55633, 0.167351)
+
+[node name="OfficeChair4" parent="." instance=ExtResource("2_1jahj")]
+transform = Transform3D(-0.702314, 0, -0.711867, 0, 1, 0, 0.711867, 0, -0.702314, -1.82294, 0, -0.599787)
+
+[node name="Office_Desk7" parent="." instance=ExtResource("3_3wg02")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.959875, 0, 0.528759)
+
+[node name="OfficePhone" parent="." instance=ExtResource("4_vhs8b")]
+transform = Transform3D(-0.510648, 0, -0.85979, 0, 1, 0, 0.85979, 0, -0.510648, 0.929579, 1.61453, 2.38661)

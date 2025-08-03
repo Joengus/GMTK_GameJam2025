@@ -13,6 +13,8 @@ radius = 0.0890736
 [node name="Node3D" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_bxc7o")
 prompt = NodePath("Prompt")
 

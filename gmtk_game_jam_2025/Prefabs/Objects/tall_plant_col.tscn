@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b2gd5c0sx65vc"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_y1rn6"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/tall_plant.tscn" id="2_pt11e"]
+[ext_resource type="PackedScene" uid="uid://be7383qwd5j4y" path="res://Prefabs/Objects/tall_plant.tscn" id="2_pt11e"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ofs66"]
 height = 0.43219
@@ -10,6 +10,8 @@ radius = 0.291016
 [node name="TallPlant" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_y1rn6")
 prompt = NodePath("Prompt")
 
@@ -21,6 +23,7 @@ shape = SubResource("CylinderShape3D_ofs66")
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.48283, 0)
+visible = false
 billboard = 1
 text = "Hold"
 font_size = 30

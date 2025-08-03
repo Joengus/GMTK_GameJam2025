@@ -4,19 +4,23 @@
 [ext_resource type="PackedScene" uid="uid://du866xgtqo3wx" path="res://Prefabs/Objects/small_potted_plant.tscn" id="2_o8gi6"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_1o5f5"]
-height = 0.171478
+height = 0.15654
 radius = 0.081543
 
-[node name="Node3D" type="Node3D"]
+[node name="SmallPottedPlant" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.109426, 0)
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_48nr6")
 prompt = NodePath("Prompt")
 
 [node name="small_potted_plant" parent="RigidBody3D" instance=ExtResource("2_o8gi6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0324249, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.0473631, 0)
 shape = SubResource("CylinderShape3D_1o5f5")
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]

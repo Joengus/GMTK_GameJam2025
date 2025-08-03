@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_2pl1g"]
 size = Vector3(0.440918, 0.980499, 0.515198)
 
-[node name="Node3D" type="Node3D"]
+[node name="Gym bag" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
 collision_layer = 4
@@ -15,14 +15,15 @@ script = ExtResource("1_ph5js")
 prompt = NodePath("Prompt")
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05418, 0)
 visible = false
 billboard = 1
 text = "Hold"
 font_size = 30
 
 [node name="Gym_bag" parent="RigidBody3D" instance=ExtResource("2_5nqtr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.35705, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.00691223, 0.0246582, -0.00888062)
+transform = Transform3D(-8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 0, 0, 2, -0.00691223, 0.35705, -0.00888062)
 shape = SubResource("BoxShape3D_2pl1g")

@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://bjda1malaulir"]
+
+[ext_resource type="PackedScene" uid="uid://dkwea1r32jwv0" path="res://Prefabs/Objects/caf_table.tscn" id="1_u6yfn"]
+[ext_resource type="PackedScene" uid="uid://dqdh02x6pv3dy" path="res://Prefabs/Objects/Coffee_Cup_Col.tscn" id="2_l4po8"]
+[ext_resource type="PackedScene" uid="uid://bfufpgxgx2t6v" path="res://Prefabs/Objects/lunch_bag_col.tscn" id="3_vvc5p"]
+[ext_resource type="PackedScene" uid="uid://o2bryt7r12u2" path="res://Prefabs/Objects/pizza_slice_col.tscn" id="4_qafuf"]
+[ext_resource type="PackedScene" uid="uid://dl5s8fhy76i75" path="res://Prefabs/Objects/sandwich_col.tscn" id="5_wrhcc"]
+[ext_resource type="PackedScene" uid="uid://b5s5yo25wajn0" path="res://Prefabs/Objects/solo_cup_col.tscn" id="7_u6yfn"]
+[ext_resource type="PackedScene" uid="uid://c3ksxsnnwql1n" path="res://Prefabs/Objects/small_Potted_Plant_Col.tscn" id="8_l4po8"]
+
+[node name="TableCluster" type="Node3D"]
+
+[node name="Caf_table" parent="." instance=ExtResource("1_u6yfn")]
+
+[node name="CoffeeCup" parent="." instance=ExtResource("2_l4po8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.594825, 1.88933, 1.34221)
+
+[node name="CoffeeCup2" parent="." instance=ExtResource("2_l4po8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11506, 1.88933, -1.17147)
+
+[node name="LunchBag" parent="." instance=ExtResource("3_vvc5p")]
+transform = Transform3D(0.887896, 0, -0.460045, 0, 1, 0, 0.460045, 0, 0.887896, -1.10387, 1.89131, 1.24618)
+
+[node name="PizzaSlice" parent="." instance=ExtResource("4_qafuf")]
+transform = Transform3D(0.761629, 0, 0.648014, 0, 1, 0, -0.648014, 0, 0.761629, 0.984519, 1.88933, -0.472701)
+
+[node name="Sandwich" parent="." instance=ExtResource("5_wrhcc")]
+transform = Transform3D(-0.461284, 0, 0.887252, 0, 1, 0, -0.887252, 0, -0.461284, -0.802003, 1.88933, -1.42466)
+
+[node name="SmallPottedPlant" parent="." instance=ExtResource("8_l4po8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00107107, 1.94219, -0.177616)
+
+[node name="SoloCup" parent="." instance=ExtResource("7_u6yfn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.23024, 1.89424, -0.157544)
+
+[node name="PizzaSlice2" parent="." instance=ExtResource("4_qafuf")]
+transform = Transform3D(-0.341003, 0, -0.940062, 0, 1, 0, 0.940062, 0, -0.341003, 1.15955, 1.88933, -0.808183)
+
+[node name="PizzaSlice3" parent="." instance=ExtResource("4_qafuf")]
+transform = Transform3D(0.208048, 0, 0.978119, 0, 1, 0, -0.978119, 0, 0.208048, 0.994243, 1.88933, -0.92001)

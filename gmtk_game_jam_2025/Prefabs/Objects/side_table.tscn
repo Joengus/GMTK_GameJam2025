@@ -1,5 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://8lpde8e58dcj"]
+[gd_scene load_steps=3 format=3 uid="uid://8lpde8e58dcj"]
 
 [ext_resource type="PackedScene" uid="uid://cjnm2dr0xel3" path="res://Assets/Models/Objects/SideTable/side_table.fbx" id="1_whx7o"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_whx7o"]
+height = 0.519356
+radius = 0.350586
+
 [node name="side_table" instance=ExtResource("1_whx7o")]
+
+[node name="table_baked" parent="." index="0"]
+transform = Transform3D(70, 0, 0, 0, -3.0598e-06, 70, 0, -70, -3.0598e-06, 0, 0.998992, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26112, 0)
+shape = SubResource("CylinderShape3D_whx7o")

@@ -7,7 +7,11 @@ size = Vector3(1.31599, 1.59843, 0.0621948)
 
 [node name="Cubicle_Wall" instance=ExtResource("1_y34to")]
 
+[node name="Cubicle_Wall" parent="." index="0"]
+transform = Transform3D(265, 0, 0, 0, 426.594, 0, 0, 0, 12.604, 0, 2.12842, 0)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 collision_layer = 2
 collision_mask = 7
 

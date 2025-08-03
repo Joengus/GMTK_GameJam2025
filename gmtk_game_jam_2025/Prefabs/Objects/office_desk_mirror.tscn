@@ -1,14 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://duwvqy5yovw0q"]
+[gd_scene load_steps=2 format=3 uid="uid://1fc1wms6da15"]
 
-[ext_resource type="PackedScene" uid="uid://dy7uhm3odajqf" path="res://Assets/Models/Objects/OfficeDesk/Office_Desk.fbx" id="1_upsyg"]
+[ext_resource type="PackedScene" uid="uid://dy7uhm3odajqf" path="res://Assets/Models/Objects/OfficeDesk/Office_Desk.fbx" id="1_gxypg"]
 
-[node name="Office_Desk" instance=ExtResource("1_upsyg")]
+[node name="Office_Desk" instance=ExtResource("1_gxypg")]
 
 [node name="Office_Desk" parent="." index="0"]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.787306, 0.00986191)
+transform = Transform3D(-2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.787306, 0.00986191)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+transform = Transform3D(-2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 collision_layer = 2
 collision_mask = 7
 

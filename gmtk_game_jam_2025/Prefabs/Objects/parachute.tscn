@@ -8,6 +8,8 @@ size = Vector3(0.417236, 0.577637, 0.352478)
 [node name="parachute" instance=ExtResource("1_hbfmw")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+collision_layer = 2
+collision_mask = 7
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012207, 0.12085, -0.0923767)

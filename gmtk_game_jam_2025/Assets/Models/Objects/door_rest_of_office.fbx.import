@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cb361y8ljkxmr"
-path="res://.godot/imported/door_rest_of_office.fbx-a5b5dadd540c57308893dab5e149b544.scn"
+path="res://.godot/imported/door_rest_of_office.fbx-b69e17da3410976c218581b51e057bd6.scn"
 
 [deps]
 
-source_file="res://Prefabs/Objects/door_rest_of_office.fbx"
-dest_files=["res://.godot/imported/door_rest_of_office.fbx-a5b5dadd540c57308893dab5e149b544.scn"]
+source_file="res://Assets/Models/Objects/door_rest_of_office.fbx"
+dest_files=["res://.godot/imported/door_rest_of_office.fbx-b69e17da3410976c218581b51e057bd6.scn"]
 
 [params]
 
