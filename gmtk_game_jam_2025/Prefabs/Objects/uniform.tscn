@@ -1,6 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://u38to82evi37"]
+[gd_scene load_steps=6 format=3 uid="uid://u38to82evi37"]
 
 [ext_resource type="PackedScene" uid="uid://dkdur1ad4u5jv" path="res://Assets/Models/Objects/Uniform/uniform.fbx" id="1_lqyps"]
+[ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="2_d54v8"]
+[ext_resource type="Script" uid="uid://d4etg4oesyjdr" path="res://Scripts/UniformBehavior.cs" id="2_f6e0x"]
+[ext_resource type="Resource" uid="uid://6dbp2pf2w2y3" path="res://Resources/Tasks/T001.tres" id="3_f6e0x"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqyps"]
 size = Vector3(0.98877, 0.9104, 0.180817)
@@ -19,15 +22,24 @@ layers = 4
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.00135238, 0.41302, -0.0185228)
 layers = 4
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2" node_paths=PackedStringArray("prompt", "taskObject")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+collision_layer = 6
+collision_mask = 7
+script = ExtResource("2_f6e0x")
+prompt = NodePath("Prompt")
+taskObject = NodePath("TaskObject")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0212402, -0.0103759, 0.00160217)
 shape = SubResource("BoxShape3D_lqyps")
 
 [node name="Prompt" type="Label3D" parent="StaticBody3D" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.658796, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.658796, 0.0729038)
 visible = false
 text = "Get Dressed"
 font_size = 30
+
+[node name="TaskObject" type="Node3D" parent="StaticBody3D" index="2"]
+script = ExtResource("2_d54v8")
+linkedTask = Array[Object]([ExtResource("3_f6e0x")])
