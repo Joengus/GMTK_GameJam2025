@@ -1,43 +1,48 @@
-[gd_scene load_steps=93 format=3 uid="uid://cokusonkv40jt"]
+[gd_scene load_steps=96 format=3 uid="uid://cokusonkv40jt"]
 
+[ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="1_bpx42"]
 [ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="1_ptysm"]
+[ext_resource type="PackedScene" uid="uid://i4mvy6jmegga" path="res://Prefabs/Managers/scene_manager.tscn" id="1_ugl6a"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="1_xooo4"]
+[ext_resource type="PackedScene" uid="uid://cylu1k6s68g85" path="res://Prefabs/Managers/game_manager.tscn" id="2_ugl6a"]
 [ext_resource type="PackedScene" uid="uid://cvxcuecl66sk1" path="res://Prefabs/Objects/Door.tscn" id="3_6o3rs"]
+[ext_resource type="PackedScene" uid="uid://c0ci0d5jr31ss" path="res://Prefabs/UI/hud.tscn" id="3_cjoqk"]
 [ext_resource type="PackedScene" uid="uid://cb3ucad42ifwa" path="res://Prefabs/Objects/tent.tscn" id="3_p887g"]
+[ext_resource type="PackedScene" uid="uid://bxfaxrrh8exdo" path="res://Scenes/pause_menu.tscn" id="4_dkn0c"]
 [ext_resource type="PackedScene" uid="uid://dkwea1r32jwv0" path="res://Prefabs/Objects/caf_table.tscn" id="4_s5aij"]
 [ext_resource type="PackedScene" uid="uid://bbsodl7rhoos3" path="res://Assets/Models/Objects/CoffeeMaker/Coffee_Maker.fbx" id="6_lk504"]
 [ext_resource type="PackedScene" uid="uid://caqhcwbqy1v1r" path="res://Prefabs/Objects/Printer_Col.tscn" id="7_p887g"]
 [ext_resource type="PackedScene" uid="uid://deckjyvac7p2i" path="res://Assets/Models/Objects/CoffeeCup/Coffee_Cup.fbx" id="7_pptb2"]
 [ext_resource type="PackedScene" uid="uid://8lpde8e58dcj" path="res://Prefabs/Objects/side_table.tscn" id="7_ravfd"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/c_suite_door.tscn" id="7_rowip"]
+[ext_resource type="PackedScene" uid="uid://b0dsbgcb3xeh2" path="res://Prefabs/Objects/c_suite_door.tscn" id="7_rowip"]
 [ext_resource type="PackedScene" uid="uid://cwrmii1upoc1n" path="res://Prefabs/Objects/computer.tscn" id="8_0km7k"]
 [ext_resource type="PackedScene" uid="uid://dmr61qjdkgsbu" path="res://Prefabs/Objects/cubicle_wall_blank.tscn" id="8_p887g"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/solo_cup_col.tscn" id="8_wqeb7"]
+[ext_resource type="PackedScene" uid="uid://b5s5yo25wajn0" path="res://Prefabs/Objects/solo_cup_col.tscn" id="8_wqeb7"]
 [ext_resource type="PackedScene" uid="uid://duwvqy5yovw0q" path="res://Prefabs/Objects/office_desk.tscn" id="9_4rasj"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/pizza_slice_col.tscn" id="9_mt86w"]
+[ext_resource type="PackedScene" uid="uid://o2bryt7r12u2" path="res://Prefabs/Objects/pizza_slice_col.tscn" id="9_mt86w"]
 [ext_resource type="PackedScene" uid="uid://hrquh41eppi" path="res://Assets/Models/Objects/CubicleWall/Blank/Cubicle_Wall.fbx" id="9_wit5t"]
 [ext_resource type="PackedScene" uid="uid://dg7sxib7afh75" path="res://Prefabs/Objects/whiskey_bottle_col.tscn" id="10_3b5j6"]
 [ext_resource type="PackedScene" uid="uid://7q8bw1iajbqe" path="res://Assets/Models/Objects/Paperclip/paperclips.fbx" id="10_ijaoq"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/office_desk_mirror.tscn" id="10_v7ntd"]
+[ext_resource type="PackedScene" uid="uid://1fc1wms6da15" path="res://Prefabs/Objects/office_desk_mirror.tscn" id="10_v7ntd"]
 [ext_resource type="PackedScene" uid="uid://fwfnkey4yhxi" path="res://Prefabs/Objects/cubicle_wall.tscn" id="11_5uf5g"]
 [ext_resource type="PackedScene" uid="uid://d1b7y5grnf58s" path="res://Prefabs/Objects/Cup_Toothbrush_Col.tscn" id="11_b0pj3"]
 [ext_resource type="PackedScene" uid="uid://b061cx8p0iv23" path="res://Prefabs/Objects/OfficeChair_Col.tscn" id="12_4te1i"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/office_desk_noSlide.tscn" id="13_0km7k"]
+[ext_resource type="PackedScene" uid="uid://dy2304ba75eyl" path="res://Prefabs/Objects/office_desk_noSlide.tscn" id="13_0km7k"]
 [ext_resource type="PackedScene" uid="uid://bfufpgxgx2t6v" path="res://Prefabs/Objects/lunch_bag_col.tscn" id="13_6ad6f"]
 [ext_resource type="PackedScene" uid="uid://b5la5ivs7rbei" path="res://Prefabs/Objects/large_potted_plant.tscn" id="13_b0pj3"]
 [ext_resource type="PackedScene" uid="uid://i6utai72estt" path="res://Prefabs/Objects/office_Phone_Col.tscn" id="13_hio85"]
 [ext_resource type="PackedScene" uid="uid://dm23ylwtfll3w" path="res://Prefabs/Objects/Gymbag_Col.tscn" id="14_6ad6f"]
 [ext_resource type="PackedScene" uid="uid://u38to82evi37" path="res://Prefabs/Objects/uniform.tscn" id="15_qftvg"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/DeskCluster.tscn" id="16_x0s5n"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/TableCluster.tscn" id="17_7a21x"]
-[ext_resource type="PackedScene" uid="uid://nbsd26vk2c1t" path="res://Prefabs/Objects/water_dispensor.tscn" id="20_7a21x"]
-[ext_resource type="PackedScene" path="res://characters/Scene/Lucas.tscn" id="21_cb25o"]
-[ext_resource type="PackedScene" path="res://characters/Scene/Sally.tscn" id="22_j4uru"]
+[ext_resource type="PackedScene" uid="uid://bmuiei5qh12sp" path="res://Prefabs/Objects/DeskCluster.tscn" id="16_x0s5n"]
+[ext_resource type="PackedScene" uid="uid://bjda1malaulir" path="res://Prefabs/Objects/TableCluster.tscn" id="17_7a21x"]
+[ext_resource type="PackedScene" uid="uid://b5b6camr4tlr7" path="res://Prefabs/Objects/water_dispensor.tscn" id="20_7a21x"]
+[ext_resource type="PackedScene" uid="uid://banw2lydb62ab" path="res://characters/Scene/Lucas.tscn" id="21_cb25o"]
+[ext_resource type="PackedScene" uid="uid://be78hygk0rqh3" path="res://characters/Scene/Sally.tscn" id="22_j4uru"]
 [ext_resource type="PackedScene" uid="uid://ly54k04utnlq" path="res://Assets/Models/Objects/Cellphone/cellphone.fbx" id="22_raq0i"]
 [ext_resource type="PackedScene" uid="uid://b42lo4fjw0clo" path="res://Assets/Models/Objects/Lunch/LunchBag/SackLunch.fbx" id="23_bpx42"]
 [ext_resource type="PackedScene" uid="uid://c3bnwa0li7evy" path="res://Assets/Models/Objects/StickyNotes/post-it-note-stack.fbx" id="24_ugl6a"]
 [ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="27_c3loq"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/paper_plate_col.tscn" id="27_exk2h"]
+[ext_resource type="PackedScene" uid="uid://dclxbo0c453m7" path="res://Prefabs/Objects/paper_plate_col.tscn" id="27_exk2h"]
 [ext_resource type="PackedScene" uid="uid://bfkns6ftdg70a" path="res://Prefabs/Objects/vending_machine.tscn" id="28_hxdps"]
 [ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="28_mtkrx"]
 [ext_resource type="PackedScene" uid="uid://djusqjyn4p0hb" path="res://characters/Scene/Gus.tscn" id="30_0hi4x"]
@@ -47,18 +52,9 @@
 [ext_resource type="PackedScene" uid="uid://dojg2bq8uho8n" path="res://Prefabs/Objects/big_red_button.tscn" id="32_ex8sv"]
 [ext_resource type="PackedScene" uid="uid://dj73qpr11vnbg" path="res://Prefabs/Objects/vhs_tape_col.tscn" id="34_cb25o"]
 [ext_resource type="PackedScene" uid="uid://ccivwxywhv4na" path="res://Prefabs/Objects/bar_cart_col.tscn" id="35_2w47o"]
-[ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="42_mtkrx"]
-[ext_resource type="PackedScene" uid="uid://bpqsvrh4o1qgx" path="res://Prefabs/Objects/tv.tscn" id="30_fb0rg"]
-[ext_resource type="PackedScene" uid="uid://b7i6ao0sfcjpb" path="res://Prefabs/Objects/vhs_player.tscn" id="31_ex8sv"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/exec_desk.tscn" id="32_0hi4x"]
-[ext_resource type="PackedScene" uid="uid://dojg2bq8uho8n" path="res://Prefabs/Objects/big_red_button.tscn" id="32_ex8sv"]
-[ext_resource type="PackedScene" uid="uid://dj73qpr11vnbg" path="res://Prefabs/Objects/vhs_tape_col.tscn" id="34_cb25o"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/bar_cart_col.tscn" id="35_2w47o"]
 [ext_resource type="PackedScene" uid="uid://cmfx6ckwr56e" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant.fbx" id="44_8e0yf"]
-[ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/Plants/Potted/large_potted_plant.fbx" id="45_4k6ur"]
-[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/Plants/Potted/small_potted_plant.fbx" id="46_dx7cr"]
-[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/PottedPlants/small_potted_plant.fbx" id="47_oupad"]
-[ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/PottedPlants/large_potted_plant.fbx" id="48_bno24"]
+[ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/PottedPlants/large_potted_plant.fbx" id="45_4k6ur"]
+[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/PottedPlants/small_potted_plant.fbx" id="46_dx7cr"]
 [ext_resource type="PackedScene" uid="uid://chuj6er6cluqw" path="res://Assets/Models/Objects/KeyLoop/key_loop.fbx" id="48_cjoqk"]
 [ext_resource type="PackedScene" uid="uid://cjnm2dr0xel3" path="res://Assets/Models/Objects/SideTable/side_table.fbx" id="49_6jukv"]
 [ext_resource type="PackedScene" uid="uid://c67oxp5pgbf0b" path="res://Assets/Models/Objects/Fishbowl/fishbowl.fbx" id="50_knbon"]
@@ -164,6 +160,16 @@ size = Vector3(11, 5.5, 0.25)
 
 [node name="Office" type="Node3D"]
 
+[node name="SceneManager" parent="." instance=ExtResource("1_ugl6a")]
+
+[node name="TaskManager" parent="." instance=ExtResource("1_bpx42")]
+
+[node name="GameManager" parent="." instance=ExtResource("2_ugl6a")]
+
+[node name="HUD" parent="." instance=ExtResource("3_cjoqk")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_dkn0c")]
+
 [node name="PlayerCharacter" parent="." instance=ExtResource("1_xooo4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2344, 0, 7.31723)
 
@@ -211,19 +217,6 @@ bones/36/rotation = Quaternion(-0.290599, 0.115953, 0.948127, 0.0562434)
 bones/37/rotation = Quaternion(0.00243721, -0.109093, 0.0267434, 0.993669)
 bones/38/rotation = Quaternion(0.328387, 0.187316, 0.0770613, 0.922571)
 bones/39/rotation = Quaternion(0.260405, -0.128421, 0.0692874, 0.954409)
-
-[node name="Cheryl" parent="NPCs"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(-1.45161, 0, 1.3758, 0, 2, 0, -1.3758, 0, -1.45161, -30.5133, 0.409426, 29.8091)
-script = null
 
 [node name="Sally" parent="NPCs" instance=ExtResource("22_j4uru")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -44.1937, 0.356827, 33.364)
@@ -502,7 +495,6 @@ transform = Transform3D(1.16332, 0, 0, 0, 1.16332, 0, 0, 0, 1.16332, 49.4282, 1.
 script = ExtResource("27_c3loq")
 
 [node name="Node3D2" type="Node3D" parent="NavigationRegion3D/Walls/Coffee_Cup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("27_c3loq")
 
 [node name="Coffee_Cup2" parent="NavigationRegion3D/Walls" instance=ExtResource("7_pptb2")]
@@ -665,7 +657,6 @@ script = ExtResource("27_c3loq")
 transform = Transform3D(0.0928052, 0, 1.40702, 0, 0.339451, 0, -1.09074, 0, 0.221306, -0.345778, 0.0130742, -0.488605)
 
 [node name="Node3D" type="Node3D" parent="NavigationRegion3D/ClosetRoom/SackLunch/post-it-note-stack"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("27_c3loq")
 
 [node name="Bullpen" type="Node3D" parent="NavigationRegion3D"]
@@ -1382,22 +1373,22 @@ transform = Transform3D(11.265, 0, 0, 0, 14.5041, 0, 0, 0, 8.56669, -6.5989, 0.6
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="small_potted_plant2"]
 
-[node name="small_potted_plant3" parent="." instance=ExtResource("47_oupad")]
+[node name="small_potted_plant3" parent="." instance=ExtResource("46_dx7cr")]
 transform = Transform3D(2.48789, 0, 0, 0, 2.9146, 0, 0, 0, 1.49917, -24.1288, 1.62725, 11.4526)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="small_potted_plant3"]
 
-[node name="large_potted_plant3" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant3" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5513, 1.90161, 9.30181)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant3"]
 
-[node name="large_potted_plant4" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant4" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8134, 1.87328, 31.0682)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant4"]
 
-[node name="large_potted_plant5" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant5" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5964, 1.87535, 26.9275)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant5"]
@@ -1405,27 +1396,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5964, 1.87535, 26.9275)
 [node name="Node3D" type="Node3D" parent="large_potted_plant5"]
 script = ExtResource("27_c3loq")
 
-[node name="small_potted_plant4" parent="." instance=ExtResource("47_oupad")]
+[node name="small_potted_plant4" parent="." instance=ExtResource("46_dx7cr")]
 transform = Transform3D(2.22251, 0, 0, 0, 5.74625, 0, 0, 0, 2.23015, -12.778, 1.59907, 30.5786)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="small_potted_plant4"]
 
-[node name="small_potted_plant5" parent="." instance=ExtResource("47_oupad")]
+[node name="small_potted_plant5" parent="." instance=ExtResource("46_dx7cr")]
 transform = Transform3D(5.25115, 0, 0, 0, 5.25115, 0, 0, 0, 5.25115, -12.0711, 1.82148, 36.2883)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="small_potted_plant5"]
 
-[node name="large_potted_plant6" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant6" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(2.00922, 0, 0, 0, 3.63442, 0, 0, 0, 1.9716, -29.9486, 0.287649, 48.694)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant6"]
 
-[node name="large_potted_plant7" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant7" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(2.26566, 0, 0, 0, 3.6072, 0, 0, 0, 1.9981, -36.4469, 0.344294, 48.7466)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant7"]
 
-[node name="large_potted_plant8" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant8" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(2.5285, 0, 0, 0, 2.64787, 0, 0, 0, 3.36477, -45.5937, 0.630283, 48.4815)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant8"]
@@ -1433,7 +1424,7 @@ transform = Transform3D(2.5285, 0, 0, 0, 2.64787, 0, 0, 0, 3.36477, -45.5937, 0.
 [node name="Node3D" type="Node3D" parent="large_potted_plant8"]
 script = ExtResource("27_c3loq")
 
-[node name="large_potted_plant9" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant9" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(2.98422, 0, 0, 0, 3.09268, 0, 0, 0, 2.55432, -48.9388, 0.344294, 46.4467)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant9"]
@@ -1446,7 +1437,7 @@ transform = Transform3D(1.88325, 0, 0, 0, 6.61513, 0, 0, 0, 3.74667, -48.2495, 0
 [node name="tall_plant4" parent="." instance=ExtResource("44_8e0yf")]
 transform = Transform3D(1.19219, 0, 0, 0, 1.79438, 0, 0, 0, 1.3971, -27.4337, 1.54569, 36.0637)
 
-[node name="small_potted_plant6" parent="." instance=ExtResource("47_oupad")]
+[node name="small_potted_plant6" parent="." instance=ExtResource("46_dx7cr")]
 transform = Transform3D(2.88909, 0, 0, 0, 6.51649, 0, 0, 0, 3.70648, -27.2082, 1.68077, 25.5984)
 
 [node name="tall_plant5" parent="." instance=ExtResource("44_8e0yf")]
@@ -1462,7 +1453,7 @@ transform = Transform3D(-0.00180219, -0.118692, -3.24288, -6.15484e-05, 3.47542,
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="tall_plant7"]
 
-[node name="large_potted_plant10" parent="." instance=ExtResource("48_bno24")]
+[node name="large_potted_plant10" parent="." instance=ExtResource("45_4k6ur")]
 transform = Transform3D(2.01205, 0, 0, 0, 2.14282, 0, 0, 0, 1.57397, 25.8738, 0.381151, 16.1983)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant10"]
@@ -1472,7 +1463,7 @@ transform = Transform3D(2.11058, 0, 0, 0, 2.93965, 0, 0, 0, 2.50347, 49.0649, 0.
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="tall_plant8"]
 
-[node name="small_potted_plant7" parent="." instance=ExtResource("47_oupad")]
+[node name="small_potted_plant7" parent="." instance=ExtResource("46_dx7cr")]
 transform = Transform3D(11.0668, 0, 0, 0, 20.5995, 0, 0, 0, 8.38323, 48.9917, 0.967497, 19.4538)
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="small_potted_plant7"]
