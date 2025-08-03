@@ -31,18 +31,36 @@ public partial class TaskManager : Node3D
 		{
 			if (!t.IsComplete) return;
 		}
+		GD.Print("Task Complete: " + taskToMarkComplete.TaskName);
 		taskToMarkComplete.IsComplete = true;
 		DisplayFlavorText(taskToMarkComplete);
 	}
 
 	public Array<Node3D> GetPossibleTargets(TaskResource task)
 	{
-		return GlobalTaskList[task].AsGodotArray<Node3D>();
+		if (GlobalTaskList.ContainsKey(task))
+		{
+			GD.Print("Found task: " + task.TaskName);
+			return GlobalTaskList[task].AsGodotArray<Node3D>();
+		}
+		else
+		{
+			GD.Print("Couldn't Find task: " + task.TaskName);
+			return null;
+		}
 	}
 
 	public void AddObjectToTask(TaskResource task, Node3D node)
 	{
-		GlobalTaskList[task].AsGodotArray<Node3D>().Add(node);
+		if (GlobalTaskList.ContainsKey(task))
+		{
+			GD.Print("Found task: " + task.TaskName);
+			GlobalTaskList[task].AsGodotArray<Node3D>().Add(node);
+		}
+		else
+		{
+			GD.Print("Couldn't Find task: " + task.TaskName);
+		}
 	}
 
 	private void DisplayFlavorText(TaskResource task)
