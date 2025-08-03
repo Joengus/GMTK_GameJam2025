@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://cokusonkv40jt"]
+[gd_scene load_steps=70 format=3 uid="uid://cokusonkv40jt"]
 
 [ext_resource type="PackedScene" uid="uid://bxfaxrrh8exdo" path="res://Scenes/pause_menu.tscn" id="1_2w47o"]
 [ext_resource type="PackedScene" uid="uid://i4mvy6jmegga" path="res://Prefabs/Managers/scene_manager.tscn" id="1_5jsaf"]
@@ -37,6 +37,9 @@
 [ext_resource type="PackedScene" uid="uid://dojg2bq8uho8n" path="res://Prefabs/Objects/big_red_button.tscn" id="32_ex8sv"]
 [ext_resource type="PackedScene" uid="uid://dj73qpr11vnbg" path="res://Prefabs/Objects/vhs_tape_col.tscn" id="34_cb25o"]
 [ext_resource type="PackedScene" uid="uid://ccivwxywhv4na" path="res://Prefabs/Objects/bar_cart_col.tscn" id="35_2w47o"]
+[ext_resource type="AudioStream" uid="uid://cqpckby6olhxi" path="res://Assets/Audio/Music/Apartment Loop.mp3" id="38_awjgr"]
+[ext_resource type="AudioStream" uid="uid://r1va7gkhk8hm" path="res://Assets/Audio/Music/Office Loop.mp3" id="39_tbe81"]
+[ext_resource type="AudioStream" uid="uid://dl6c84finljoa" path="res://Assets/Audio/Music/Exec Suite Loop.mp3" id="40_1uvor"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6o3rs"]
 
@@ -757,6 +760,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9294, 2.37367, -24.0665)
 
 [node name="Whiskey Bottle4" parent="." instance=ExtResource("10_3b5j6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.1837, 2.37367, -24.0721)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6287, 5.97492, 11.0745)
+stream = ExtResource("38_awjgr")
+unit_size = 1.0
+autoplay = true
+bus = &"Music"
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0942, 5.97491, 24.9383)
+stream = ExtResource("39_tbe81")
+unit_size = 2.55
+autoplay = true
+bus = &"Music"
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.9672, 5.97491, -30.0348)
+stream = ExtResource("40_1uvor")
+unit_size = 2.55
+autoplay = true
+bus = &"Music"
 
 [editable path="Bullpen/DeskCluster"]
 [editable path="Bullpen/DeskCluster2"]
