@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://i4mvy6jmegga"]
+
+[ext_resource type="Script" uid="uid://dfe7nlorx1pbd" path="res://Scripts/SceneManager.cs" id="1_e03lu"]
+[ext_resource type="PackedScene" uid="uid://j8u14eptdk6k" path="res://Prefabs/Managers/fade_controller.tscn" id="2_cuexd"]
+
+[node name="SceneManager" type="Node3D"]
+script = ExtResource("1_e03lu")
+
+[node name="FadeController" parent="." instance=ExtResource("2_cuexd")]

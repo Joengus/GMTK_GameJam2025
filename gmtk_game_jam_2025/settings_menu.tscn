@@ -1,0 +1,164 @@
+[gd_scene load_steps=4 format=3 uid="uid://dr7sljy0pk1q3"]
+
+[ext_resource type="Script" uid="uid://b6ob8wg80ydb1" path="res://SettingsMenu.cs" id="1_ufg0w"]
+[ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://AudioController.cs" id="2_0cmel"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufg0w"]
+bg_color = Color(0.158472, 0.158472, 0.158472, 1)
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ufg0w")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.5
+offset_top = -161.0
+offset_right = 204.5
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufg0w")
+
+[node name="AudioController" type="Control" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_0cmel")
+
+[node name="SettingsTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -73.0
+offset_top = 20.0
+offset_right = 73.0
+offset_bottom = 60.0
+grow_horizontal = 2
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MasterTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 68.0
+offset_right = 48.0
+offset_bottom = 108.0
+grow_horizontal = 2
+text = "Master"
+vertical_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -59.0
+offset_right = 99.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="MusicTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 125.0
+offset_right = 48.0
+offset_bottom = 165.0
+grow_horizontal = 2
+text = "Music"
+vertical_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -2.0
+offset_right = 99.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="SfxTitle" type="RichTextLabel" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -98.0
+offset_top = 186.0
+offset_right = 48.0
+offset_bottom = 226.0
+grow_horizontal = 2
+text = "Sound Effects"
+vertical_alignment = 1
+
+[node name="SfxSlider" type="HSlider" parent="Panel/AudioController"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = 59.0
+offset_right = 99.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+
+[node name="ReturnButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -62.0
+offset_right = 44.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Return"
+
+[connection signal="value_changed" from="Panel/AudioController/MasterSlider" to="Panel/AudioController" method="OnMasterVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/MusicSlider" to="Panel/AudioController" method="OnMusicVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/SfxSlider" to="Panel/AudioController" method="OnSfxVolumeChanged"]
+[connection signal="pressed" from="Panel/ReturnButton" to="." method="OnReturnButtonPressed"]

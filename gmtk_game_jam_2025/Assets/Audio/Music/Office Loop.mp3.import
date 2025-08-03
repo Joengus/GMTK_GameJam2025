@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://r1va7gkhk8hm"
+path="res://.godot/imported/Office Loop.mp3-c109ba5ea298b916a654f98177bef77d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Office Loop.mp3"
+dest_files=["res://.godot/imported/Office Loop.mp3-c109ba5ea298b916a654f98177bef77d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

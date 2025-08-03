@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwcg2a1qy6eec"]
+[gd_scene load_steps=5 format=3 uid="uid://cwcg2a1qy6eec"]
 
 [ext_resource type="Script" uid="uid://b6ob8wg80ydb1" path="res://Scripts/SettingsMenu.cs" id="1_ufg0w"]
 [ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://Scripts/AudioController.cs" id="2_0cmel"]
+[ext_resource type="Texture2D" uid="uid://vgq5cekw2dx3" path="res://Assets/Art/UI/SVG/button_square_depth_line.svg" id="2_7y5a0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufg0w"]
 bg_color = Color(0.158472, 0.158472, 0.158472, 1)
@@ -30,6 +31,19 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ufg0w")
 
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7y5a0")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 15
+
 [node name="AudioController" type="Control" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
@@ -49,6 +63,7 @@ offset_top = 20.0
 offset_right = 73.0
 offset_bottom = 60.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -59,10 +74,11 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -98.0
-offset_top = 68.0
+offset_top = 55.0
 offset_right = 48.0
-offset_bottom = 108.0
+offset_bottom = 95.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Master"
 vertical_alignment = 1
 
@@ -74,9 +90,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -99.0
-offset_top = -59.0
+offset_top = -72.0
 offset_right = 99.0
-offset_bottom = -43.0
+offset_bottom = -56.0
 grow_horizontal = 2
 grow_vertical = 2
 max_value = 1.0
@@ -89,10 +105,11 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -98.0
-offset_top = 125.0
+offset_top = 112.0
 offset_right = 48.0
-offset_bottom = 165.0
+offset_bottom = 152.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Music"
 vertical_alignment = 1
 
@@ -104,9 +121,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -99.0
-offset_top = -2.0
+offset_top = -15.0
 offset_right = 99.0
-offset_bottom = 14.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 max_value = 1.0
@@ -119,10 +136,11 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -98.0
-offset_top = 186.0
+offset_top = 173.0
 offset_right = 48.0
-offset_bottom = 226.0
+offset_bottom = 213.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Sound Effects"
 vertical_alignment = 1
 
@@ -134,9 +152,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -99.0
-offset_top = 59.0
+offset_top = 46.0
 offset_right = 99.0
-offset_bottom = 75.0
+offset_bottom = 62.0
 grow_horizontal = 2
 grow_vertical = 2
 max_value = 1.0
@@ -151,9 +169,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -44.0
-offset_top = -62.0
+offset_top = -72.0
 offset_right = 44.0
-offset_bottom = -26.0
+offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Return"

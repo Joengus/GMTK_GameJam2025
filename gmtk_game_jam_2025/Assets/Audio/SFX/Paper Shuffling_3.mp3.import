@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btwbko80cs7sl"
+path="res://.godot/imported/Paper Shuffling_3.mp3-ebb7531f2600ad0a84d90ebe5ad5c645.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Paper Shuffling_3.mp3"
+dest_files=["res://.godot/imported/Paper Shuffling_3.mp3-ebb7531f2600ad0a84d90ebe5ad5c645.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
