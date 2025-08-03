@@ -244,5 +244,8 @@ text = "Main Menu"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[connection signal="value_changed" from="Panel/AudioController/MasterSlider" to="Panel/AudioController" method="OnMasterVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/MusicSlider" to="Panel/AudioController" method="OnMusicVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/SfxSlider" to="Panel/AudioController" method="OnSfxVolumeChanged"]
 [connection signal="pressed" from="Panel/ResumeButton" to="." method="OnResumeButtonPressed"]
 [connection signal="pressed" from="Panel/MainMenuButton" to="." method="OnMainMenuButtonPressed"]
