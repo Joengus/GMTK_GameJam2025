@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_ottgi")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Spike coffee with stolen whiskey"
+PointsTowardAlignment = 200
+DescriptionRebel = "It's five o'clock right here, right now."
+DescriptionNeutral = "Whatever it takes to get through the day."
+DescriptionCitizen = "Just a little lubricant to take the edge off. "
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

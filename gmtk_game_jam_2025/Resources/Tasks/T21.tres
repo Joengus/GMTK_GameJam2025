@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_j1bor")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Ensure all paperclips are straight"
+PointsTowardAlignment = 400
+DescriptionRebel = "This is one step up from peeling my toenails off."
+DescriptionNeutral = "Why were they all bent like that?"
+DescriptionCitizen = "You know, I think that really made a difference!"
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

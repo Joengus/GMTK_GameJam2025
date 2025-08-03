@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_pmf8n")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Attend office party"
+PointsTowardAlignment = 400
+DescriptionRebel = "Are we feeling the team spirit, yet?"
+DescriptionNeutral = "Free food! I should have brought a container. "
+DescriptionCitizen = "This is much more motivating than a raise."
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

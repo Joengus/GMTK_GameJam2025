@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_o7iq7")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Spill coffee on Sad Sally's computer"
+PointsTowardAlignment = 500
+DescriptionRebel = "Free yourself, Sally! Escape while you still can!"
+DescriptionNeutral = "She'll thank me later."
+DescriptionCitizen = "I deserved last month's Employee Award, you snake!"
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

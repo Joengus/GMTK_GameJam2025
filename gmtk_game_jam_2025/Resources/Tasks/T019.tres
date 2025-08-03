@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_25fic")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Rotate 3 office plants 33 degrees clockwise"
+PointsTowardAlignment = 333
+DescriptionRebel = "It was between this and throwing myself down the stairs."
+DescriptionNeutral = "The vibes were bad. "
+DescriptionCitizen = "Flourish in the light, my children."
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_1h4ac")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Chair Yoga"
+PointsTowardAlignment = 500
+DescriptionRebel = "I think I heard something pop..."
+DescriptionNeutral = "This isn't dystopian at all!"
+DescriptionCitizen = "I could sit for another 12 hours after that!"
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

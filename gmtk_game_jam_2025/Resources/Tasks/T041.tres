@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource("1_vpj3j")
-ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+ReputationAlignment = 2
+TaskName = "Bring Sad Sally a Sweet Snack"
+PointsTowardAlignment = 500
+DescriptionRebel = "500Pretty sure these are expired, but I'm sure they're fine."
+DescriptionNeutral = "A little bribery goes a long way."
+DescriptionCitizen = "This wasn't in the simulations. "
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_6sxl0")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Spill coffee on the floor"
+PointsTowardAlignment = 500
+DescriptionRebel = "It works better as a floor cleaner, anyway."
+DescriptionNeutral = "Do you want ants?"
+DescriptionCitizen = "There's no use crying over spilled decaf tripleshot hazelnut macchiatos. "
 PrerequisiteTasks = null
-isHidden = false
+isHidden = true
 metadata/_custom_type_script = "uid://tsksdlunldfr"

@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1_8k3um")
 ReputationAlignment = 0
-TaskName = ""
-PointsTowardAlignment = 0
-DescriptionRebel = ""
-DescriptionNeutral = ""
-DescriptionCitizen = ""
+TaskName = "Disenfect your co-worker"
+PointsTowardAlignment = 500
+DescriptionRebel = "I'm not sure that slapping them really disenfected anything..."
+DescriptionNeutral = "They were starting to smell."
+DescriptionCitizen = "Violent but necessary."
 PrerequisiteTasks = null
 isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"
