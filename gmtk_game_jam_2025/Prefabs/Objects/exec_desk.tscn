@@ -1,5 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2tc57wiout5s"]
+[gd_scene load_steps=2 format=3 uid="uid://dkapn5kojr3b7"]
 
 [ext_resource type="PackedScene" uid="uid://by64o45om1tsx" path="res://Assets/Models/Objects/ExecutiveDesk/Exec_desk.fbx" id="1_m36v5"]
 
 [node name="Exec_desk" instance=ExtResource("1_m36v5")]
+
+[node name="exec_desk" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0955429)
+polygon = PackedVector2Array(-0.00653046, 0.853735, -0.994059, 0.856571, -1.00507, -0.0210588, -0.491674, -0.0210588, -0.494463, 0.672495, 0.495157, 0.673042, 0.495157, -0.019614, 0.998911, -0.0218419, 1.00206, 0.854762)

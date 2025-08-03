@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://ccivwxywhv4na"]
 
 [ext_resource type="Script" uid="uid://j5betyluc5js" path="res://Scripts/BarcartBehavior.cs" id="1_ipni8"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/barcart.tscn" id="2_wgldj"]
+[ext_resource type="PackedScene" uid="uid://chujm7hs5xs8i" path="res://Prefabs/Objects/barcart.tscn" id="2_wgldj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6t0k0"]
-size = Vector3(1.72253, 1.42047, 0.939941)
+size = Vector3(1.62656, 1.11111, 0.939941)
 
 [node name="BarCart" type="Node3D"]
 
@@ -17,10 +17,11 @@ axis_lock_angular_z = true
 script = ExtResource("1_ipni8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0176392, 0.705902, -0.00219727)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.000517808, 1.11741, -0.00219727)
 shape = SubResource("BoxShape3D_6t0k0")
 
 [node name="barcart" parent="RigidBody3D" instance=ExtResource("2_wgldj")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56288, 0)

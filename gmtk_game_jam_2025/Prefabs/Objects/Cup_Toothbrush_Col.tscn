@@ -7,7 +7,7 @@
 height = 0.12326
 radius = 0.0620117
 
-[node name="Node3D2" type="Node3D"]
+[node name="ToothBrushCup" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
 collision_layer = 4

@@ -11,10 +11,11 @@ radius = 0.500692
 
 [node name="big_red_button" instance=ExtResource("1_mcleu")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2" node_paths=PackedStringArray("prompt")]
 collision_layer = 6
 collision_mask = 7
 script = ExtResource("2_110nb")
+prompt = NodePath("Prompt")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000320435, 0.256897, -0.00326538)
