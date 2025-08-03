@@ -145,7 +145,6 @@ mesh = SubResource("BoxMesh_xooo4")
 
 [node name="Ceiling" type="StaticBody3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 10, 0)
-visible = false
 collision_layer = 2
 collision_mask = 7
 
@@ -724,32 +723,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839211, 1.73566, -0.0868683
 [node name="VhsTape" parent="Csuite/Exec_desk" instance=ExtResource("34_cb25o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.06374, 1.74067, -0.0336266)
 
+[node name="BarCart" parent="Csuite" instance=ExtResource("35_2w47o")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -47.5352, 0, -24.0764)
+
+[node name="Whiskey Bottle" parent="Csuite/BarCart" instance=ExtResource("10_3b5j6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.09365, 2.37367, -0.389805)
+
+[node name="Whiskey Bottle2" parent="Csuite/BarCart" instance=ExtResource("10_3b5j6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10058, 2.37367, 0.3578)
+
+[node name="Whiskey Bottle3" parent="Csuite/BarCart" instance=ExtResource("10_3b5j6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.513899, 2.37367, -0.397202)
+
+[node name="Whiskey Bottle4" parent="Csuite/BarCart" instance=ExtResource("10_3b5j6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.512999, 2.37367, 0.359097)
+
+[node name="Whiskey Bottle5" parent="Csuite/BarCart" instance=ExtResource("10_3b5j6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.00990105, 2.37367, -0.394203)
+
+[node name="Whiskey Bottle6" parent="Csuite/BarCart" instance=ExtResource("10_3b5j6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.00430107, 2.37367, 0.351498)
+
 [node name="DeskCluster" parent="." instance=ExtResource("16_x0s5n")]
 transform = Transform3D(0.642788, 0, -0.766044, 0, 1, 0, 0.766044, 0, 0.642788, -42.1996, 0, -42.0871)
 
 [node name="DeskCluster2" parent="." instance=ExtResource("16_x0s5n")]
 transform = Transform3D(-0.642788, 0, -0.766044, 0, 1, 0, 0.766044, 0, -0.642788, -7.19464, 0, -41.451)
-
-[node name="BarCart" parent="." instance=ExtResource("35_2w47o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -47.5352, 0, -24.0764)
-
-[node name="Whiskey Bottle" parent="BarCart" instance=ExtResource("10_3b5j6")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.09365, 2.37367, -0.389805)
-
-[node name="Whiskey Bottle2" parent="BarCart" instance=ExtResource("10_3b5j6")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.10058, 2.37367, 0.3578)
-
-[node name="Whiskey Bottle" parent="." instance=ExtResource("10_3b5j6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9324, 2.37367, -24.5903)
-
-[node name="Whiskey Bottle2" parent="." instance=ExtResource("10_3b5j6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.1761, 2.37367, -24.5894)
-
-[node name="Whiskey Bottle3" parent="." instance=ExtResource("10_3b5j6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9294, 2.37367, -24.0665)
-
-[node name="Whiskey Bottle4" parent="." instance=ExtResource("10_3b5j6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.1837, 2.37367, -24.0721)
 
 [editable path="Bullpen/DeskCluster"]
 [editable path="Bullpen/DeskCluster2"]
