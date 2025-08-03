@@ -13,4 +13,9 @@ public partial class PauseMenu : Control
 	{
 		GetTree().ChangeSceneToPacked(MainMenuScene);
 	}
+
+	public void TogglePauseMenu()
+	{
+		Visible = !Visible;
+	}
 }
