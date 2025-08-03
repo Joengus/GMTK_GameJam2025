@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcg3hqsr22kwh"]
+
+[ext_resource type="PackedScene" uid="uid://0una6a86b1ep" path="res://Assets/Models/Objects/ExecutiveDoors/Exec_doors.fbx" id="1_og83g"]
+
+[node name="Exec_doors" instance=ExtResource("1_og83g")]
+
+[node name="Door" parent="exec_door" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.658998, 1.50421, 0.00597101)

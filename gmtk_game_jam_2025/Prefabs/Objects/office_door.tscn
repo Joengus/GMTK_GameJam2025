@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckmgi0asmdl3e"]
+
+[ext_resource type="PackedScene" uid="uid://cqgx2tdmjtxig" path="res://Assets/Models/Objects/OfficeDoor/door_rest_of_office.fbx" id="1_t8tjq"]
+
+[node name="door_rest_of_office" instance=ExtResource("1_t8tjq")]

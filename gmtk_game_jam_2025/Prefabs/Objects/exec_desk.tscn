@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2tc57wiout5s"]
+
+[ext_resource type="PackedScene" uid="uid://by64o45om1tsx" path="res://Assets/Models/Objects/ExecutiveDesk/Exec_desk.fbx" id="1_m36v5"]
+
+[node name="Exec_desk" instance=ExtResource("1_m36v5")]

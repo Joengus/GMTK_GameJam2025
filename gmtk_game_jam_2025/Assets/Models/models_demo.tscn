@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://prhag7ysq88h"]
+[gd_scene load_steps=51 format=3 uid="uid://prhag7ysq88h"]
 
 [ext_resource type="PackedScene" uid="uid://wgxgtmng04p4" path="res://Assets/Models/Objects/BarCart/barcart.fbx" id="1_2w60t"]
 [ext_resource type="PackedScene" uid="uid://chuj6er6cluqw" path="res://Assets/Models/Objects/KeyLoop/key_loop.fbx" id="2_d6bst"]
@@ -47,6 +47,9 @@
 [ext_resource type="PackedScene" uid="uid://0vrw4ov2igps" path="res://Assets/Models/Objects/Pizza/PizzaInBox/pizza inbox.fbx" id="45_s0hat"]
 [ext_resource type="PackedScene" uid="uid://bjjadw34kpjys" path="res://Assets/Models/Objects/VhsPlayer/VHS_player.fbx" id="46_4eg0x"]
 [ext_resource type="PackedScene" uid="uid://bylmhaa6xled0" path="res://Assets/Models/Objects/WateringCan/watering_can.fbx" id="47_s0hat"]
+[ext_resource type="PackedScene" uid="uid://derlgiffq5tjl" path="res://Assets/Models/Objects/Paper/sheets of paper.fbx" id="48_ry15g"]
+[ext_resource type="PackedScene" uid="uid://0una6a86b1ep" path="res://Assets/Models/Objects/ExecutiveDoors/Exec_doors.fbx" id="49_ms045"]
+[ext_resource type="PackedScene" uid="uid://cqgx2tdmjtxig" path="res://Assets/Models/Objects/OfficeDoor/door_rest_of_office.fbx" id="50_4j5ft"]
 
 [node name="ModelsDemo" type="Node3D"]
 
@@ -189,3 +192,12 @@ transform = Transform3D(-0.430732, 0, 0.90248, 0, 1, 0, -0.90248, 0, -0.430732, 
 
 [node name="watering_can" parent="." instance=ExtResource("47_s0hat")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.276073, 0.276477, 0.0774457)
+
+[node name="sheets of paper" parent="." instance=ExtResource("48_ry15g")]
+transform = Transform3D(-0.249653, 0, 0.968335, 0, 1, 0, -0.968335, 0, -0.249653, 2.37299, -2.38419e-07, 6.23635)
+
+[node name="Exec_doors" parent="." instance=ExtResource("49_ms045")]
+transform = Transform3D(0.718357, 0, 0.695675, 0, 1, 0, -0.695675, 0, 0.718357, 3.26418, 0, 7.99061)
+
+[node name="door_rest_of_office" parent="." instance=ExtResource("50_4j5ft")]
+transform = Transform3D(0.494549, 0, 0.86915, 0, 1, 0, -0.86915, 0, 0.494549, 4.73624, 0, 6.43001)
