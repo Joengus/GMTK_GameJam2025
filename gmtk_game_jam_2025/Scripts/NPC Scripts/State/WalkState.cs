@@ -11,11 +11,6 @@ public partial class WalkState : NpcState
         base._Ready();
         machine.data.agent.VelocityComputed += VelocityComputed;
         targetReference = TaskManager.Instance.GetPossibleTargets(machine.data.taskList[0])[0];
-        GD.Print(targetReference.GlobalPosition);
-        machine.data.agent.TargetPosition = targetReference.GlobalPosition;
-        machine.data.agent.AvoidanceEnabled = true;
-        machine.data.agent.SetProcess(true);
-        machine.data.agent.SetPhysicsProcess(true);
 
     }
     public override void Enter()
@@ -25,6 +20,7 @@ public partial class WalkState : NpcState
     }
     public override void Update(double delta)
     {
+        machine.data.agent.TargetPosition = targetReference.GlobalPosition;
         Vector3 currentLocation = machine.data.body3D.Position;
         Vector3 nextLocation = machine.data.agent.GetNextPathPosition();
         Vector3 newVel = (nextLocation - currentLocation).Normalized() * machine.data.walkSpeed * (float)delta;
