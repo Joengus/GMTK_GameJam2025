@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://dt5leut1xx8xc" path="res://Scripts/NPC Scripts/StateMachine.cs" id="1_2uuoo"]
 [ext_resource type="Animation" uid="uid://cddgmq43285o3" path="res://characters/animation/Woman NPC_ANIM/sitting_ sad.res" id="1_3i5g2"]
-[ext_resource type="Script" uid="uid://ms7qidx7h6h0" path="res://Scripts/NPC Scripts/Cheryl/CherylWalkState.cs" id="2_7s3dm"]
 [ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="2_r6f5l"]
-[ext_resource type="Script" uid="uid://tv3rs7eotwxa" path="res://Scripts/NPC Scripts/Cheryl/CherylSitState.cs" id="3_y4y88"]
-[ext_resource type="Script" uid="uid://c0qunugfoslqq" path="res://Scripts/NPC Scripts/Cheryl/CherylIdleState.cs" id="4_qid2q"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T025.tres" id="6_gv7mr"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T029.tres" id="7_kji2c"]
+[ext_resource type="Script" uid="uid://cjmqrtecpluq0" path="res://Scripts/NPC Scripts/State/WalkState.cs" id="3_mce15"]
+[ext_resource type="Script" uid="uid://dt6ol8pd8gmrj" path="res://Scripts/NPC Scripts/State/SitState.cs" id="4_51f85"]
+[ext_resource type="Script" uid="uid://ci8ktq2tiaabr" path="res://Scripts/NPC Scripts/State/IdleState.cs" id="5_f1f76"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="6_gv7mr"]
+[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="7_kji2c"]
 [ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="8_0qeke"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_usucp"]
@@ -924,15 +924,15 @@ data = NodePath("../NpcData")
 currentState = NodePath("Sit")
 
 [node name="Walk" type="Node3D" parent="StateMachine"]
-script = ExtResource("2_7s3dm")
+script = ExtResource("3_mce15")
 
 [node name="Sit" type="Node3D" parent="StateMachine"]
-script = ExtResource("3_y4y88")
+script = ExtResource("4_51f85")
 
 [node name="Idle" type="Node3D" parent="StateMachine"]
-script = ExtResource("4_qid2q")
+script = ExtResource("5_f1f76")
 
-[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("playback", "body3D")]
+[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("playback", "body3D", "agent")]
 script = ExtResource("2_r6f5l")
 taskList = Array[Object]([ExtResource("6_gv7mr"), ExtResource("7_kji2c"), ExtResource("8_0qeke")])
 name = "Cheryl"
@@ -942,8 +942,14 @@ animations = {
 "idle": "sad_idle"
 }
 playback = NodePath("../Cheryl_MasterANIM/AnimationPlayer")
+walkSpeed = 10.0
 body3D = NodePath("..")
+agent = NodePath("../NavigationAgent3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.853146, 0.112986)
 shape = SubResource("CapsuleShape3D_jpxrh")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+avoidance_enabled = true
+radius = 2.0

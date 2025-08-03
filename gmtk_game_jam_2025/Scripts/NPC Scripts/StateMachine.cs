@@ -8,11 +8,17 @@ public partial class StateMachine : Node3D
     [Export] public NpcState currentState;
     public NpcState previousState;
 
+    public override void _Ready()
+    {
+        base._Ready();
+        ChangeState(currentState);
+    }
+
     public override void _PhysicsProcess(double delta)
     {
         base._PhysicsProcess(delta);
         currentState.Update(delta);
-    }
+    } 
 
     public void ChangeState(NpcState newState)
     {

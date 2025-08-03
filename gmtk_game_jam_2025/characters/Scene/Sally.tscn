@@ -5,10 +5,10 @@
 [ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="2_ywiux"]
 [ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="3_t3he0"]
 [ext_resource type="Resource" uid="uid://c6nwlwcjtw14d" path="res://Resources/Tasks/T013.tres" id="4_awwok"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T025.tres" id="5_uc4he"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T029.tres" id="6_uuxir"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T040.tres" id="7_pd7ts"]
-[ext_resource type="Resource" path="res://Resources/Tasks/T041.tres" id="8_e2klq"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="5_uc4he"]
+[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="6_uuxir"]
+[ext_resource type="Resource" uid="uid://d3y7c1u2ff34s" path="res://Resources/Tasks/T040.tres" id="7_pd7ts"]
+[ext_resource type="Resource" uid="uid://d12bxjppqgodt" path="res://Resources/Tasks/T041.tres" id="8_e2klq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_767kt"]
 radius = 0.288637
