@@ -1,11 +1,112 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmjlxqbcgfq7g"]
+[gd_scene load_steps=53 format=3 uid="uid://cmjlxqbcgfq7g"]
 
 [ext_resource type="Script" uid="uid://53hfdi48h7qw" path="res://Scripts/Task/TaskManager.cs" id="1_6nu63"]
+[ext_resource type="Resource" uid="uid://6dbp2pf2w2y3" path="res://Resources/Tasks/T001.tres" id="2_oe8ff"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T002.tres" id="3_r61gb"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T003.tres" id="4_fpjma"]
 [ext_resource type="Script" uid="uid://bpdq4ivujdhst" path="res://Prefabs/Managers/FlavorText.cs" id="4_vq6m6"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T004.tres" id="5_vcbcg"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T005.tres" id="6_mddbl"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T006.tres" id="7_yludm"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T007.tres" id="8_vyhpt"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T008.tres" id="9_q6kjx"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T009.tres" id="10_y1ttb"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T010.tres" id="11_r61gb"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T011.tres" id="12_vyhpt"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T012.tres" id="13_q6kjx"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T013.tres" id="14_y1ttb"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T014.tres" id="15_el1fn"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T015.tres" id="16_p1gnx"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T016.tres" id="17_3tlua"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T017.tres" id="18_5j2hs"]
+[ext_resource type="Resource" path="res://Resources/Tasks/T018.tres" id="19_2bcyp"]
+[ext_resource type="Resource" uid="uid://dkpwfjtntjuo6" path="res://Resources/Tasks/T019.tres" id="20_tlxno"]
+[ext_resource type="Resource" uid="uid://bxnrw7k28tdho" path="res://Resources/Tasks/T020.tres" id="21_48ygd"]
+[ext_resource type="Resource" uid="uid://dckmlr5563gpt" path="res://Resources/Tasks/T21.tres" id="22_p47nb"]
+[ext_resource type="Resource" uid="uid://dyvmveorjlotp" path="res://Resources/Tasks/T022.tres" id="23_gy5t5"]
+[ext_resource type="Resource" uid="uid://c0e6q0chhkuvh" path="res://Resources/Tasks/T023.tres" id="24_evnvp"]
+[ext_resource type="Resource" uid="uid://dmeyxeg7bf5ic" path="res://Resources/Tasks/T024.tres" id="25_rkoq3"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="26_fkepx"]
+[ext_resource type="Resource" uid="uid://cgej5tdqulpae" path="res://Resources/Tasks/T026.tres" id="27_ee307"]
+[ext_resource type="Resource" uid="uid://qewxwusvsrpu" path="res://Resources/Tasks/T027.tres" id="28_tng3v"]
+[ext_resource type="Resource" uid="uid://cp6xvihahrlca" path="res://Resources/Tasks/T028.tres" id="29_r7upd"]
+[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="30_uulta"]
+[ext_resource type="Resource" uid="uid://cqtt03f6hcluf" path="res://Resources/Tasks/T030.tres" id="31_xkrfg"]
+[ext_resource type="Resource" uid="uid://cfyu3i438ey0k" path="res://Resources/Tasks/T031.tres" id="32_4c47x"]
+[ext_resource type="Resource" uid="uid://d0vupd872dl2j" path="res://Resources/Tasks/T032.tres" id="33_pae2c"]
+[ext_resource type="Resource" uid="uid://dx0hgxcnahdij" path="res://Resources/Tasks/T033.tres" id="34_wyxl3"]
+[ext_resource type="Resource" uid="uid://cc5im8ojbwdnn" path="res://Resources/Tasks/T034.tres" id="35_h51un"]
+[ext_resource type="Resource" uid="uid://byqsq5cobpgk4" path="res://Resources/Tasks/T035.tres" id="36_o5bc0"]
+[ext_resource type="Resource" uid="uid://d4gatspwaifwy" path="res://Resources/Tasks/T036.tres" id="37_xibu6"]
+[ext_resource type="Resource" uid="uid://r6ny4t4cxff2" path="res://Resources/Tasks/T037.tres" id="38_fx6sh"]
+[ext_resource type="Resource" uid="uid://bhemguj4t3v4s" path="res://Resources/Tasks/T038.tres" id="39_xv1vv"]
+[ext_resource type="Resource" uid="uid://coqwn31fk11do" path="res://Resources/Tasks/T039.tres" id="40_trejb"]
+[ext_resource type="Resource" uid="uid://d3y7c1u2ff34s" path="res://Resources/Tasks/T040.tres" id="41_a16du"]
+[ext_resource type="Resource" uid="uid://d12bxjppqgodt" path="res://Resources/Tasks/T041.tres" id="42_lguuc"]
+[ext_resource type="Resource" uid="uid://bo1lw87cf2i4j" path="res://Resources/Tasks/T042.tres" id="43_y0r7l"]
+[ext_resource type="Resource" uid="uid://gntgj664y0gq" path="res://Resources/Tasks/T043.tres" id="44_emdn1"]
+[ext_resource type="Resource" uid="uid://cmejyjfa0dck6" path="res://Resources/Tasks/T044.tres" id="45_fg5u0"]
+[ext_resource type="Resource" uid="uid://onv8xtap88u2" path="res://Resources/Tasks/T045.tres" id="46_l7noc"]
+[ext_resource type="Resource" uid="uid://csttubj7wo0al" path="res://Resources/Tasks/T046.tres" id="47_sxmqr"]
+[ext_resource type="Resource" uid="uid://ha3stu0ci3q1" path="res://Resources/Tasks/T047.tres" id="48_iomsj"]
+[ext_resource type="Resource" uid="uid://27rihlyven7g" path="res://Resources/Tasks/T048.tres" id="49_4u0g2"]
+[ext_resource type="Resource" uid="uid://b8rt31benis38" path="res://Resources/Tasks/T049.tres" id="50_2i3ql"]
+[ext_resource type="Resource" uid="uid://usuxmoyj8nis" path="res://Resources/Tasks/T050.tres" id="51_4lfnd"]
 
 [node name="TaskManager" type="Node3D"]
 script = ExtResource("1_6nu63")
-TaskList = Array[Object]([])
+GlobalTaskList = {
+ExtResource("27_ee307"): [],
+ExtResource("28_tng3v"): [],
+ExtResource("29_r7upd"): [],
+ExtResource("30_uulta"): [],
+ExtResource("31_xkrfg"): [],
+ExtResource("32_4c47x"): [],
+ExtResource("33_pae2c"): [],
+ExtResource("34_wyxl3"): [],
+ExtResource("35_h51un"): [],
+ExtResource("36_o5bc0"): [],
+ExtResource("37_xibu6"): [],
+ExtResource("38_fx6sh"): [],
+ExtResource("39_xv1vv"): [],
+ExtResource("40_trejb"): [],
+ExtResource("41_a16du"): [],
+ExtResource("42_lguuc"): [],
+ExtResource("43_y0r7l"): [],
+ExtResource("44_emdn1"): [],
+ExtResource("45_fg5u0"): [],
+ExtResource("46_l7noc"): [],
+ExtResource("47_sxmqr"): [],
+ExtResource("48_iomsj"): [],
+ExtResource("49_4u0g2"): [],
+ExtResource("50_2i3ql"): [],
+ExtResource("51_4lfnd"): [],
+ExtResource("2_oe8ff"): [],
+ExtResource("3_r61gb"): [],
+ExtResource("4_fpjma"): [],
+ExtResource("5_vcbcg"): [],
+ExtResource("6_mddbl"): [],
+ExtResource("7_yludm"): [],
+ExtResource("8_vyhpt"): [],
+ExtResource("9_q6kjx"): [],
+ExtResource("10_y1ttb"): [],
+ExtResource("11_r61gb"): [],
+ExtResource("12_vyhpt"): [],
+ExtResource("13_q6kjx"): [],
+ExtResource("14_y1ttb"): [],
+ExtResource("15_el1fn"): [],
+ExtResource("16_p1gnx"): [],
+ExtResource("17_3tlua"): [],
+ExtResource("18_5j2hs"): [],
+ExtResource("19_2bcyp"): [],
+ExtResource("20_tlxno"): [],
+ExtResource("21_48ygd"): [],
+ExtResource("22_p47nb"): [],
+ExtResource("23_gy5t5"): [],
+ExtResource("24_evnvp"): [],
+ExtResource("25_rkoq3"): [],
+ExtResource("26_fkepx"): []
+}
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

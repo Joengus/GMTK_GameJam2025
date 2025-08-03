@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://bjyxdku67nhyx"]
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://6dbp2pf2w2y3"]
 
 [ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_1a5f5"]
 
@@ -9,6 +9,7 @@ TaskName = "Get Dressed"
 PointsTowardAlignment = 500
 DescriptionRebel = "Or, I could wear my pajamas"
 DescriptionNeutral = "Can't go outside in my undies"
-DescriptionCitizen = "Dress for the job you wnt"
+DescriptionCitizen = "Dress for the job you want"
 PrerequisiteTasks = null
+isHidden = false
 metadata/_custom_type_script = "uid://tsksdlunldfr"

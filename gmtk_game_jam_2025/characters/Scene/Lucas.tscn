@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://banw2lydb62ab"]
+[gd_scene load_steps=11 format=3 uid="uid://banw2lydb62ab"]
 
 [ext_resource type="PackedScene" uid="uid://dl5t7f6d1uyxt" path="res://characters/animation/Lucas_ANIM/Lucas_Master_ANIM.fbx" id="1_c8x4s"]
 [ext_resource type="Script" uid="uid://dt5leut1xx8xc" path="res://Scripts/NPC Scripts/StateMachine.cs" id="2_7k85n"]
 [ext_resource type="Script" uid="uid://cjmqrtecpluq0" path="res://Scripts/NPC Scripts/State/WalkState.cs" id="3_el61q"]
 [ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="3_pjwoq"]
+[ext_resource type="Script" uid="uid://bm1twkc0qddrw" path="res://Scripts/NPC Scripts/State/LieDownState.cs" id="3_x85pr"]
+[ext_resource type="Script" uid="uid://dn1idqw5lnx06" path="res://Scripts/NPC Scripts/State/YawnState.cs" id="4_b381j"]
 [ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="5_cqmai"]
 [ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="6_x85pr"]
 [ext_resource type="Resource" uid="uid://dx0hgxcnahdij" path="res://Resources/Tasks/T033.tres" id="7_b381j"]
@@ -21,7 +23,6 @@ bones/0/position = Vector3(-0.00288705, 0.906663, 0.00792813)
 bones/0/rotation = Quaternion(0.0197484, 0.218397, 0.0610471, 0.973748)
 bones/1/position = Vector3(0, 0.0901555, -0.00165811)
 bones/1/rotation = Quaternion(0.008773, 0.0373101, -0.00261061, 0.999262)
-bones/1/scale = Vector3(1, 1, 1)
 bones/2/position = Vector3(0, 0.105199, 1e-08)
 bones/2/rotation = Quaternion(0.00289331, 0.0108378, 0.00385408, 0.99993)
 bones/2/scale = Vector3(1, 1, 1)
@@ -50,13 +51,10 @@ bones/11/rotation = Quaternion(0.0123727, 0.0376479, 0.254266, 0.966322)
 bones/11/scale = Vector3(1, 1, 1)
 bones/12/position = Vector3(-0.00950106, 0.0606384, -6.8389e-07)
 bones/12/rotation = Quaternion(0.0775773, 0.105137, -0.0320511, 0.990909)
-bones/12/scale = Vector3(1, 1, 1)
 bones/13/position = Vector3(0.0012928, 0.0522162, 1.70478e-07)
 bones/13/rotation = Quaternion(-0.0975475, -0.0525394, -0.0634793, 0.991814)
-bones/13/scale = Vector3(1, 1, 1)
 bones/15/position = Vector3(4.9242e-07, 0.105676, 0.00535026)
 bones/15/rotation = Quaternion(0.169429, -0.0121981, 0.19878, 0.965211)
-bones/15/scale = Vector3(1, 1, 1)
 bones/16/position = Vector3(0.00679054, 0.0528648, -6.32311e-07)
 bones/16/rotation = Quaternion(0.237372, -0.00156519, 0.0579993, 0.969684)
 bones/16/scale = Vector3(1, 1, 1)
@@ -74,13 +72,11 @@ bones/21/rotation = Quaternion(0.00371856, 1.44583e-05, -0.18302, 0.983102)
 bones/21/scale = Vector3(0.999999, 1, 0.999999)
 bones/22/position = Vector3(-4.85567e-07, 0.295039, 7.80123e-07)
 bones/22/rotation = Quaternion(-0.0981815, -0.246362, -0.194114, 0.94445)
-bones/22/scale = Vector3(1, 1, 1)
 bones/23/position = Vector3(0.0373005, 0.0646748, -6.76466e-07)
 bones/23/rotation = Quaternion(-0.0138829, -0.0205118, -0.186317, 0.982178)
 bones/23/scale = Vector3(1, 0.999999, 1)
 bones/24/position = Vector3(0.00884209, 0.0590724, -2.12182e-07)
 bones/24/rotation = Quaternion(0.147757, -0.0703599, 0.0906874, 0.982341)
-bones/24/scale = Vector3(1, 1, 1)
 bones/25/position = Vector3(-0.00222527, 0.0531457, -1.3122e-07)
 bones/25/rotation = Quaternion(-0.2213, 0.0248327, -0.0670885, 0.972578)
 bones/25/scale = Vector3(1, 1, 1)
@@ -89,19 +85,15 @@ bones/27/rotation = Quaternion(0.0994954, 0.00898259, 0.00136969, 0.994997)
 bones/27/scale = Vector3(1, 0.999999, 1)
 bones/28/position = Vector3(0.00902844, 0.0490982, -1.02966e-07)
 bones/28/rotation = Quaternion(0.3276, -0.0149826, -0.379618, 0.865069)
-bones/28/scale = Vector3(1, 1, 1)
 bones/29/position = Vector3(-0.00535452, 0.0445459, -9.52008e-08)
 bones/29/rotation = Quaternion(0.0378899, 0.00272735, -0.0174502, 0.999126)
-bones/29/scale = Vector3(1, 1, 1)
 bones/31/position = Vector3(0.081017, -0.0501885, -0.00821499)
 bones/31/rotation = Quaternion(0.0443463, 0.117538, 0.991807, -0.0231877)
 bones/31/scale = Vector3(1, 1, 1)
 bones/32/position = Vector3(8.68541e-09, 0.366741, -2.67066e-08)
 bones/32/rotation = Quaternion(-0.14726, -0.0826264, -0.0193357, 0.985451)
-bones/32/scale = Vector3(1, 1, 1)
 bones/33/position = Vector3(-5.02205e-08, 0.350833, -6.66351e-09)
 bones/33/rotation = Quaternion(0.530182, -0.0341144, -0.0860066, 0.84282)
-bones/33/scale = Vector3(1, 1, 1)
 bones/34/position = Vector3(3.04794e-10, 0.170863, -1.37711e-08)
 bones/34/rotation = Quaternion(0.35348, 0.125374, -0.0353741, 0.926327)
 bones/34/scale = Vector3(1, 1, 1)
@@ -110,7 +102,6 @@ bones/36/rotation = Quaternion(-0.0707153, 0.116979, 0.989665, 0.0433516)
 bones/36/scale = Vector3(1, 1, 1)
 bones/37/position = Vector3(5.93275e-08, 0.366742, 9.69439e-09)
 bones/37/rotation = Quaternion(-0.191957, 0.0875985, 0.0135256, 0.977393)
-bones/37/scale = Vector3(1, 1, 1)
 bones/38/position = Vector3(-5.45208e-08, 0.350634, -2.4435e-08)
 bones/38/rotation = Quaternion(0.500839, 0.18119, -0.0772429, 0.842831)
 bones/38/scale = Vector3(0.999999, 1, 1)
@@ -118,17 +109,21 @@ bones/39/position = Vector3(5.37387e-09, 0.167471, -8.04853e-08)
 bones/39/rotation = Quaternion(0.371222, -0.123126, 0.0344796, 0.919699)
 bones/39/scale = Vector3(1, 0.999999, 0.999999)
 
-[node name="StateMachine" type="Node3D" parent="."]
+[node name="StateMachine" type="Node3D" parent="." node_paths=PackedStringArray("data", "currentState")]
 script = ExtResource("2_7k85n")
+data = NodePath("../NpcData")
+currentState = NodePath("LieDown")
 
 [node name="LieDown" type="Node3D" parent="StateMachine"]
+script = ExtResource("3_x85pr")
 
 [node name="Yawn" type="Node3D" parent="StateMachine"]
+script = ExtResource("4_b381j")
 
 [node name="Walk" type="Node3D" parent="StateMachine"]
 script = ExtResource("3_el61q")
 
-[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("playback", "body3D")]
+[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("playback", "body3D", "agent")]
 script = ExtResource("3_pjwoq")
 taskList = Array[Object]([ExtResource("5_cqmai"), ExtResource("6_x85pr"), ExtResource("7_b381j")])
 name = "Lucas"
@@ -138,10 +133,14 @@ animations = {
 "lie down": "Lucas_lieDown"
 }
 playback = NodePath("../Lucas_Master_ANIM/AnimationPlayer")
+walkSpeed = 30.0
 body3D = NodePath("..")
+agent = NodePath("../NavigationAgent3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, -0.000635938, 0.000678109, 0.000638536, 0.999992, -0.00385106, -0.000675663, 0.00385149, 0.999992, 0.0220585, 0.870045, 0.110289)
 shape = SubResource("CapsuleShape3D_edg6p")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [editable path="Lucas_Master_ANIM"]

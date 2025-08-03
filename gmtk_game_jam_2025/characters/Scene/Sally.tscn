@@ -1,10 +1,13 @@
-[gd_scene load_steps=26 format=4 uid="uid://be78hygk0rqh3"]
+[gd_scene load_steps=29 format=4 uid="uid://be78hygk0rqh3"]
 
 [ext_resource type="Script" uid="uid://dt5leut1xx8xc" path="res://Scripts/NPC Scripts/StateMachine.cs" id="1_vfkuo"]
 [ext_resource type="Animation" uid="uid://cddgmq43285o3" path="res://characters/animation/Woman NPC_ANIM/sitting_ sad.res" id="2_767kt"]
+[ext_resource type="Script" uid="uid://cjmqrtecpluq0" path="res://Scripts/NPC Scripts/State/WalkState.cs" id="2_uuxir"]
 [ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="2_ywiux"]
+[ext_resource type="Script" uid="uid://dt6ol8pd8gmrj" path="res://Scripts/NPC Scripts/State/SitState.cs" id="3_pd7ts"]
 [ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="3_t3he0"]
 [ext_resource type="Resource" uid="uid://c6nwlwcjtw14d" path="res://Resources/Tasks/T013.tres" id="4_awwok"]
+[ext_resource type="Script" uid="uid://ci8ktq2tiaabr" path="res://Scripts/NPC Scripts/State/IdleState.cs" id="4_e2klq"]
 [ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="5_uc4he"]
 [ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="6_uuxir"]
 [ext_resource type="Resource" uid="uid://d3y7c1u2ff34s" path="res://Resources/Tasks/T040.tres" id="7_pd7ts"]
@@ -815,14 +818,25 @@ _data = {
 
 [node name="Sally" type="CharacterBody3D"]
 
-[node name="StateMachine" type="Node3D" parent="."]
+[node name="StateMachine" type="Node3D" parent="." node_paths=PackedStringArray("data", "currentState")]
 script = ExtResource("1_vfkuo")
+data = NodePath("../NpcData")
+currentState = NodePath("Sit")
+
+[node name="Walk" type="Node3D" parent="StateMachine"]
+script = ExtResource("2_uuxir")
+
+[node name="Sit" type="Node3D" parent="StateMachine"]
+script = ExtResource("3_pd7ts")
+
+[node name="Idle" type="Node3D" parent="StateMachine"]
+script = ExtResource("4_e2klq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7739, 0.0625505)
 shape = SubResource("CapsuleShape3D_767kt")
 
-[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("playback", "body3D")]
+[node name="NpcData" type="Node3D" parent="." node_paths=PackedStringArray("playback", "body3D", "agent")]
 script = ExtResource("2_ywiux")
 taskList = Array[Object]([ExtResource("3_t3he0"), ExtResource("4_awwok"), ExtResource("5_uc4he"), ExtResource("6_uuxir"), ExtResource("7_pd7ts"), ExtResource("8_e2klq")])
 name = "Sad Sally"
@@ -832,7 +846,9 @@ animations = {
 "Walk": "Sally_run"
 }
 playback = NodePath("../Sally_Master_ANIM2/AnimationPlayer")
+walkSpeed = 30.0
 body3D = NodePath("..")
+agent = NodePath("../NavigationAgent3D")
 
 [node name="Sally_Master_ANIM2" type="Node3D" parent="."]
 
@@ -1137,3 +1153,5 @@ skin = SubResource("Skin_u47xd")
 libraries = {
 &"": SubResource("AnimationLibrary_jp53p")
 }
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

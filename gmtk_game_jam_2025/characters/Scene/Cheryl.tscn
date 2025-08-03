@@ -954,4 +954,5 @@ shape = SubResource("CapsuleShape3D_jpxrh")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 avoidance_enabled = true
-radius = 2.0
+radius = 10.0
+use_3d_avoidance = true
