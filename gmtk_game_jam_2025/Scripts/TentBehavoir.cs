@@ -33,6 +33,7 @@ public partial class TentBehavoir : StaticBody3D, IInteractable
 
     public void AllowSleep()
     {
+        GD.Print("allowing sleep");
         _canSleep = true;
     }
 }

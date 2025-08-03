@@ -17,13 +17,13 @@ public partial class DoorBehavior : StaticBody3D, IInteractable
 
     public override void _Ready()
     {
-        _tent = GetNode<TentBehavoir>("../../../ClosetRoom/Tent");
+        _tent = GetNode<TentBehavoir>("../../../ClosetRoom/Tent/StaticBody3D");
         if (_tent == null) GD.Print("I don't know da wei");
     }
 
     public void interact()
     {
-        // GameManager.Instance.StartGame();
+        GameManager.Instance.StartGame();
         _tent.AllowSleep();
         if (!active && unlocked)
         {
