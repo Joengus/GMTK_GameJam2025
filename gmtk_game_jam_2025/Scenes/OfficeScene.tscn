@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cokusonkv40jt"]
+[gd_scene load_steps=35 format=3 uid="uid://cokusonkv40jt"]
 
 [ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="1_ptysm"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="1_xooo4"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://em2wtwgag1cn" path="res://Scenes/mug.tscn" id="4_lgsb2"]
 [ext_resource type="PackedScene" uid="uid://dkwea1r32jwv0" path="res://Prefabs/Objects/caf_table.tscn" id="4_s5aij"]
 [ext_resource type="PackedScene" uid="uid://ctecpjpuny511" path="res://Prefabs/Objects/CellPhone_Col.tscn" id="6_lgsb2"]
+[ext_resource type="PackedScene" uid="uid://b0dsbgcb3xeh2" path="res://Prefabs/Objects/c_suite_door.tscn" id="7_rowip"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6o3rs"]
 
@@ -84,10 +85,10 @@ size = Vector3(2.25, 10, 0.25)
 size = Vector3(2.25, 10, 0.25)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lgsb2"]
-size = Vector3(3, 5, 0.25)
+size = Vector3(11, 5, 0.25)
 
 [sub_resource type="BoxMesh" id="BoxMesh_rowip"]
-size = Vector3(3, 5, 0.25)
+size = Vector3(11, 5, 0.25)
 
 [node name="Office" type="Node3D"]
 
@@ -125,19 +126,19 @@ collision_layer = 2
 collision_mask = 7
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 5, 0)
 shape = SubResource("BoxShape3D_ptysm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 5, 0)
 mesh = SubResource("BoxMesh_ptysm")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 5, 0)
 shape = SubResource("BoxShape3D_6o3rs")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 5, 0)
 mesh = SubResource("BoxMesh_s5aij")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Walls"]
@@ -212,6 +213,14 @@ shape = SubResource("BoxShape3D_lgsb2")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 7.5, 17)
 mesh = SubResource("BoxMesh_rowip")
 
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.5, 0)
+shape = SubResource("BoxShape3D_lgsb2")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.5, 0)
+mesh = SubResource("BoxMesh_rowip")
+
 [node name="Closet Door" parent="." instance=ExtResource("3_6o3rs")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 17)
 
@@ -223,3 +232,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0879, 1.2148, 37.2912)
 
 [node name="Cellphone" parent="." instance=ExtResource("6_lgsb2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5505, 1.23914, 36.6175)
+
+[node name="cSuiteDoor" parent="." instance=ExtResource("7_rowip")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 0)

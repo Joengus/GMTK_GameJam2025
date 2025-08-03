@@ -1,5 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpqsvrh4o1qgx"]
+[gd_scene load_steps=3 format=3 uid="uid://b6puk4b18xd2p"]
 
 [ext_resource type="PackedScene" uid="uid://ep8bfqgb2662" path="res://Assets/Models/Objects/TV/TV.fbx" id="1_ccuam"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ccuam"]
+size = Vector3(0.781128, 0.56543, 0.492676)
+
 [node name="TV" instance=ExtResource("1_ccuam")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.109436, 0.0180664, 0.309814)
+shape = SubResource("BoxShape3D_ccuam")

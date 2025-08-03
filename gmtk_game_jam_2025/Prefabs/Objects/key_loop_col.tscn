@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://baf6atloc76sa"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_214ha"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/key_loop.tscn" id="2_2q3wo"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_214ha"]
+height = 0.029541
+radius = 0.0898438
+
+[node name="KeyLoop" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_214ha")
+prompt = NodePath("Prompt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.000610352, 0)
+shape = SubResource("CylinderShape3D_214ha")
+
+[node name="key_loop" parent="RigidBody3D" instance=ExtResource("2_2q3wo")]
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256831, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30

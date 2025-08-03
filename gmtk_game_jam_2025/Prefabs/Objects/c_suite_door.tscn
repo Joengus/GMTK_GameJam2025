@@ -1,23 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://cvxcuecl66sk1"]
+[gd_scene load_steps=6 format=3 uid="uid://b0dsbgcb3xeh2"]
 
-[ext_resource type="Script" uid="uid://d27dkljwetoeh" path="res://Scripts/DoorBehavior.cs" id="1_bx7sw"]
-[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="2_mw28t"]
+[ext_resource type="Script" uid="uid://d27dkljwetoeh" path="res://Scripts/DoorBehavior.cs" id="1_rx3ib"]
+[ext_resource type="Shader" uid="uid://dqml0pqx5vixr" path="res://CheckerboardShader.gdshader" id="2_10f8q"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_inpyb"]
-size = Vector3(2, 5, 0.075)
+[sub_resource type="BoxShape3D" id="BoxShape3D_n02nc"]
+size = Vector3(8, 5, 0.075)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7mbvs"]
 render_priority = 0
-shader = ExtResource("2_mw28t")
+shader = ExtResource("2_10f8q")
 shader_parameter/color1 = Color(0, 0, 0, 1)
 shader_parameter/color2 = Color(1, 1, 1, 1)
 shader_parameter/scale = 50.0
 
-[sub_resource type="BoxMesh" id="BoxMesh_et2cr"]
+[sub_resource type="BoxMesh" id="BoxMesh_2tvkn"]
 material = SubResource("ShaderMaterial_7mbvs")
-size = Vector3(2, 5, 0.075)
+size = Vector3(10, 5, 0.075)
 
-[node name="Door" type="Node3D"]
+[node name="cSuiteDoor" type="Node3D"]
 
 [node name="OpenPosition" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
@@ -27,19 +27,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 [node name="StaticBody3D" type="StaticBody3D" parent="." node_paths=PackedStringArray("openPrompt", "lockedPrompt", "openPos", "closedPos")]
 collision_layer = 6
 collision_mask = 7
-script = ExtResource("1_bx7sw")
+script = ExtResource("1_rx3ib")
 openPrompt = NodePath("OpenPromptParent")
 lockedPrompt = NodePath("LockedPromptParent")
 openPos = NodePath("../OpenPosition")
 closedPos = NodePath("../ClosePosition")
+unlocked = false
+_tweenDuration = 2.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
-shape = SubResource("BoxShape3D_inpyb")
+shape = SubResource("BoxShape3D_n02nc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
-mesh = SubResource("BoxMesh_et2cr")
+mesh = SubResource("BoxMesh_2tvkn")
 skeleton = NodePath("../..")
 
 [node name="OpenPromptParent" type="Node3D" parent="StaticBody3D"]
@@ -49,11 +51,13 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0.08)
 layers = 8
 text = "Open"
+font_size = 96
 
 [node name="Prompt2" type="Label3D" parent="StaticBody3D/OpenPromptParent"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.5, -0.08)
 layers = 8
 text = "Open"
+font_size = 96
 
 [node name="LockedPromptParent" type="Node3D" parent="StaticBody3D"]
 visible = false
@@ -62,8 +66,10 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0.08)
 layers = 8
 text = "Locked"
+font_size = 96
 
 [node name="Prompt2" type="Label3D" parent="StaticBody3D/LockedPromptParent"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.5, -0.08)
 layers = 8
 text = "Locked"
+font_size = 96
