@@ -3,7 +3,7 @@ public partial class CherylIdleState : NpcState
 
     public override void Enter()
     {
-        machine.data.playback.Travel(machine.data.animations["Idle"].AsString());
+        machine.data.playback.Play(machine.data.animations["Idle"].AsString());
     }
     public override void Update(double delta)
     { 
@@ -11,6 +11,6 @@ public partial class CherylIdleState : NpcState
     }
     public override void Exit()
     { 
-        
+        machine.data.playback.Stop();
     }
 }
