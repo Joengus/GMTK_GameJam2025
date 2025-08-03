@@ -8,6 +8,7 @@ public partial class PlayerInteractionBehavior : Node3D
     public static PlayerInteractionBehavior instance;
 
     [Export] ShapeCast3D shapeCast;
+    [Export] ShapeCast3D slapCast;
     PhysicsBody3D currentSelectedInteractable = null;
     bool ItemHeld = false;
     PhysicsBody3D currentHeldObject = null;
@@ -119,10 +120,34 @@ public partial class PlayerInteractionBehavior : Node3D
 
     private async void slap()
     {
-        anim.Play("PC_throw", 0, 3);
+        anim.Play("Slap_ANIM", 0, 4);
 
-        await ToSignal(anim, AnimationPlayer.SignalName.AnimationFinished);
+        while (anim.CurrentAnimationPosition < anim.CurrentAnimation.Length / 8)
+        {
+            await ToSignal(GetTree(), "process_frame"); 
+        }
 
-        anim.Seek(0,true);
+        slapCast.ForceShapecastUpdate();
+        int numOfHits = slapCast.GetCollisionCount();
+
+        if (numOfHits > 0)
+        {
+            for (int i = 0; i < numOfHits; i++)
+            {
+                Node3D collider = slapCast.GetCollider(i) as Node3D;
+
+                if (collider is RigidBody3D rb)
+                {
+                    rb.ApplyCentralImpulse(-slapCast.GlobalBasis.Z * 10);
+                }
+            }
+        }
+
+        while (anim.CurrentAnimationPosition < anim.CurrentAnimation.Length)
+        {
+            await ToSignal(GetTree(), "process_frame"); 
+        }  
+        
+        anim.Play("Slap_STATIC", .25, 1);
     }
 }
