@@ -7,6 +7,7 @@ public partial class PauseMenu : Control
 	public void OnResumeButtonPressed()
 	{
 		Visible = false;
+		Input.MouseMode = Input.MouseModeEnum.Captured;
 	}
 
 	public void OnMainMenuButtonPressed()

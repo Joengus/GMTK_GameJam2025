@@ -15,6 +15,7 @@ public partial class SceneManager : Node3D
 		if (Input.IsActionJustPressed("Pause"))
 		{
 			_pauseMenu.TogglePauseMenu();
+			Input.MouseMode = _pauseMenu.Visible ? Input.MouseModeEnum.Visible : Input.MouseModeEnum.Captured;
 		}
 	}
 }
