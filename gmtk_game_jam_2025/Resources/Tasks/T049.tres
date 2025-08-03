@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://b8rt31benis38"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_ibefg"]
+
+[resource]
+script = ExtResource("1_ibefg")
+ReputationAlignment = 0
+TaskName = ""
+PointsTowardAlignment = 0
+DescriptionRebel = ""
+DescriptionNeutral = ""
+DescriptionCitizen = ""
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"
