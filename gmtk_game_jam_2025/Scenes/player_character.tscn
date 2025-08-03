@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dwkmxhgklhjr8" path="res://Scripts/PlayerCharacterController.cs" id="1_02ohv"]
 [ext_resource type="Script" uid="uid://fhigqns7sgk8" path="res://Scripts/PlayerInteractionBehavior.cs" id="2_cmdk4"]
-[ext_resource type="PackedScene" uid="uid://eyeewd56fkfc" path="res://Scripts/pc_throw.tscn" id="4_wko77"]
+[ext_resource type="PackedScene" uid="uid://bax2p0weawep5" path="res://Scripts/pc_throw.tscn" id="4_wko77"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tfo3t"]
 height = 3.0
@@ -97,8 +97,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85169, 1.23632, -0.0169053
 [node name="Skeleton3D" parent="CharacterBody3D/HandTransform/PC_throw" index="2"]
 bones/0/position = Vector3(-0.85169, 1.23632, -0.0169052)
 bones/0/rotation = Quaternion(-0.612233, -2.98023e-08, -1.49012e-08, 0.790678)
-bones/1/position = Vector3(-0.509282, 1.24772, -0.646234)
-bones/1/rotation = Quaternion(0.00556012, 0.616018, 0.787158, -0.0295637)
 
 [node name="HeadRoomCast" type="ShapeCast3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62366, 0)
