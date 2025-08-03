@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://bixhydqy242lq"]
+[gd_scene load_steps=12 format=3 uid="uid://bixhydqy242lq"]
 
 [ext_resource type="Script" uid="uid://dwkmxhgklhjr8" path="res://Scripts/PlayerCharacterController.cs" id="1_02ohv"]
+[ext_resource type="Script" uid="uid://xgsf6vh3prlb" path="res://Scenes/PlayerTaskSystem.cs" id="1_wko77"]
 [ext_resource type="Script" uid="uid://fhigqns7sgk8" path="res://Scripts/PlayerInteractionBehavior.cs" id="2_cmdk4"]
-[ext_resource type="PackedScene" uid="uid://wheufvsgrx4y" path="res://Scripts/pc_master_anim.tscn" id="4_pb3n0"]
+[ext_resource type="PackedScene" path="res://Scripts/pc_master_anim.tscn" id="4_pb3n0"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_tfo3t"]
 height = 3.0
@@ -28,6 +29,7 @@ size = Vector3(2, 1, 0.1)
 radius = 0.15
 
 [node name="PlayerCharacter" type="Node3D"]
+script = ExtResource("1_wko77")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." node_paths=PackedStringArray("shapeCast")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
