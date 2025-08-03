@@ -11,5 +11,6 @@ public partial class TaskResource : Resource
 	[Export] public string DescriptionNeutral;
 	[Export] public string DescriptionCitizen;
 	[Export] public TaskResource[] PrerequisiteTasks;
+	[Export] public bool isHidden;
 	public bool IsComplete = false;
 }
