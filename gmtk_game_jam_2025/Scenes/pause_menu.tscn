@@ -1,11 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxfaxrrh8exdo"]
+[gd_scene load_steps=15 format=3 uid="uid://bxfaxrrh8exdo"]
 
 [ext_resource type="Script" uid="uid://bdahqn7y1h265" path="res://Scripts/PauseMenu.cs" id="1_05uyy"]
 [ext_resource type="Script" uid="uid://roplms4a6nnk" path="res://Scripts/AudioController.cs" id="1_hdmo1"]
 [ext_resource type="PackedScene" uid="uid://xio2gveaa1q8" path="res://Scenes/main_menu.tscn" id="2_p81d2"]
+[ext_resource type="Texture2D" uid="uid://vgq5cekw2dx3" path="res://Assets/Art/UI/SVG/button_square_depth_line.svg" id="3_bpi0q"]
+[ext_resource type="Texture2D" uid="uid://bqimeres7pp6y" path="res://Assets/Art/UI/SVG/RedButtons/button_rectangle_depth_border.png" id="5_myy0f"]
+[ext_resource type="Texture2D" uid="uid://bv3gd2lxa3tbl" path="res://Assets/Art/UI/SVG/GreenButtons/button_rectangle_depth_border.png" id="5_u8tnp"]
+[ext_resource type="Texture2D" uid="uid://c2n2w0xhhvljv" path="res://Assets/Art/UI/SVG/RedButtons/button_rectangle_border.png" id="6_sjs17"]
+[ext_resource type="Texture2D" uid="uid://dndatxp2s4qdu" path="res://Assets/Art/UI/SVG/GreenButtons/button_rectangle_border.png" id="6_stj27"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hdmo1"]
-bg_color = Color(0, 0, 0, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u8tnp"]
+texture = ExtResource("5_u8tnp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_stj27"]
+texture = ExtResource("6_stj27")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ix48p"]
+texture = ExtResource("5_u8tnp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_myy0f"]
+texture = ExtResource("5_myy0f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sjs17"]
+texture = ExtResource("6_sjs17")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_524vl"]
+texture = ExtResource("5_myy0f")
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -30,7 +50,19 @@ offset_right = 213.0
 offset_bottom = 266.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_hdmo1")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_bpi0q")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 15
 
 [node name="PauseTitle" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
@@ -42,6 +74,7 @@ offset_top = 32.0
 offset_right = 116.0
 offset_bottom = 109.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 24
 text = "Game Paused"
 horizontal_alignment = 1
@@ -66,6 +99,7 @@ offset_top = 122.0
 offset_right = 48.0
 offset_bottom = 162.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Master"
 vertical_alignment = 1
 
@@ -96,6 +130,7 @@ offset_top = 179.0
 offset_right = 48.0
 offset_bottom = 219.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Music"
 vertical_alignment = 1
 
@@ -126,6 +161,7 @@ offset_top = 240.0
 offset_right = 48.0
 offset_bottom = 280.0
 grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Sound Effects"
 vertical_alignment = 1
 
@@ -159,7 +195,23 @@ offset_right = 75.0
 offset_bottom = -134.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_styles/hover = SubResource("StyleBoxTexture_u8tnp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_stj27")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ix48p")
 text = "Resume"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/ResumeButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Resume"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="MainMenuButton" type="Button" parent="Panel"]
 layout_mode = 1
@@ -174,7 +226,26 @@ offset_right = 75.0
 offset_bottom = -60.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_styles/hover = SubResource("StyleBoxTexture_myy0f")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sjs17")
+theme_override_styles/normal = SubResource("StyleBoxTexture_524vl")
 text = "Main Menu"
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="Panel/MainMenuButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="value_changed" from="Panel/AudioController/MasterSlider" to="Panel/AudioController" method="OnMasterVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/MusicSlider" to="Panel/AudioController" method="OnMusicVolumeChanged"]
+[connection signal="value_changed" from="Panel/AudioController/SfxSlider" to="Panel/AudioController" method="OnSfxVolumeChanged"]
 [connection signal="pressed" from="Panel/ResumeButton" to="." method="OnResumeButtonPressed"]
 [connection signal="pressed" from="Panel/MainMenuButton" to="." method="OnMainMenuButtonPressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://slbl4ivtbkna"
+path="res://.godot/imported/Alarm Clock (Day Begins).mp3-f5812f499bab66277ddfb6777e50fdc1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Alarm Clock (Day Begins).mp3"
+dest_files=["res://.godot/imported/Alarm Clock (Day Begins).mp3-f5812f499bab66277ddfb6777e50fdc1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
