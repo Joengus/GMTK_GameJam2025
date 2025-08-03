@@ -1,47 +1,56 @@
-[gd_scene load_steps=73 format=3 uid="uid://c0bgvx74ffals"]
+[gd_scene load_steps=82 format=3 uid="uid://cokusonkv40jt"]
 
 [ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="1_ptysm"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="1_xooo4"]
 [ext_resource type="PackedScene" uid="uid://cvxcuecl66sk1" path="res://Prefabs/Objects/Door.tscn" id="3_6o3rs"]
 [ext_resource type="PackedScene" uid="uid://cb3ucad42ifwa" path="res://Prefabs/Objects/tent.tscn" id="3_p887g"]
 [ext_resource type="PackedScene" uid="uid://dkwea1r32jwv0" path="res://Prefabs/Objects/caf_table.tscn" id="4_s5aij"]
+[ext_resource type="PackedScene" uid="uid://bbsodl7rhoos3" path="res://Assets/Models/Objects/CoffeeMaker/Coffee_Maker.fbx" id="6_lk504"]
 [ext_resource type="PackedScene" uid="uid://caqhcwbqy1v1r" path="res://Prefabs/Objects/Printer_Col.tscn" id="7_p887g"]
+[ext_resource type="PackedScene" uid="uid://deckjyvac7p2i" path="res://Assets/Models/Objects/CoffeeCup/Coffee_Cup.fbx" id="7_pptb2"]
 [ext_resource type="PackedScene" uid="uid://8lpde8e58dcj" path="res://Prefabs/Objects/side_table.tscn" id="7_ravfd"]
-[ext_resource type="PackedScene" uid="uid://b0dsbgcb3xeh2" path="res://Prefabs/Objects/c_suite_door.tscn" id="7_rowip"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/c_suite_door.tscn" id="7_rowip"]
 [ext_resource type="PackedScene" uid="uid://cwrmii1upoc1n" path="res://Prefabs/Objects/computer.tscn" id="8_0km7k"]
 [ext_resource type="PackedScene" uid="uid://dmr61qjdkgsbu" path="res://Prefabs/Objects/cubicle_wall_blank.tscn" id="8_p887g"]
-[ext_resource type="PackedScene" uid="uid://b5s5yo25wajn0" path="res://Prefabs/Objects/solo_cup_col.tscn" id="8_wqeb7"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/solo_cup_col.tscn" id="8_wqeb7"]
 [ext_resource type="PackedScene" uid="uid://duwvqy5yovw0q" path="res://Prefabs/Objects/office_desk.tscn" id="9_4rasj"]
-[ext_resource type="PackedScene" uid="uid://o2bryt7r12u2" path="res://Prefabs/Objects/pizza_slice_col.tscn" id="9_mt86w"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/pizza_slice_col.tscn" id="9_mt86w"]
+[ext_resource type="PackedScene" uid="uid://hrquh41eppi" path="res://Assets/Models/Objects/CubicleWall/Blank/Cubicle_Wall.fbx" id="9_wit5t"]
 [ext_resource type="PackedScene" uid="uid://dg7sxib7afh75" path="res://Prefabs/Objects/whiskey_bottle_col.tscn" id="10_3b5j6"]
-[ext_resource type="PackedScene" uid="uid://1fc1wms6da15" path="res://Prefabs/Objects/office_desk_mirror.tscn" id="10_v7ntd"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/office_desk_mirror.tscn" id="10_v7ntd"]
 [ext_resource type="PackedScene" uid="uid://fwfnkey4yhxi" path="res://Prefabs/Objects/cubicle_wall.tscn" id="11_5uf5g"]
 [ext_resource type="PackedScene" uid="uid://d1b7y5grnf58s" path="res://Prefabs/Objects/Cup_Toothbrush_Col.tscn" id="11_b0pj3"]
 [ext_resource type="PackedScene" uid="uid://b061cx8p0iv23" path="res://Prefabs/Objects/OfficeChair_Col.tscn" id="12_4te1i"]
-[ext_resource type="PackedScene" uid="uid://dy2304ba75eyl" path="res://Prefabs/Objects/office_desk_noSlide.tscn" id="13_0km7k"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/office_desk_noSlide.tscn" id="13_0km7k"]
 [ext_resource type="PackedScene" uid="uid://bfufpgxgx2t6v" path="res://Prefabs/Objects/lunch_bag_col.tscn" id="13_6ad6f"]
 [ext_resource type="PackedScene" uid="uid://b5la5ivs7rbei" path="res://Prefabs/Objects/large_potted_plant.tscn" id="13_b0pj3"]
 [ext_resource type="PackedScene" uid="uid://i6utai72estt" path="res://Prefabs/Objects/office_Phone_Col.tscn" id="13_hio85"]
 [ext_resource type="PackedScene" uid="uid://dm23ylwtfll3w" path="res://Prefabs/Objects/Gymbag_Col.tscn" id="14_6ad6f"]
 [ext_resource type="PackedScene" uid="uid://u38to82evi37" path="res://Prefabs/Objects/uniform.tscn" id="15_qftvg"]
-[ext_resource type="PackedScene" uid="uid://bmuiei5qh12sp" path="res://Prefabs/Objects/DeskCluster.tscn" id="16_x0s5n"]
-[ext_resource type="PackedScene" uid="uid://bjda1malaulir" path="res://Prefabs/Objects/TableCluster.tscn" id="17_7a21x"]
-[ext_resource type="PackedScene" uid="uid://b5b6camr4tlr7" path="res://Prefabs/Objects/water_dispensor.tscn" id="20_7a21x"]
-[ext_resource type="PackedScene" uid="uid://banw2lydb62ab" path="res://characters/Scene/Lucas.tscn" id="21_cb25o"]
-[ext_resource type="PackedScene" uid="uid://bcq4835jtlqih" path="res://characters/Scene/Cheryl.tscn" id="21_ex8sv"]
-[ext_resource type="PackedScene" uid="uid://be78hygk0rqh3" path="res://characters/Scene/Sally.tscn" id="22_j4uru"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/DeskCluster.tscn" id="16_x0s5n"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/TableCluster.tscn" id="17_7a21x"]
+[ext_resource type="PackedScene" uid="uid://nbsd26vk2c1t" path="res://Prefabs/Objects/water_dispensor.tscn" id="20_7a21x"]
+[ext_resource type="PackedScene" path="res://characters/Scene/Lucas.tscn" id="21_cb25o"]
+[ext_resource type="PackedScene" path="res://characters/Scene/Sally.tscn" id="22_j4uru"]
 [ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="27_c3loq"]
-[ext_resource type="PackedScene" uid="uid://dclxbo0c453m7" path="res://Prefabs/Objects/paper_plate_col.tscn" id="27_exk2h"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/paper_plate_col.tscn" id="27_exk2h"]
 [ext_resource type="PackedScene" uid="uid://bfkns6ftdg70a" path="res://Prefabs/Objects/vending_machine.tscn" id="28_hxdps"]
 [ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="28_mtkrx"]
 [ext_resource type="PackedScene" uid="uid://djusqjyn4p0hb" path="res://characters/Scene/Gus.tscn" id="30_0hi4x"]
-[ext_resource type="PackedScene" uid="uid://b6puk4b18xd2p" path="res://Prefabs/Objects/tv.tscn" id="30_fb0rg"]
+[ext_resource type="PackedScene" uid="uid://bpqsvrh4o1qgx" path="res://Prefabs/Objects/tv.tscn" id="30_fb0rg"]
 [ext_resource type="PackedScene" uid="uid://b7i6ao0sfcjpb" path="res://Prefabs/Objects/vhs_player.tscn" id="31_ex8sv"]
-[ext_resource type="PackedScene" uid="uid://dkapn5kojr3b7" path="res://Prefabs/Objects/exec_desk.tscn" id="32_0hi4x"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/exec_desk.tscn" id="32_0hi4x"]
 [ext_resource type="PackedScene" uid="uid://dojg2bq8uho8n" path="res://Prefabs/Objects/big_red_button.tscn" id="32_ex8sv"]
 [ext_resource type="PackedScene" uid="uid://dj73qpr11vnbg" path="res://Prefabs/Objects/vhs_tape_col.tscn" id="34_cb25o"]
-[ext_resource type="PackedScene" uid="uid://ccivwxywhv4na" path="res://Prefabs/Objects/bar_cart_col.tscn" id="35_2w47o"]
-[ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="42_mtkrx"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/bar_cart_col.tscn" id="35_2w47o"]
+[ext_resource type="PackedScene" uid="uid://cmfx6ckwr56e" path="res://Assets/Models/Objects/Plants/TallPlant/tall_plant.fbx" id="44_8e0yf"]
+[ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/Plants/Potted/large_potted_plant.fbx" id="45_4k6ur"]
+[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/Plants/Potted/small_potted_plant.fbx" id="46_dx7cr"]
+[ext_resource type="PackedScene" uid="uid://3l1ubac2b3di" path="res://Assets/Models/Objects/PottedPlants/small_potted_plant.fbx" id="47_oupad"]
+[ext_resource type="PackedScene" uid="uid://cr8a30d5x5tn0" path="res://Assets/Models/Objects/PottedPlants/large_potted_plant.fbx" id="48_bno24"]
+[ext_resource type="PackedScene" uid="uid://cjnm2dr0xel3" path="res://Assets/Models/Objects/SideTable/side_table.fbx" id="49_6jukv"]
+[ext_resource type="PackedScene" uid="uid://c67oxp5pgbf0b" path="res://Assets/Models/Objects/Fishbowl/fishbowl.fbx" id="50_knbon"]
+[ext_resource type="PackedScene" uid="uid://4sh6nhq18npm" path="res://Assets/Models/Objects/VendingMachine/Vending Machine.fbx" id="51_1rmu1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6o3rs"]
 
@@ -137,10 +146,6 @@ size = Vector3(11, 5.5, 0.25)
 
 [node name="Office" type="Node3D"]
 
-[node name="Managers" type="Node3D" parent="."]
-
-[node name="TaskManager" parent="Managers" instance=ExtResource("42_mtkrx")]
-
 [node name="PlayerCharacter" parent="." instance=ExtResource("1_xooo4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2344, 0, 7.31723)
 
@@ -189,74 +194,18 @@ bones/37/rotation = Quaternion(0.00243721, -0.109093, 0.0267434, 0.993669)
 bones/38/rotation = Quaternion(0.328387, 0.187316, 0.0770613, 0.922571)
 bones/39/rotation = Quaternion(0.260405, -0.128421, 0.0692874, 0.954409)
 
-[node name="Cheryl" parent="NPCs" instance=ExtResource("21_ex8sv")]
+[node name="Cheryl" parent="NPCs"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(-1.45161, 0, 1.3758, 0, 2, 0, -1.3758, 0, -1.45161, -30.5133, 0.409426, 29.8091)
-
-[node name="Skeleton3D" parent="NPCs/Cheryl/Cheryl_MasterANIM" index="0"]
-bones/0/position = Vector3(-0.00187072, 0.520616, 0.0177574)
-bones/0/rotation = Quaternion(0.0104089, 0.00608678, 0.0156255, 0.999805)
-bones/1/position = Vector3(0, 0.0927219, -0.00172525)
-bones/1/rotation = Quaternion(0.0475111, -0.0141129, -0.0194951, 0.998581)
-bones/2/position = Vector3(-8.67362e-19, 0.108194, 1e-08)
-bones/2/rotation = Quaternion(0.028757, -0.0113468, -0.00745932, 0.999494)
-bones/3/position = Vector3(-8.67362e-19, 0.123651, -3.46945e-18)
-bones/3/rotation = Quaternion(0.0287153, -0.0114025, -0.00724093, 0.999496)
-bones/4/position = Vector3(-8.67362e-19, 0.139107, 4.30136e-08)
-bones/4/rotation = Quaternion(0.0384229, -0.00753741, 0.00482987, 0.999222)
-bones/5/rotation = Quaternion(-0.0793164, -0.019484, -0.0490485, 0.995452)
-bones/7/position = Vector3(0.0430568, 0.109219, -0.00133738)
-bones/7/rotation = Quaternion(-0.642826, -0.342911, 0.563871, -0.38889)
-bones/8/position = Vector3(-3.74029e-08, 0.100232, 1.38995e-07)
-bones/8/rotation = Quaternion(0.0606416, -0.508912, 0.440578, 0.737036)
-bones/9/position = Vector3(-2.30669e-08, 0.265063, 6.89588e-07)
-bones/9/rotation = Quaternion(0.00121567, -0.173385, 0.836982, 0.519035)
-bones/10/position = Vector3(-1.19687e-07, 0.31662, -3.93409e-07)
-bones/10/rotation = Quaternion(-0.0645731, -0.566329, -0.205544, 0.795521)
-bones/11/position = Vector3(3.8538e-07, 0.121624, 2.49404e-07)
-bones/11/rotation = Quaternion(0.105657, -0.0234095, -0.00891272, 0.994087)
-bones/11/scale = Vector3(1, 1, 0.999999)
-bones/12/position = Vector3(2.06931e-08, 0.037102, 2.36601e-08)
-bones/12/rotation = Quaternion(0.23184, 0.0226794, -0.184429, 0.954841)
-bones/13/position = Vector3(-0.0173688, 0.0496097, -0.00917193)
-bones/13/rotation = Quaternion(0.0972989, 0.0323462, -0.00578002, 0.994713)
-bones/15/position = Vector3(-0.0430566, 0.10919, 0.000224654)
-bones/15/rotation = Quaternion(0.668893, -0.339866, 0.479907, 0.454712)
-bones/15/scale = Vector3(1, 0.999999, 1)
-bones/16/position = Vector3(-3.30578e-08, 0.100232, 1.19736e-07)
-bones/16/rotation = Quaternion(0.152727, 0.506156, -0.390508, 0.753647)
-bones/16/scale = Vector3(0.999999, 1, 1)
-bones/17/position = Vector3(-3.10002e-08, 0.265188, -5.12223e-07)
-bones/17/rotation = Quaternion(0.0760889, 0.18222, -0.876291, 0.439454)
-bones/17/scale = Vector3(1, 0.999999, 1)
-bones/18/position = Vector3(1.39915e-07, 0.316619, 1.04164e-06)
-bones/18/rotation = Quaternion(-0.0747344, 0.243296, 0.0464013, 0.965955)
-bones/18/scale = Vector3(1, 1, 0.999999)
-bones/19/position = Vector3(-2.6003e-08, 0.118597, -1.07684e-06)
-bones/19/rotation = Quaternion(0.0694461, -0.527504, -0.0494511, 0.845264)
-bones/20/position = Vector3(-2.49871e-10, 0.0351122, -3.38972e-09)
-bones/20/rotation = Quaternion(0.337181, -0.0373971, -0.122463, 0.932692)
-bones/21/position = Vector3(0.0028872, 0.0521516, -0.0257621)
-bones/21/rotation = Quaternion(0.0669771, -0.0768059, -0.154428, 0.982735)
-bones/23/position = Vector3(0.0783234, -0.05162, -0.0124892)
-bones/23/rotation = Quaternion(0.0483771, 0.703677, 0.699797, -0.11306)
-bones/24/position = Vector3(1.98608e-08, 0.359184, -1.83221e-08)
-bones/24/rotation = Quaternion(-0.692775, -0.0429898, 0.00416832, 0.719859)
-bones/24/scale = Vector3(1, 0.999999, 0.999999)
-bones/25/position = Vector3(4.67991e-08, 0.337569, -3.78047e-08)
-bones/25/rotation = Quaternion(0.435475, 0.0332083, -0.0966392, 0.894382)
-bones/26/position = Vector3(2.52047e-08, 0.172432, -3.42949e-08)
-bones/28/position = Vector3(-0.0783233, -0.0516207, -0.0305563)
-bones/28/rotation = Quaternion(-0.0173685, 0.710702, 0.694524, 0.110622)
-bones/28/scale = Vector3(1, 0.999999, 1)
-bones/29/position = Vector3(-3.11508e-08, 0.359255, -1.20546e-08)
-bones/29/rotation = Quaternion(-0.675578, 0.0316466, -0.0136793, 0.736482)
-bones/29/scale = Vector3(0.999999, 0.999999, 1)
-bones/30/position = Vector3(-1.59705e-08, 0.336597, -5.8795e-08)
-bones/30/rotation = Quaternion(0.404837, 0.0227652, 0.0684908, 0.911536)
-bones/31/position = Vector3(2.5294e-08, 0.168099, 1.19104e-08)
-
-[node name="StateMachine" parent="NPCs/Cheryl" index="1" node_paths=PackedStringArray("currentState")]
-currentState = NodePath("Walk")
+script = null
 
 [node name="Sally" parent="NPCs" instance=ExtResource("22_j4uru")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -44.1937, 0.356827, 33.364)
@@ -407,6 +356,7 @@ bones/31/rotation = Quaternion(0.378086, -0.0290259, 0.0116669, 0.925242)
 bones/32/rotation = Quaternion(-3.16526e-10, 6.2211e-17, -5.421e-19, 1)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00168133, 0.0167537, -0.000566483)
 navigation_mesh = SubResource("NavigationMesh_tbe81")
 
 [node name="Floor" type="StaticBody3D" parent="NavigationRegion3D"]
@@ -520,13 +470,46 @@ shape = SubResource("BoxShape3D_lgsb2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 7.5, 0)
 mesh = SubResource("BoxMesh_rowip")
 
+[node name="Coffee_Maker" parent="NavigationRegion3D/Walls" instance=ExtResource("6_lk504")]
+transform = Transform3D(-6.66389e-08, 0, -1, 0, 2.00524, 0, 1.52452, 0, -4.37114e-08, 49.7418, 1.50707, 8.07516)
+
+[node name="Coffee_Cup" parent="NavigationRegion3D/Walls" instance=ExtResource("7_pptb2")]
+transform = Transform3D(1.16332, 0, 0, 0, 1.16332, 0, 0, 0, 1.16332, 49.4282, 1.49638, 8.82081)
+
+[node name="Node3D" type="Node3D" parent="NavigationRegion3D/Walls/Coffee_Cup"]
+script = ExtResource("27_c3loq")
+
+[node name="Coffee_Cup2" parent="NavigationRegion3D/Walls" instance=ExtResource("7_pptb2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.6255, 1.52301, 9.02818)
+
+[node name="Coffee_Cup3" parent="NavigationRegion3D/Walls" instance=ExtResource("7_pptb2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.427, 1.50334, 8.62596)
+
+[node name="Coffee_Cup4" parent="NavigationRegion3D/Walls" instance=ExtResource("7_pptb2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.5647, 1.493, 8.48073)
+
+[node name="Coffee_Cup5" parent="NavigationRegion3D/Walls" instance=ExtResource("7_pptb2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.4216, 1.4967, 9.16571)
+
+[node name="Coffee_Maker2" parent="NavigationRegion3D/Walls" instance=ExtResource("6_lk504")]
+transform = Transform3D(-7.10547e-08, 0, -1.34949, 0, 1.85524, 0, 1.62554, 0, -5.89881e-08, 49.7217, 1.49472, 12.149)
+
+[node name="Cubicle_Wall" parent="NavigationRegion3D/Walls" instance=ExtResource("9_wit5t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.4097, -0.103325, 7.88686)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Walls/Cubicle_Wall"]
+
 [node name="ClosetRoom" type="Node3D" parent="NavigationRegion3D"]
 
 [node name="Tent" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("3_p887g")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 21.25, 0, 3.5)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/Tent"]
+
 [node name="Printer" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("7_p887g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 1)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/Printer"]
 
 [node name="Printer2" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("7_p887g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.31771, 0, 1)
@@ -567,26 +550,42 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.437
 [node name="large_potted_plant" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("13_b0pj3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 1.93667)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/large_potted_plant"]
+
 [node name="large_potted_plant2" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("13_b0pj3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 3.83638)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/large_potted_plant2"]
 
 [node name="large_potted_plant3" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("13_b0pj3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 5.61611)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/large_potted_plant3"]
+
 [node name="large_potted_plant4" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("13_b0pj3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 7.29586)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/large_potted_plant4"]
 
 [node name="large_potted_plant5" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("13_b0pj3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 8.95561)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/large_potted_plant5"]
+
 [node name="large_potted_plant6" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("13_b0pj3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3138, 0, 10.5949)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/large_potted_plant6"]
 
 [node name="Printer3" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("7_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.865808, 0, 4.14321)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/Printer3"]
+
 [node name="Printer4" parent="NavigationRegion3D/ClosetRoom" instance=ExtResource("7_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.828083, 0, 7.82531)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/ClosetRoom/Printer4"]
 
 [node name="Bullpen" type="Node3D" parent="NavigationRegion3D"]
 
@@ -596,11 +595,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.0544, 1.55633, 11.7876)
 [node name="Cubicle_Wall3" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -34.5422, 0, 12.028)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall3"]
+
 [node name="Cubicle_Wall4" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -34.5422, 0, 9.06594)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall4"]
+
 [node name="Cubicle_Wall5" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.0689, 0, 12.028)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall5"]
 
 [node name="Cubicle_Wall6" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.0689, 0, 9.06594)
@@ -608,32 +613,52 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.06
 [node name="Office_Desk3" parent="NavigationRegion3D/Bullpen" instance=ExtResource("9_4rasj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8607, 0, 11.523)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk3"]
+
 [node name="Office_Desk4" parent="NavigationRegion3D/Bullpen" instance=ExtResource("10_v7ntd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -31.8777, 0, 9.63386)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk4"]
 
 [node name="Cubicle_Wall7" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -23.3945, 0, 12.0435)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall7"]
+
 [node name="Cubicle_Wall8" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -23.3945, 0, 9.0814)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall8"]
 
 [node name="Cubicle_Wall" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0664, 0, 10.5765)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall"]
+
 [node name="Cubicle_Wall2" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -38.7991, 0, 10.5833)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall2"]
 
 [node name="Cubicle_Wall9" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.7582, 0, 10.5765)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall9"]
+
 [node name="Cubicle_Wall10" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -27.4909, 0, 10.5833)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall10"]
 
 [node name="Cubicle_Wall11" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.3868, 0, 12.0435)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall11"]
+
 [node name="Cubicle_Wall12" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.3868, 0, 9.0814)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall12"]
 
 [node name="LunchBag" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_6ad6f")]
 transform = Transform3D(0.872138, 0, -0.489261, 0, 1, 0, 0.489261, 0, 0.872138, -36.0653, 1.53266, 11.7728)
@@ -644,44 +669,72 @@ transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962
 [node name="Cubicle_Wall13" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.719, 0, 31.76)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall13"]
+
 [node name="Cubicle_Wall14" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.5683, 0, 31.723)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall14"]
 
 [node name="Cubicle_Wall15" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.6506, 0, 26.4971)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall15"]
+
 [node name="Cubicle_Wall16" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.6124, 0, 26.4601)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall16"]
 
 [node name="Office_Desk9" parent="NavigationRegion3D/Bullpen" instance=ExtResource("9_4rasj")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -40.1904, 0, 29.0724)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk9"]
+
 [node name="Office_Desk10" parent="NavigationRegion3D/Bullpen" instance=ExtResource("10_v7ntd")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -42.0796, 0, 29.0658)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk10"]
 
 [node name="Cubicle_Wall17" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.5642, 0, 21.0858)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall17"]
+
 [node name="Cubicle_Wall18" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.526, 0, 21.0488)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall18"]
 
 [node name="Cubicle_Wall19" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -41.1894, 0, 33.0634)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall19"]
+
 [node name="Cubicle_Wall20" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -41.2168, 0, 35.7885)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall20"]
 
 [node name="Cubicle_Wall21" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -41.0481, 0, 22.4311)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall21"]
+
 [node name="Cubicle_Wall22" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -41.0755, 0, 25.1636)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall22"]
 
 [node name="Cubicle_Wall23" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -39.7765, 0, 37.25)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall23"]
+
 [node name="Cubicle_Wall24" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -42.7384, 0, 37.213)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall24"]
 
 [node name="LunchBag2" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_6ad6f")]
 transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, -39.9932, 1.53266, 33.2798)
@@ -692,44 +745,72 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.03
 [node name="Cubicle_Wall25" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.4888, 0, 31.76)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall25"]
+
 [node name="Cubicle_Wall26" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.4506, 0, 31.723)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall26"]
 
 [node name="Office_Desk13" parent="NavigationRegion3D/Bullpen" instance=ExtResource("9_4rasj")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -25.9484, 0, 34.3057)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk13"]
+
 [node name="Office_Desk14" parent="NavigationRegion3D/Bullpen" instance=ExtResource("10_v7ntd")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -28.1072, 0, 34.2735)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk14"]
 
 [node name="Cubicle_Wall27" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.4204, 0, 26.2871)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall27"]
+
 [node name="Cubicle_Wall28" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.3822, 0, 26.2501)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall28"]
 
 [node name="Cubicle_Wall29" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.334, 0, 21.1491)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall29"]
+
 [node name="Cubicle_Wall30" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.2958, 0, 21.1121)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall30"]
 
 [node name="Office_Desk17" parent="NavigationRegion3D/Bullpen" instance=ExtResource("9_4rasj")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -25.8807, 0, 23.7372)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk17"]
+
 [node name="Office_Desk18" parent="NavigationRegion3D/Bullpen" instance=ExtResource("10_v7ntd")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -27.8409, 0, 23.6649)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk18"]
 
 [node name="Cubicle_Wall31" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -26.9592, 0, 27.6561)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall31"]
+
 [node name="Cubicle_Wall32" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -26.9866, 0, 30.3887)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall32"]
 
 [node name="Cubicle_Wall35" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -25.5463, 0, 36.9461)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall35"]
+
 [node name="Cubicle_Wall36" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -28.5082, 0, 36.9091)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall36"]
 
 [node name="LunchBag3" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_6ad6f")]
 transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, -26.1199, 1.53266, 33.2219)
@@ -740,44 +821,72 @@ transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962
 [node name="Cubicle_Wall37" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.7579, 0, 31.76)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall37"]
+
 [node name="Cubicle_Wall38" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.7197, 0, 31.723)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall38"]
 
 [node name="Cubicle_Wall39" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.6895, 0, 26.5014)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall39"]
+
 [node name="Cubicle_Wall40" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.6513, 0, 26.4643)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall40"]
 
 [node name="Office_Desk21" parent="NavigationRegion3D/Bullpen" instance=ExtResource("9_4rasj")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -12.2293, 0, 29.0724)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk21"]
+
 [node name="Office_Desk22" parent="NavigationRegion3D/Bullpen" instance=ExtResource("10_v7ntd")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -14.1185, 0, 29.0658)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk22"]
 
 [node name="Cubicle_Wall41" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.6031, 0, 21.0954)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall41"]
+
 [node name="Cubicle_Wall42" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.5649, 0, 21.0584)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall42"]
 
 [node name="Cubicle_Wall43" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -13.2283, 0, 33.016)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall43"]
+
 [node name="Cubicle_Wall44" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -13.2557, 0, 35.7485)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall44"]
 
 [node name="Cubicle_Wall45" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -13.087, 0, 22.5121)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall45"]
+
 [node name="Cubicle_Wall46" parent="NavigationRegion3D/Bullpen" instance=ExtResource("11_5uf5g")]
 transform = Transform3D(-0.0124962, 0, -0.999922, 0, 1, 0, 0.999922, 0, -0.0124962, -13.1144, 0, 25.2447)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall46"]
 
 [node name="Cubicle_Wall47" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -11.8154, 0, 37.0212)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall47"]
+
 [node name="Cubicle_Wall48" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_p887g")]
 transform = Transform3D(-0.999922, 0, 0.0124961, 0, 1, 0, -0.0124961, 0, -0.999922, -14.7773, 0, 36.9841)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Cubicle_Wall48"]
 
 [node name="LunchBag4" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_6ad6f")]
 transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, -12.0321, 1.53266, 33.2798)
@@ -785,41 +894,67 @@ transform = Transform3D(0.500121, 0, 0.865956, 0, 1, 0, -0.865956, 0, 0.500121, 
 [node name="Office_Desk" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -37.6177, 0, 8.98059)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk"]
+
 [node name="Office_Desk2" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.3615, 0, 12.1286)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk2"]
 
 [node name="Office_Desk5" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -26.1159, 9.53674e-07, 9.05067)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk5"]
+
 [node name="Office_Desk6" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.272, 0, 12.043)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk6"]
 
 [node name="Office_Desk8" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -39.7092, 0, 23.822)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk8"]
+
 [node name="Office_Desk11" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42.6586, 0, 34.52)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk11"]
 
 [node name="Office_Desk12" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -39.7679, 0, 34.598)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk12"]
+
 [node name="Office_Desk15" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -28.1695, 0, 29.03)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk15"]
 
 [node name="Office_Desk16" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -25.7232, 0, 29.03)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk16"]
+
 [node name="Office_Desk19" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.5206, 0, 23.7213)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk19"]
 
 [node name="Office_Desk20" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.7892, 0, 23.7213)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk20"]
+
 [node name="Office_Desk23" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -14.7017, 0, 34.3373)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk23"]
+
 [node name="Office_Desk24" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.789, 0, 34.3427)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk24"]
 
 [node name="Computer5" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_0km7k")]
 transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962, -12.0422, 1.55633, 23.9563)
@@ -836,11 +971,17 @@ transform = Transform3D(0.0124962, 0, 0.999922, 0, 1, 0, -0.999922, 0, 0.0124962
 [node name="Computer9" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42.2752, 1.55633, 23.3927)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Computer9"]
+
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen" instance=ExtResource("12_4te1i")]
 transform = Transform3D(-0.702314, 0, -0.711867, 0, 1, 0, 0.711867, 0, -0.702314, -45.1995, 0, 22.6256)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/OfficeChair4"]
+
 [node name="Office_Desk7" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -42.4167, 0, 23.7541)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/Office_Desk7"]
 
 [node name="Computer10" parent="NavigationRegion3D/Bullpen" instance=ExtResource("8_0km7k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -40.0148, 1.55633, 24.975)
@@ -851,11 +992,17 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -42.37
 [node name="OfficeChair2" parent="NavigationRegion3D/Bullpen" instance=ExtResource("12_4te1i")]
 transform = Transform3D(-0.375092, 0, 0.926988, 0, 1, 0, -0.926988, 0, -0.375092, -37.6861, 0, 35.0074)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/OfficeChair2"]
+
 [node name="OfficeChair" parent="NavigationRegion3D/Bullpen" instance=ExtResource("12_4te1i")]
 transform = Transform3D(0.703072, 0, -0.711119, 0, 1, 0, 0.711119, 0, 0.703072, -30.511, 0, 29.9742)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/OfficeChair"]
+
 [node name="OfficeChair3" parent="NavigationRegion3D/Bullpen" instance=ExtResource("12_4te1i")]
 transform = Transform3D(-0.122597, 0, -0.992457, 0, 1, 0, 0.992457, 0, -0.122597, -44.0941, 0, 33.4437)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/OfficeChair3"]
 
 [node name="OfficePhone" parent="NavigationRegion3D/Bullpen" instance=ExtResource("13_hio85")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.447, 0, 25.612)
@@ -869,6 +1016,10 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.1014
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen/DeskCluster" index="1"]
 transform = Transform3D(0.725459, 0, -0.688265, 0, 1, 0, 0.688265, 0, 0.725459, -6.55466, 0, -0.217323)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster/OfficeChair4" index="1"]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster/Office_Desk7" index="3"]
+
 [node name="OfficePhone" parent="NavigationRegion3D/Bullpen/DeskCluster" index="3"]
 transform = Transform3D(0.264883, 0, -0.964281, 0, 1, 0, 0.964281, 0, 0.264883, 0.929579, 1.61453, -1.18555)
 
@@ -878,6 +1029,12 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.039
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen/DeskCluster2" index="1"]
 transform = Transform3D(0.307756, 0, -0.951465, 0, 1, 0, 0.951465, 0, 0.307756, -3.11105, 0, 1.42049)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster2/OfficeChair4" index="1"]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster2/Office_Desk7" index="3"]
+
+[node name="NavigationObstacle3D2" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster2/Office_Desk7" index="4"]
+
 [node name="DeskCluster3" parent="NavigationRegion3D/Bullpen" instance=ExtResource("16_x0s5n")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.2054, 0, 22.2242)
 
@@ -886,6 +1043,10 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.1014
 
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen/DeskCluster3" index="1"]
 transform = Transform3D(0.649156, 0, -0.760655, 0, 1, 0, 0.760655, 0, 0.649156, -2.06284, 0, 2.98086)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster3/OfficeChair4" index="1"]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster3/Office_Desk7" index="3"]
 
 [node name="OfficePhone" parent="NavigationRegion3D/Bullpen/DeskCluster3" index="3"]
 transform = Transform3D(0.25715, 0, -0.966372, 0, 1, 0, 0.966372, 0, 0.25715, 0.929579, 1.61453, -0.596628)
@@ -901,6 +1062,10 @@ linkedTask = Array[Object]([ExtResource("28_mtkrx")])
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen/DeskCluster4" index="1"]
 transform = Transform3D(-0.177565, 0, -0.984109, 0, 1, 0, 0.984109, 0, -0.177565, -3.32293, 0, -0.161119)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster4/OfficeChair4" index="1"]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster4/Office_Desk7" index="3"]
+
 [node name="OfficePhone" parent="NavigationRegion3D/Bullpen/DeskCluster4" index="3"]
 transform = Transform3D(0.264883, 0, -0.964281, 0, 1, 0, 0.964281, 0, 0.264883, 0.929579, 1.61453, -1.18555)
 
@@ -910,6 +1075,10 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -32.56
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen/DeskCluster5" index="1"]
 transform = Transform3D(0.307756, 0, -0.951465, 0, 1, 0, 0.951465, 0, 0.307756, -0.76527, 0, 1.39238)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster5/OfficeChair4" index="1"]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster5/Office_Desk7" index="3"]
+
 [node name="DeskCluster6" parent="NavigationRegion3D/Bullpen" instance=ExtResource("16_x0s5n")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -40.7272, -1.90735e-06, 47.9011)
 
@@ -918,6 +1087,10 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.1014
 
 [node name="OfficeChair4" parent="NavigationRegion3D/Bullpen/DeskCluster6" index="1"]
 transform = Transform3D(0.791905, 0, 0.610643, 0, 1, 0, -0.610643, 0, 0.791905, -1.64132, 0, 1.18233)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster6/OfficeChair4" index="1"]
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Bullpen/DeskCluster6/Office_Desk7" index="3"]
 
 [node name="OfficePhone" parent="NavigationRegion3D/Bullpen/DeskCluster6" index="3"]
 transform = Transform3D(0.25715, 0, -0.966372, 0, 1, 0, 0.966372, 0, 0.25715, 0.929579, 1.61453, -0.596628)
@@ -938,35 +1111,55 @@ unlocked = true
 [node name="water_dispensor" parent="NavigationRegion3D/Kitchen" instance=ExtResource("20_7a21x")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.194, 4.76837e-07, 15.2915)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/water_dispensor"]
+
 [node name="water_dispensor2" parent="NavigationRegion3D/Kitchen" instance=ExtResource("20_7a21x")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.194, 4.76837e-07, 17.3764)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/water_dispensor2"]
 
 [node name="water_dispensor3" parent="NavigationRegion3D/Kitchen" instance=ExtResource("20_7a21x")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.8039, 4.76837e-07, 17.7324)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/water_dispensor3"]
+
 [node name="water_dispensor4" parent="NavigationRegion3D/Kitchen" instance=ExtResource("20_7a21x")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 48.7688, 4.76837e-07, 15.6478)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/water_dispensor4"]
 
 [node name="TableCluster" parent="NavigationRegion3D/Kitchen" instance=ExtResource("17_7a21x")]
 transform = Transform3D(0.857895, 0, -0.513826, 0, 1, 0, 0.513826, 0, 0.857895, 32.8714, 0, 30.9344)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/TableCluster"]
+
 [node name="TableCluster2" parent="NavigationRegion3D/Kitchen" instance=ExtResource("17_7a21x")]
 transform = Transform3D(0.467637, 0, 0.883921, 0, 1, 0, -0.883921, 0, 0.467637, 31.7176, -0.0218859, 42.8474)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/TableCluster2"]
 
 [node name="TableCluster3" parent="NavigationRegion3D/Kitchen" instance=ExtResource("17_7a21x")]
 transform = Transform3D(-0.714265, 0, -0.699875, 0, 1, 0, 0.699875, 0, -0.714265, 43.5076, -9.53674e-07, 27.9273)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/TableCluster3"]
+
 [node name="TableCluster4" parent="NavigationRegion3D/Kitchen" instance=ExtResource("17_7a21x")]
 transform = Transform3D(-0.930692, 0, -0.365803, 0, 1, 0, 0.365803, 0, -0.930692, 43.4208, 0, 42.238)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/TableCluster4"]
+
 [node name="TableCluster5" parent="NavigationRegion3D/Kitchen" instance=ExtResource("17_7a21x")]
 transform = Transform3D(0.467637, 0, 0.883921, 0, 1, 0, -0.883921, 0, 0.467637, 38.5714, -0.0218859, 36.3157)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/TableCluster5"]
 
 [node name="PaperPlate" parent="NavigationRegion3D/Kitchen" instance=ExtResource("27_exk2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.2183, 1.90125, 30.5314)
 
 [node name="Vending Machine" parent="NavigationRegion3D/Kitchen" instance=ExtResource("28_hxdps")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.3766, 0.00287074, 11.9994)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/Vending Machine"]
 
 [node name="Caf_table" parent="NavigationRegion3D/Kitchen" instance=ExtResource("4_s5aij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3369, 0, 4.4257)
@@ -977,8 +1170,12 @@ transform = Transform3D(-0.70076, 0, -0.713397, 0, 1, 0, 0.713397, 0, -0.70076, 
 [node name="VHS_player" parent="NavigationRegion3D/Kitchen/Caf_table" instance=ExtResource("31_ex8sv")]
 transform = Transform3D(-0.512328, 0, -0.85879, 0, 1, 0, 0.85879, 0, -0.512328, 0.125519, 2.04854, 1.51408)
 
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/Caf_table"]
+
 [node name="Vending Machine2" parent="NavigationRegion3D/Kitchen" instance=ExtResource("28_hxdps")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5297, 0, 1.42058)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="NavigationRegion3D/Kitchen/Vending Machine2"]
 
 [node name="Csuite" type="Node3D" parent="NavigationRegion3D"]
 
@@ -1032,9 +1229,147 @@ shape = SubResource("BoxShape3D_p8twe")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ceiling"]
 mesh = SubResource("BoxMesh_xooo4")
 
+[node name="tall_plant" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(1.22042, 0, 0, 0, 3.46119, 0, 0, 0, 3.17925, -1.10222, -0.0347345, -48.8033)
+
+[node name="tall_plant2" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(-0.00921479, 0, -2.52699, 0, 4.06934, 0, 1.00563, 0, -0.0231553, -29.7168, -0.00951551, -49.1144)
+
+[node name="large_potted_plant" parent="." instance=ExtResource("45_4k6ur")]
+transform = Transform3D(3.44777, 0, 0, 0, 4.87636, 0, 0, 0, 3.11637, -48.5281, 1.13053, -27.0968)
+
+[node name="small_potted_plant" parent="." instance=ExtResource("46_dx7cr")]
+transform = Transform3D(-19.9476, 0, 0, 0, 17.1665, 0, 0, 0, 25.4735, -47.7959, 0.897332, -3.59674)
+
+[node name="large_potted_plant2" parent="." instance=ExtResource("45_4k6ur")]
+transform = Transform3D(2.04296, 0, 0, 0, 2.61928, 0, 0, 0, 1, -19.3417, 0.481615, -1.98239)
+
+[node name="small_potted_plant2" parent="." instance=ExtResource("46_dx7cr")]
+transform = Transform3D(11.265, 0, 0, 0, 14.5041, 0, 0, 0, 8.56669, -6.5989, 0.674068, -1.68773)
+
+[node name="small_potted_plant3" parent="." instance=ExtResource("47_oupad")]
+transform = Transform3D(2.48789, 0, 0, 0, 2.9146, 0, 0, 0, 1.49917, -24.1288, 1.62725, 11.4526)
+
+[node name="large_potted_plant3" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5513, 1.90161, 9.30181)
+
+[node name="large_potted_plant4" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8134, 1.87328, 31.0682)
+
+[node name="large_potted_plant5" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5964, 1.87535, 26.9275)
+
+[node name="small_potted_plant4" parent="." instance=ExtResource("47_oupad")]
+transform = Transform3D(2.22251, 0, 0, 0, 5.74625, 0, 0, 0, 2.23015, -12.778, 1.59907, 30.5786)
+
+[node name="small_potted_plant5" parent="." instance=ExtResource("47_oupad")]
+transform = Transform3D(5.25115, 0, 0, 0, 5.25115, 0, 0, 0, 5.25115, -12.0711, 1.82148, 36.2883)
+
+[node name="large_potted_plant6" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(2.00922, 0, 0, 0, 3.63442, 0, 0, 0, 1.9716, -29.9486, 0.287649, 48.694)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant6"]
+
+[node name="large_potted_plant7" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(2.26566, 0, 0, 0, 3.6072, 0, 0, 0, 1.9981, -36.4469, 0.344294, 48.7466)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant7"]
+
+[node name="large_potted_plant8" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(2.5285, 0, 0, 0, 2.64787, 0, 0, 0, 3.36477, -45.5937, 0.630283, 48.4815)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant8"]
+
+[node name="large_potted_plant9" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(2.98422, 0, 0, 0, 3.09268, 0, 0, 0, 2.55432, -48.9388, 0.344294, 46.4467)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant9"]
+
+[node name="tall_plant3" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(1.88325, 0, 0, 0, 6.61513, 0, 0, 0, 3.74667, -48.2495, 0.0167542, 48.3432)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="tall_plant3"]
+
+[node name="tall_plant4" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(1.19219, 0, 0, 0, 1.79438, 0, 0, 0, 1.3971, -27.4337, 1.54569, 36.0637)
+
+[node name="small_potted_plant6" parent="." instance=ExtResource("47_oupad")]
+transform = Transform3D(2.88909, 0, 0, 0, 6.51649, 0, 0, 0, 3.70648, -27.2082, 1.68077, 25.5984)
+
+[node name="tall_plant5" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(2.06634, 0, 0, 0, 2.16557, 0, 0, 0, 1.74941, -41.283, 1.54742, 27.3881)
+
+[node name="tall_plant6" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(2.56776, 0, 0, 0, 3.53076, 0, 0, 0, 1.75826, 8.41227, 0.0167537, 21.422)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="tall_plant6"]
+
+[node name="tall_plant7" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(-0.00180219, -0.118692, -3.24288, -6.15484e-05, 3.47542, -0.11075, 3.03849, 0, -0.00192566, 15.7384, 0.0205224, 21.9697)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="tall_plant7"]
+
+[node name="large_potted_plant10" parent="." instance=ExtResource("48_bno24")]
+transform = Transform3D(2.01205, 0, 0, 0, 2.14282, 0, 0, 0, 1.57397, 25.8738, 0.381151, 16.1983)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant10"]
+
+[node name="tall_plant8" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(2.11058, 0, 0, 0, 2.93965, 0, 0, 0, 2.50347, 49.0649, 0.0167537, 14.3691)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="tall_plant8"]
+
+[node name="small_potted_plant7" parent="." instance=ExtResource("47_oupad")]
+transform = Transform3D(11.0668, 0, 0, 0, 20.5995, 0, 0, 0, 8.38323, 48.9917, 0.967497, 19.4538)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="small_potted_plant7"]
+
+[node name="tall_plant9" parent="." instance=ExtResource("44_8e0yf")]
+transform = Transform3D(4.85108, 0, 0, 0, 1, 0, 0, 0, 1, 38.4101, 4.09127, 1.61861)
+
+[node name="large_potted_plant11" parent="." instance=ExtResource("45_4k6ur")]
+transform = Transform3D(2.29342, 0, 0, 0, 3.03053, 0, 0, 0, 1.5327, 41.3549, 0.414639, 1.78919)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant11"]
+
+[node name="small_potted_plant8" parent="." instance=ExtResource("46_dx7cr")]
+transform = Transform3D(7.13373, 0, 0, 0, 13.4836, 0, 0, 0, 5.45432, 1.30519, 0.0699333, 0.778484)
+
+[node name="large_potted_plant12" parent="." instance=ExtResource("45_4k6ur")]
+transform = Transform3D(2.18513, 0, 0, 0, 2.83289, 0, 0, 0, 3.00924, -1.69061, 0.253254, 1.6922)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant12"]
+
+[node name="large_potted_plant13" parent="." instance=ExtResource("45_4k6ur")]
+transform = Transform3D(5.15318, 0, 0, 0, 3.54539, 0, 0, 0, 3.04405, 48.2131, 0.344294, 48.8553)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant13"]
+
+[node name="large_potted_plant14" parent="." instance=ExtResource("45_4k6ur")]
+transform = Transform3D(3.04318, 0, 0, 0, 5.1884, 0, 0, 0, 3.12938, 26.5786, 1.2414, 1.25749)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="large_potted_plant14"]
+
+[node name="side_table" parent="." instance=ExtResource("49_6jukv")]
+transform = Transform3D(7.68449, 0, 0, 0, 3.82979, 0, 0, 0, 6.25152, -47.1792, -0.28575, 2.55164)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="side_table"]
+
+[node name="fishbowl" parent="." instance=ExtResource("50_knbon")]
+transform = Transform3D(11.2905, 0, 0, 0, 9.79943, 0, 0, 0, 10.782, -47.2785, 1.72279, 2.52223)
+
+[node name="Vending Machine" parent="." instance=ExtResource("51_1rmu1")]
+transform = Transform3D(1, 9.77828e-08, -1.12528e-07, -5.96046e-08, -3.62498e-15, -1.8879, -4.37114e-08, 2.23701, 3.97506e-15, 49.3143, 0.498385, 7.86225)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="Vending Machine"]
+
+[node name="Cubicle_Wall" parent="." instance=ExtResource("9_wit5t")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -3.47931, 0, 0, 48.7921, -0.106051, 10.1456)
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="Cubicle_Wall"]
+
 [editable path="NPCs/Lucas"]
 [editable path="NPCs/Lucas/Lucas_Master_ANIM"]
-[editable path="NPCs/Cheryl"]
 [editable path="NPCs/Sally"]
 [editable path="NPCs/Gus"]
 [editable path="NavigationRegion3D/Bullpen/DeskCluster"]
