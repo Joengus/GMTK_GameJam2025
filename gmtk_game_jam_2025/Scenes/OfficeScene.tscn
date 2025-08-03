@@ -1,9 +1,11 @@
-[gd_scene load_steps=70 format=3 uid="uid://cokusonkv40jt"]
+[gd_scene load_steps=72 format=3 uid="uid://cokusonkv40jt"]
 
 [ext_resource type="PackedScene" uid="uid://bxfaxrrh8exdo" path="res://Scenes/pause_menu.tscn" id="1_2w47o"]
 [ext_resource type="PackedScene" uid="uid://i4mvy6jmegga" path="res://Prefabs/Managers/scene_manager.tscn" id="1_5jsaf"]
+[ext_resource type="PackedScene" uid="uid://cylu1k6s68g85" path="res://Prefabs/Managers/game_manager.tscn" id="1_mtkrx"]
 [ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="1_ptysm"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="1_xooo4"]
+[ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="2_2lmuu"]
 [ext_resource type="PackedScene" uid="uid://cvxcuecl66sk1" path="res://Prefabs/Objects/Door.tscn" id="3_6o3rs"]
 [ext_resource type="PackedScene" uid="uid://cb3ucad42ifwa" path="res://Prefabs/Objects/tent.tscn" id="3_p887g"]
 [ext_resource type="PackedScene" uid="uid://dkwea1r32jwv0" path="res://Prefabs/Objects/caf_table.tscn" id="4_s5aij"]
@@ -130,6 +132,10 @@ size = Vector3(11, 5.5, 0.25)
 size = Vector3(11, 5.5, 0.25)
 
 [node name="Office" type="Node3D"]
+
+[node name="GameManager" parent="." instance=ExtResource("1_mtkrx")]
+
+[node name="TaskManager" parent="." instance=ExtResource("2_2lmuu")]
 
 [node name="SceneManager" parent="." instance=ExtResource("1_5jsaf")]
 
