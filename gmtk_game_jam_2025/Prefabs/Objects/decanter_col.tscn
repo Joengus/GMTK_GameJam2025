@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1oqfpcg11qnk"]
+
+[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_1qo0y"]
+[ext_resource type="PackedScene" path="res://Prefabs/Objects/decanter.tscn" id="1_esapl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1qo0y"]
+size = Vector3(0.159058, 0.356598, 0.151291)
+
+[node name="Decanter" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
+script = ExtResource("1_1qo0y")
+prompt = NodePath("Prompt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000793457, 0.0588837, -0.00025177)
+shape = SubResource("BoxShape3D_1qo0y")
+
+[node name="Prompt" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.326743, 0)
+visible = false
+billboard = 1
+text = "Hold"
+font_size = 30
+
+[node name="decanter3" parent="RigidBody3D" instance=ExtResource("1_esapl")]

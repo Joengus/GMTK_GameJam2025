@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class BigRedButtonBehavior : StaticBody3D, IInteractable
+public partial class WaterDeispensorBehavior : StaticBody3D, IInteractable
 {
 
     [Export] Node3D prompt;
@@ -28,5 +28,4 @@ public partial class BigRedButtonBehavior : StaticBody3D, IInteractable
     {
         return iType;
     }
-
 }

@@ -4,12 +4,23 @@ using System.Diagnostics;
 
 public partial class PlayerInteractionBehavior : Node3D
 {
+    public static PlayerInteractionBehavior instance;
 
     [Export] ShapeCast3D shapeCast;
     PhysicsBody3D currentSelectedInteractable = null;
     bool ItemHeld = false;
     PhysicsBody3D currentHeldObject = null;
     [Export] Node3D handTransform;
+
+    public override void _EnterTree()
+    {
+        base._EnterTree();
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
 
     public override void _Ready()
     {
@@ -65,8 +76,12 @@ public partial class PlayerInteractionBehavior : Node3D
     {
         if (currentSelectedInteractable is IInteractable script)
         {
-            if (script.getIType() == InteractableType.Hold && currentHeldObject == null)
+            if (script.getIType() == InteractableType.Hold )//&& currentHeldObject == null)
             {
+                if (currentHeldObject != null)
+                {
+                    currentHeldObject.Reparent(GetTree().CurrentScene, true);
+                }
                 //grab
                 script.hidePrompt();
                 currentSelectedInteractable.Reparent(handTransform, false);
