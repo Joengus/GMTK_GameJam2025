@@ -10,7 +10,7 @@ public partial class WaterDeispensorBehavior : StaticBody3D, IInteractable
 
     public void interact()
     {
-        //activate end of day 
+        
     }
     
     public void showPrompt()

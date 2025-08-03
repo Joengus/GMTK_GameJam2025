@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dj73qpr11vnbg"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_kvsgn"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/vhs_tape.tscn" id="2_s830f"]
+[ext_resource type="PackedScene" uid="uid://ddq2t7u4upx3o" path="res://Prefabs/Objects/vhs_tape.tscn" id="2_s830f"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ls0nv"]
 size = Vector3(0.25267, 0.0492554, 0.149078)
@@ -9,6 +9,8 @@ size = Vector3(0.25267, 0.0492554, 0.149078)
 [node name="VhsTape" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+collision_layer = 4
+collision_mask = 6
 script = ExtResource("1_kvsgn")
 prompt = NodePath("Prompt")
 

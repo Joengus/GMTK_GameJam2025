@@ -7,7 +7,7 @@
 height = 0.174336
 radius = 0.0605469
 
-[node name="Node3D" type="Node3D"]
+[node name="CoffeCup" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
 collision_layer = 4
@@ -16,9 +16,10 @@ script = ExtResource("1_bfnqc")
 prompt = NodePath("Prompt")
 
 [node name="Coffee_Cup" parent="RigidBody3D" instance=ExtResource("1_gf7oa")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0880369, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.174598, 0)
 shape = SubResource("CylinderShape3D_bfnqc")
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]

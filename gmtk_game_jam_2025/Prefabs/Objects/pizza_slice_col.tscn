@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://o2bryt7r12u2"]
 
 [ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_m5lx6"]
-[ext_resource type="PackedScene" path="res://Prefabs/Objects/pizza_slice.tscn" id="2_n4jeh"]
+[ext_resource type="PackedScene" uid="uid://0bqt830ymv2g" path="res://Prefabs/Objects/pizza_slice.tscn" id="2_n4jeh"]
 
 [node name="PizzaSlice" type="Node3D"]
 
@@ -19,8 +19,9 @@ text = "Hold"
 font_size = 30
 
 [node name="pizza slice" parent="RigidBody3D" instance=ExtResource("2_n4jeh")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.00951484, 0)
+transform = Transform3D(2, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.00951484, 0)
 depth = 0.02
-polygon = PackedVector2Array(-0.00115767, -0.153356, -0.037224, -0.149422, -0.0726346, -0.133684, -0.00246915, 0.00205709, 0.0742538, -0.133028, 0.0381875, -0.14811)
+polygon = PackedVector2Array(0.000908332, -0.307449, -0.0364803, -0.300053, -0.0722255, -0.266362, 4.37137e-05, 0.0090013, 0.0728096, -0.266362, 0.0415839, -0.295123)

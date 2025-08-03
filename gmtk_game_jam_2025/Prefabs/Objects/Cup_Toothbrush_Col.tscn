@@ -5,7 +5,7 @@
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_pfuk5"]
 height = 0.12326
-radius = 0.0610352
+radius = 0.0620117
 
 [node name="Node3D" type="Node3D"]
 
@@ -16,9 +16,10 @@ script = ExtResource("1_hsxsc")
 prompt = NodePath("Prompt")
 
 [node name="cup_toothbrush_combo" parent="RigidBody3D" instance=ExtResource("2_kk25o")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.061203, 0.000887915)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.124701, 0.000887915)
 shape = SubResource("CylinderShape3D_pfuk5")
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]

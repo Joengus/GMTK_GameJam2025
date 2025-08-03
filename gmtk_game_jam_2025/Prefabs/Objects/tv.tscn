@@ -7,8 +7,12 @@ size = Vector3(0.781128, 0.56543, 0.492676)
 
 [node name="TV" instance=ExtResource("1_ccuam")]
 
+[node name="TV" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.219951, 0.00179057, 0.16448)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
-collision_layer = 2
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.226407, 0, -0.172266)
+collision_layer = 6
 collision_mask = 7
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]

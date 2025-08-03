@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://diyg7jdjr8up8"]
+
+[ext_resource type="PackedScene" uid="uid://cb361y8ljkxmr" path="res://Assets/Models/Objects/door_rest_of_office.fbx" id="1_4d5u7"]
+
+[node name="MetalDoor" instance=ExtResource("1_4d5u7")]
+
+[node name="door" parent="door_rest_of_office" index="0"]
+transform = Transform3D(0.0170658, 0, 0, 0, -9.29958e-10, -0.0212749, 0, 0.0212749, -9.29958e-10, -0.00793533, -1.02141e-16, 4.08562e-16)

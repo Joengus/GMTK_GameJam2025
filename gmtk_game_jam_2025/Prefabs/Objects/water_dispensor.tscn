@@ -4,15 +4,26 @@
 [ext_resource type="Script" uid="uid://cx7oh80sk86h5" path="res://Scripts/WaterDeispensorBehavior.cs" id="2_0ogmi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u00ol"]
-size = Vector3(0.639404, 2.37939, 0.746033)
+size = Vector3(0.639404, 2.34528, 0.746033)
 
 [node name="water_dispensor" instance=ExtResource("1_6cw7v")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+[node name="water_despenser_baked" parent="." index="0"]
+transform = Transform3D(2.068, 0, 0, 0, -1.05869e-07, 3.089, 0, -2.422, -1.35024e-07, 0.263215, 0.0411274, -0.333132)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" node_paths=PackedStringArray("prompt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02483, 0)
 collision_layer = 6
 collision_mask = 7
 script = ExtResource("2_0ogmi")
+prompt = NodePath("Prompt")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012207, 1.17651, -0.00888062)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012207, 1.1611, -0.00888062)
 shape = SubResource("BoxShape3D_u00ol")
+
+[node name="Prompt" type="Label3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07496, 0.475441)
+billboard = 1
+text = "Pour"
+font_size = 30

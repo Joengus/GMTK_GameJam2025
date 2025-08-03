@@ -1,25 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://b061cx8p0iv23"]
+[gd_scene load_steps=2 format=3 uid="uid://b061cx8p0iv23"]
 
-[ext_resource type="Script" uid="uid://dmye1uq05fkn4" path="res://Scripts/MugBehavior.cs" id="1_jk6tk"]
 [ext_resource type="PackedScene" uid="uid://cab5v4x5wmyqj" path="res://Prefabs/Objects/office_chair.tscn" id="2_bnvpt"]
 
-[node name="Node3D" type="Node3D"]
+[node name="OfficeChair" type="Node3D"]
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." node_paths=PackedStringArray("prompt")]
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
 collision_layer = 6
 collision_mask = 7
-script = ExtResource("1_jk6tk")
-prompt = NodePath("Prompt")
 
 [node name="Office_Chair" parent="RigidBody3D" instance=ExtResource("2_bnvpt")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="RigidBody3D"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 0, 0, 0)
 depth = 0.5
 polygon = PackedVector2Array(-0.00999877, 0.55111, -0.348581, 0.552858, -0.339693, 1.17501, -0.43746, 1.17723, -0.421906, 0.526194, -0.386355, 0.455091, -0.317473, 0.417317, -0.208596, 0.406207, -0.0463913, 0.403985, -0.0486133, 0.0929078, -0.23526, 0.0551341, -0.259702, -0.00930333, -0.237482, -0.0293012, 0.298016, -0.0248573, 0.273574, 0.064022, 0.035822, 0.0862418, 0.042488, 0.399541, 0.218024, 0.403985, 0.275796, 0.459535, 0.277513, 0.547663)
 
 [node name="Prompt" type="Label3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.34779, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.22853, 0)
 visible = false
 billboard = 1
 text = "Hold"
