@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://xio2gveaa1q8"]
+[gd_scene load_steps=31 format=3 uid="uid://xio2gveaa1q8"]
 
 [ext_resource type="Script" uid="uid://x3kcgdrs8csv" path="res://Scripts/MainMenu.cs" id="1_06t4h"]
 [ext_resource type="PackedScene" uid="uid://cwcg2a1qy6eec" path="res://Scenes/settings_menu.tscn" id="2_7vrkn"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dqm0s8yhpojkj" path="res://Assets/Art/UI/Buttons-175.png" id="11_vtepg"]
 [ext_resource type="Texture2D" uid="uid://bc0sev56ksipf" path="res://Assets/Art/UI/Buttons-176.png" id="12_8dnnj"]
 [ext_resource type="PackedScene" uid="uid://j8u14eptdk6k" path="res://Prefabs/Managers/fade_controller.tscn" id="14_vtepg"]
+[ext_resource type="AudioStream" uid="uid://cqpckby6olhxi" path="res://Assets/Audio/Music/Apartment Loop.mp3" id="18_ujyyl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vr1f0"]
 texture = ExtResource("5_yhxw7")
@@ -163,6 +164,10 @@ visible = false
 layout_mode = 1
 
 [node name="FadeController" parent="." instance=ExtResource("14_vtepg")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_ujyyl")
+autoplay = true
 
 [connection signal="pressed" from="PlayButton" to="." method="OnPlayButtonPressed"]
 [connection signal="pressed" from="CreditsButton" to="." method="OnCreditsButtonPressed"]
