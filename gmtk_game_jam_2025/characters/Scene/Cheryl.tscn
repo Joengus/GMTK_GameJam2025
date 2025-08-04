@@ -6,9 +6,9 @@
 [ext_resource type="Script" uid="uid://cjmqrtecpluq0" path="res://Scripts/NPC Scripts/State/WalkState.cs" id="3_mce15"]
 [ext_resource type="Script" uid="uid://dt6ol8pd8gmrj" path="res://Scripts/NPC Scripts/State/SitState.cs" id="4_51f85"]
 [ext_resource type="Script" uid="uid://ci8ktq2tiaabr" path="res://Scripts/NPC Scripts/State/IdleState.cs" id="5_f1f76"]
-[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="6_gv7mr"]
-[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="7_kji2c"]
-[ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="8_0qeke"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/HiddenTasks/SpikeCoffeeWithWhiskey.tres" id="6_gv7mr"]
+[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/UpdateYourBossOnYourProgress.tres" id="7_kji2c"]
+[ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/HiddenTasks/DeliverCopies.tres" id="8_0qeke"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_usucp"]
 resource_name = "glasses2"

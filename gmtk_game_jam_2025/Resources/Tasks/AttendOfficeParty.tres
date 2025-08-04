@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://cgej5tdqulpae"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_pmf8n"]
+
+[resource]
+script = ExtResource("1_pmf8n")
+ReputationAlignment = 0
+TaskName = "Attend office party"
+PointsTowardAlignment = 400
+DescriptionRebel = "Are we feeling the team spirit, yet?"
+DescriptionNeutral = "Free food! I should have brought a container. "
+DescriptionCitizen = "This is much more motivating than a raise."
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"

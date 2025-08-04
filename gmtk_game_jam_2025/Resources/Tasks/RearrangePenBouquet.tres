@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://bd6saxiu12kub"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_8ch4v"]
+
+[resource]
+script = ExtResource("1_8ch4v")
+ReputationAlignment = 0
+TaskName = "Rearrange pen bouquet"
+PointsTowardAlignment = 200
+DescriptionRebel = "Something about this looks very flammable to me."
+DescriptionNeutral = "Anything to bring a little joy into this place."
+DescriptionCitizen = "Such great colors! And no watering required."
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"

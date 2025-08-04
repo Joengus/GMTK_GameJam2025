@@ -8,8 +8,9 @@ public partial class TaskManager : Node3D
 	public static TaskManager Instance;
 
 	private const int NON_NEUTRAL_FLAVOR_TEXT_POINT_THRESHOLD = 50;
+	[Export] TaskLibraryResource taskLibrary;
 	[Export] public Dictionary GlobalTaskList = new Dictionary();
-	public List<Object> currentTaskKeys = new List<Object>();
+	public List<TaskResource> currentTaskList = new List<TaskResource>();
 	private RichTextLabel _flavorText;
 
 	public override void _EnterTree()
@@ -21,7 +22,7 @@ public partial class TaskManager : Node3D
 	{
 		_flavorText = GetNode<RichTextLabel>("Control/Text");
 		AssignTasks();
-		foreach (TaskResource task in currentTaskKeys)
+		foreach (TaskResource task in currentTaskList)
 		{
 			GD.Print("New Task: " + task.TaskName);			
 		}
@@ -29,43 +30,12 @@ public partial class TaskManager : Node3D
 
 	public void AssignTasks()
 	{
-		currentTaskKeys.Clear();
-		for (int i = 0; i < 10; i++)
-		{
-			var rng = new RandomNumberGenerator();
-			// Get keys as a Godot.Collections.Array
-			Godot.Collections.Array keysArray = new Godot.Collections.Array(GlobalTaskList.Keys);
-
-			// Get values as a Godot.Collections.Array
-			Godot.Collections.Array valuesArray = new Godot.Collections.Array(GlobalTaskList.Values);
-			bool gotGoodTask = false;
-
-			while (!gotGoodTask)
-			{
-				GD.Print("In while loop");
-				rng.Randomize();
-				int randomNumber = rng.RandiRange(0, keysArray.Count - 1);
-				TaskResource taskInfo = (TaskResource)keysArray[randomNumber];
-				if (!taskInfo.isHidden && !currentTaskKeys.Contains(keysArray[randomNumber]))
-				{
-					gotGoodTask = true;
-					currentTaskKeys.Add(keysArray[randomNumber]);
-				}
-			}
-		}
-
-
-
-		GD.Print("Number of tasks: " + currentTaskKeys.Count);
+		currentTaskList.Clear();
+		currentTaskList = taskLibrary.GetRandomIncompleteTasks(5);
 	}
 
 	public void CompleteTask(TaskResource taskToMarkComplete)
 	{
-		if (!GlobalTaskList.ContainsKey(taskToMarkComplete))
-		{
-//			GD.PrintErr($"Task does not exist: '{taskToMarkComplete.TaskName}'");
-			return;
-		}
 		foreach (TaskResource t in taskToMarkComplete.PrerequisiteTasks)
 		{
 			if (!t.IsComplete) return;

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="1_bpx42"]
 [ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="1_ptysm"]
-[ext_resource type="PackedScene" uid="uid://i4mvy6jmegga" path="res://Prefabs/Managers/scene_manager.tscn" id="1_ugl6a"]
+[ext_resource type="PackedScene" path="res://Prefabs/Managers/scene_manager.tscn" id="1_ugl6a"]
 [ext_resource type="PackedScene" uid="uid://bixhydqy242lq" path="res://Scenes/player_character.tscn" id="1_xooo4"]
 [ext_resource type="PackedScene" uid="uid://cylu1k6s68g85" path="res://Prefabs/Managers/game_manager.tscn" id="2_ugl6a"]
 [ext_resource type="PackedScene" uid="uid://cvxcuecl66sk1" path="res://Prefabs/Objects/Door.tscn" id="3_6o3rs"]
@@ -44,7 +44,7 @@
 [ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="27_c3loq"]
 [ext_resource type="PackedScene" uid="uid://dclxbo0c453m7" path="res://Prefabs/Objects/paper_plate_col.tscn" id="27_exk2h"]
 [ext_resource type="PackedScene" uid="uid://bfkns6ftdg70a" path="res://Prefabs/Objects/vending_machine.tscn" id="28_hxdps"]
-[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="28_mtkrx"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/HiddenTasks/SpikeCoffeeWithWhiskey.tres" id="28_mtkrx"]
 [ext_resource type="PackedScene" uid="uid://djusqjyn4p0hb" path="res://characters/Scene/Gus.tscn" id="30_0hi4x"]
 [ext_resource type="PackedScene" uid="uid://b6puk4b18xd2p" path="res://Prefabs/Objects/tv.tscn" id="30_fb0rg"]
 [ext_resource type="PackedScene" uid="uid://b7i6ao0sfcjpb" path="res://Prefabs/Objects/vhs_player.tscn" id="31_ex8sv"]

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://27rihlyven7g"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_a1djm"]
+
+[resource]
+script = ExtResource("1_a1djm")
+ReputationAlignment = 2
+TaskName = "Retreive cleaning supplies from Supply Closet."
+PointsTowardAlignment = 200
+DescriptionRebel = "I'm supposed to mix bleach and ammonia...right?"
+DescriptionNeutral = "Janitor Gus has been slacking..."
+DescriptionCitizen = "We're all a part of keeping our workplace clean!"
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"

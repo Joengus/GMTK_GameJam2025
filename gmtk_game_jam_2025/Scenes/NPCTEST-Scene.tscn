@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bcq4835jtlqih" path="res://characters/Scene/Cheryl.tscn" id="1_daot0"]
 [ext_resource type="Script" uid="uid://dg2pq2bihtq3i" path="res://Scripts/NPC Scripts/TaskObject.cs" id="2_iyg6u"]
-[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/Tasks/T025.tres" id="3_r47yj"]
+[ext_resource type="Resource" uid="uid://so8eya5u1i6i" path="res://Resources/HiddenTasks/SpikeCoffeeWithWhiskey.tres" id="3_r47yj"]
 [ext_resource type="Script" uid="uid://53hfdi48h7qw" path="res://Scripts/Task/TaskManager.cs" id="4_r47yj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cn623"]

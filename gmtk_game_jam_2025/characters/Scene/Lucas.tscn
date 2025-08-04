@@ -6,9 +6,9 @@
 [ext_resource type="Script" uid="uid://bjruyaudjqqv5" path="res://Scripts/NPC Scripts/NpcData.cs" id="3_pjwoq"]
 [ext_resource type="Script" uid="uid://bm1twkc0qddrw" path="res://Scripts/NPC Scripts/State/LieDownState.cs" id="3_x85pr"]
 [ext_resource type="Script" uid="uid://dn1idqw5lnx06" path="res://Scripts/NPC Scripts/State/YawnState.cs" id="4_b381j"]
-[ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/Tasks/T010.tres" id="5_cqmai"]
-[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/T029.tres" id="6_x85pr"]
-[ext_resource type="Resource" uid="uid://dx0hgxcnahdij" path="res://Resources/Tasks/T033.tres" id="7_b381j"]
+[ext_resource type="Resource" uid="uid://bgwckigch758d" path="res://Resources/HiddenTasks/DeliverCopies.tres" id="5_cqmai"]
+[ext_resource type="Resource" uid="uid://bpp6s7smpo4qs" path="res://Resources/Tasks/UpdateYourBossOnYourProgress.tres" id="6_x85pr"]
+[ext_resource type="Resource" uid="uid://dx0hgxcnahdij" path="res://Resources/Tasks/DisinfectCoworker.tres" id="7_b381j"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_edg6p"]
 radius = 0.292267

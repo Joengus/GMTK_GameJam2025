@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://bhemguj4t3v4s"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_iykwi"]
+
+[resource]
+script = ExtResource("1_iykwi")
+ReputationAlignment = 0
+TaskName = "Restart the office wi-fi "
+PointsTowardAlignment = 400
+DescriptionRebel = "I should have just cut the cable when I had the chance."
+DescriptionNeutral = "Is this what the Dark Ages felt like?"
+DescriptionCitizen = "I hope it comes back in time for our afternoon share circle!"
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"

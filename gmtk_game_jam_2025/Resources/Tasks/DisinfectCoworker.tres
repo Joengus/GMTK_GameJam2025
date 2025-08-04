@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TaskResource" load_steps=2 format=3 uid="uid://dx0hgxcnahdij"]
+
+[ext_resource type="Script" uid="uid://tsksdlunldfr" path="res://Scripts/Task/TaskResource.cs" id="1_8k3um"]
+
+[resource]
+script = ExtResource("1_8k3um")
+ReputationAlignment = 0
+TaskName = "Disenfect your co-worker"
+PointsTowardAlignment = 500
+DescriptionRebel = "I'm not sure that slapping them really disenfected anything..."
+DescriptionNeutral = "They were starting to smell."
+DescriptionCitizen = "Violent but necessary."
+PrerequisiteTasks = null
+isHidden = false
+metadata/_custom_type_script = "uid://tsksdlunldfr"
