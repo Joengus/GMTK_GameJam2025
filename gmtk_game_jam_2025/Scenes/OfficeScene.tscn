@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://cokusonkv40jt"]
+[gd_scene load_steps=99 format=3 uid="uid://cokusonkv40jt"]
 
 [ext_resource type="PackedScene" uid="uid://cmjlxqbcgfq7g" path="res://Prefabs/Managers/task_manager.tscn" id="1_bpx42"]
 [ext_resource type="Material" uid="uid://ww2grp7o85yh" path="res://Assets/Models/Objects/GymBag/standardSurface1.tres" id="1_ptysm"]
@@ -65,6 +65,9 @@
 [ext_resource type="PackedScene" uid="uid://0vrw4ov2igps" path="res://Assets/Models/Objects/Pizza/PizzaInBox/pizza inbox.fbx" id="60_j2d7b"]
 [ext_resource type="PackedScene" uid="uid://e0ucjbdk05a0" path="res://Assets/Models/Objects/SprayBottleRag/spray bottle_rag.fbx" id="61_4ccrj"]
 [ext_resource type="PackedScene" uid="uid://pfrielop4ko1" path="res://Assets/Models/Objects/Stapler/red_stapler.fbx" id="62_kuaot"]
+[ext_resource type="AudioStream" uid="uid://cqpckby6olhxi" path="res://Assets/Audio/Music/Apartment Loop.mp3" id="66_dkn0c"]
+[ext_resource type="AudioStream" uid="uid://r1va7gkhk8hm" path="res://Assets/Audio/Music/Office Loop.mp3" id="67_5mptf"]
+[ext_resource type="AudioStream" uid="uid://dl6c84finljoa" path="res://Assets/Audio/Music/Exec Suite Loop.mp3" id="68_5mptf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6o3rs"]
 
@@ -169,6 +172,7 @@ size = Vector3(11, 5.5, 0.25)
 [node name="HUD" parent="." instance=ExtResource("3_cjoqk")]
 
 [node name="PauseMenu" parent="." instance=ExtResource("4_dkn0c")]
+visible = false
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("1_xooo4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2344, 0, 7.31723)
@@ -1631,6 +1635,24 @@ transform = Transform3D(-0.467216, 0, -2.18512, 0, 1.94587, 0, 1.74367, 0, -0.58
 
 [node name="Node3D" type="Node3D" parent="red_stapler"]
 script = ExtResource("27_c3loq")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7479, 11.8139, 10.1053)
+stream = ExtResource("66_dkn0c")
+unit_size = 1.0
+autoplay = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.4198, 11.8139, 29.3163)
+stream = ExtResource("67_5mptf")
+unit_size = 2.6
+autoplay = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.754, 11.8139, -27.8006)
+stream = ExtResource("68_5mptf")
+unit_size = 2.25
+autoplay = true
 
 [editable path="NPCs/Lucas"]
 [editable path="NPCs/Lucas/Lucas_Master_ANIM"]

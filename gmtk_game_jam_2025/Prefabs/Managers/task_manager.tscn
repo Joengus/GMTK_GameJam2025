@@ -58,31 +58,6 @@
 script = ExtResource("1_6nu63")
 taskLibrary = ExtResource("2_5j2hs")
 GlobalTaskList = {
-ExtResource("2_oe8ff"): [],
-ExtResource("3_r61gb"): [],
-ExtResource("4_fpjma"): [],
-ExtResource("5_vcbcg"): [],
-ExtResource("6_mddbl"): [],
-ExtResource("7_yludm"): [],
-ExtResource("8_vyhpt"): [],
-ExtResource("9_q6kjx"): [],
-ExtResource("10_y1ttb"): [],
-ExtResource("11_r61gb"): [],
-ExtResource("12_vyhpt"): [],
-ExtResource("13_q6kjx"): [],
-ExtResource("14_y1ttb"): [],
-ExtResource("15_el1fn"): [],
-ExtResource("16_p1gnx"): [],
-ExtResource("17_3tlua"): [],
-ExtResource("18_5j2hs"): [],
-ExtResource("19_2bcyp"): [],
-ExtResource("20_tlxno"): [],
-ExtResource("21_48ygd"): [],
-ExtResource("22_p47nb"): [],
-ExtResource("23_gy5t5"): [],
-ExtResource("24_evnvp"): [],
-ExtResource("25_rkoq3"): [],
-ExtResource("26_fkepx"): [],
 ExtResource("27_ee307"): [],
 ExtResource("28_tng3v"): [],
 ExtResource("29_r7upd"): [],
@@ -107,7 +82,32 @@ ExtResource("47_sxmqr"): [],
 ExtResource("48_iomsj"): [],
 ExtResource("49_4u0g2"): [],
 ExtResource("50_2i3ql"): [],
-ExtResource("51_4lfnd"): []
+ExtResource("51_4lfnd"): [],
+ExtResource("2_oe8ff"): [],
+ExtResource("3_r61gb"): [],
+ExtResource("4_fpjma"): [],
+ExtResource("5_vcbcg"): [],
+ExtResource("6_mddbl"): [],
+ExtResource("7_yludm"): [],
+ExtResource("8_vyhpt"): [],
+ExtResource("9_q6kjx"): [],
+ExtResource("10_y1ttb"): [],
+ExtResource("11_r61gb"): [],
+ExtResource("12_vyhpt"): [],
+ExtResource("13_q6kjx"): [],
+ExtResource("14_y1ttb"): [],
+ExtResource("15_el1fn"): [],
+ExtResource("16_p1gnx"): [],
+ExtResource("17_3tlua"): [],
+ExtResource("18_5j2hs"): [],
+ExtResource("19_2bcyp"): [],
+ExtResource("20_tlxno"): [],
+ExtResource("21_48ygd"): [],
+ExtResource("22_p47nb"): [],
+ExtResource("23_gy5t5"): [],
+ExtResource("24_evnvp"): [],
+ExtResource("25_rkoq3"): [],
+ExtResource("26_fkepx"): []
 }
 
 [node name="Control" type="Control" parent="."]
@@ -131,6 +131,5 @@ offset_bottom = 218.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-text = "Some cool text"
 horizontal_alignment = 1
 vertical_alignment = 1
