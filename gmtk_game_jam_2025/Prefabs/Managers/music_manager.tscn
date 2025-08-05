@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7bgk51l661k3"]
+
+[ext_resource type="AudioStream" uid="uid://cqpckby6olhxi" path="res://Assets/Audio/Music/Apartment Loop.mp3" id="1_qj72f"]
+[ext_resource type="AudioStream" uid="uid://r1va7gkhk8hm" path="res://Assets/Audio/Music/Office Loop.mp3" id="2_k2lhc"]
+[ext_resource type="AudioStream" uid="uid://dl6c84finljoa" path="res://Assets/Audio/Music/Exec Suite Loop.mp3" id="3_4ekea"]
+[ext_resource type="Script" uid="uid://cf3k8865wrjve" path="res://Scripts/MusicManager.cs" id="4_jwv01"]
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_dkn0c"]
+clip_count = 3
+clip_0/name = &"supply_closet"
+clip_0/stream = ExtResource("1_qj72f")
+clip_0/auto_advance = 0
+clip_1/name = &"office"
+clip_1/stream = ExtResource("2_k2lhc")
+clip_1/auto_advance = 0
+clip_2/name = &"executive"
+clip_2/stream = ExtResource("3_4ekea")
+clip_2/auto_advance = 0
+_transitions = {
+Vector2i(-1, -1): {
+"fade_beats": 2.5,
+"fade_mode": 3,
+"from_time": 0,
+"to_time": 0
+}
+}
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamInteractive_dkn0c")
+autoplay = true
+bus = &"Music"
+script = ExtResource("4_jwv01")

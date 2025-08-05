@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqdpr1equ5sa0"]
+
+[ext_resource type="Script" uid="uid://d33bvyfa2bs18" path="res://Scripts/MusicChange.cs" id="1_tybno"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5mptf"]
+
+[node name="ChangeMusic" type="Area3D"]
+script = ExtResource("1_tybno")
+_music = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_5mptf")
+
+[connection signal="body_entered" from="." to="." method="OnCollisionEnter"]
