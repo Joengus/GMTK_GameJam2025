@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7bgk51l661k3"]
+[gd_scene load_steps=5 format=3 uid="uid://c7bgk51l661k3"]
 
 [ext_resource type="AudioStream" uid="uid://cqpckby6olhxi" path="res://Assets/Audio/Music/Apartment Loop.mp3" id="1_qj72f"]
 [ext_resource type="AudioStream" uid="uid://r1va7gkhk8hm" path="res://Assets/Audio/Music/Office Loop.mp3" id="2_k2lhc"]
 [ext_resource type="AudioStream" uid="uid://dl6c84finljoa" path="res://Assets/Audio/Music/Exec Suite Loop.mp3" id="3_4ekea"]
-[ext_resource type="Script" uid="uid://cf3k8865wrjve" path="res://Scripts/MusicManager.cs" id="4_jwv01"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_dkn0c"]
 clip_count = 3
@@ -29,4 +28,3 @@ Vector2i(-1, -1): {
 stream = SubResource("AudioStreamInteractive_dkn0c")
 autoplay = true
 bus = &"Music"
-script = ExtResource("4_jwv01")
